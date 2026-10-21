@@ -1,0 +1,22 @@
+<html><head><meta charset="utf-8"><style>
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1440px;font-family:"Noto Sans CJK SC";color:#222;overflow:hidden;background:#f7efdf;background-image:linear-gradient(#e8dcc4 1.5px,transparent 1.5px),linear-gradient(90deg,#e8dcc4 1.5px,transparent 1.5px);background-size:44px 44px}
+.w{padding:70px 70px;height:100%;display:flex;flex-direction:column;gap:30px}
+.tape{display:inline-block;background:#ffd86b;padding:8px 22px;font:700 26px "Noto Sans CJK SC";transform:rotate(-2deg);border:3px solid #222}
+h1{font:900 84px/1.2 "Noto Sans CJK SC";margin-top:20px}h1 u{text-decoration:none;background:linear-gradient(transparent 62%,#ff9eb5 62%)}
+.tags span{display:inline-block;border:3px solid #222;border-radius:99px;padding:6px 20px;font:600 24px "Noto Sans CJK SC";margin-right:12px;background:#fff}
+.box{border:4px solid #222;border-radius:24px;padding:26px 32px;box-shadow:8px 8px 0 #222}
+.hero{background:#bfe3ff;display:flex;justify-content:space-between;align-items:center}
+.big{font:900 140px/1 "Noto Sans CJK SC"}.lab{font:700 28px "Noto Sans CJK SC"}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.n{font:900 66px/1.1 "Noto Sans CJK SC"}.n i{font-style:normal;font-size:34px;color:#555}
+.t{margin-top:auto;background:#222;color:#fff;font:800 42px/1.4 "Noto Sans CJK SC";box-shadow:8px 8px 0 #ff9eb5}.t b{color:#ffd86b}
+</style></head><body><div class="w">
+<div><span class="tape">✏️ {{series}}</span><h1>{{title_line1}}<br><u>{{title_line2}}</u></h1></div>
+<div class="tags">{{tags_html}}</div>
+<div class="box hero"><div><div class="lab">👀 {{hero_label}}</div><div class="big">{{hero_value}}{{hero_unit}}</div></div><div style="text-align:right"><div class="lab">{{stat1_label}}</div><div class="n">{{stat1_value}}</div><div class="lab" style="margin-top:10px">{{stat2_label}} {{stat2_value}}</div></div></div>
+<div class="grid">
+{{#metrics}}<div class="box" style="background:{{color}}"><div class="lab">{{emoji}} {{label}}</div><div class="n">{{value}}{{#sub}} <i>{{sub_sep}} {{sub}}</i>{{/sub}}</div></div>{{/metrics}}
+</div>
+<div class="lab" style="color:#555">{{footnote}}</div>
+<div class="box t">划重点：{{takeaway_html}}</div>
+</div></body></html>

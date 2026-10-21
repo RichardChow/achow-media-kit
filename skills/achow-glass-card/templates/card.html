@@ -1,0 +1,27 @@
+<html><head><meta charset="utf-8"><style>
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1440px;font-family:"Noto Sans CJK SC";color:#1d2140;overflow:hidden;position:relative;background:#eef0ff}
+.b{position:absolute;border-radius:50%;filter:blur(90px)}
+.w{position:relative;padding:76px 72px;height:100%;display:flex;flex-direction:column;gap:30px}
+.g{background:rgba(255,255,255,.55);border:1.5px solid rgba(255,255,255,.9);border-radius:36px;box-shadow:0 20px 60px rgba(80,70,180,.12);backdrop-filter:blur(20px)}
+.pill{display:inline-block;padding:10px 24px;border-radius:99px;background:rgba(255,255,255,.7);font:600 24px "Noto Sans CJK SC";color:#5b4bd6}
+h1{font:800 82px/1.2 "Noto Sans CJK SC";letter-spacing:-1px;margin-top:22px}
+.hero{padding:42px 48px;display:flex;justify-content:space-between;align-items:flex-end}
+.lab{font:500 26px "Noto Sans CJK SC";color:#6a6f93}
+.v{font:800 150px/1 "Noto Sans CJK SC";background:linear-gradient(90deg,#5b4bd6,#e0559b);-webkit-background-clip:text;color:transparent;letter-spacing:-4px}
+.side div{font:700 40px "Noto Sans CJK SC";text-align:right}.side span{font:500 24px "Noto Sans CJK SC";color:#6a6f93;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.c{padding:30px 36px}
+.n{font:800 64px/1.1 "Noto Sans CJK SC"}.n i{font-style:normal;font-size:32px;color:#8a8fb3}
+.bar{height:12px;border-radius:9px;background:rgba(91,75,214,.12);margin-top:16px}.bar b{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#7b6cf6,#e0559b)}
+.t{margin-top:auto;padding:36px 44px;font:700 42px/1.4 "Noto Sans CJK SC"}.t em{font-style:normal;color:#e0559b}
+</style></head><body>
+<div class="b" style="width:620px;height:620px;background:#b9a8ff;left:-160px;top:-120px"></div>
+<div class="b" style="width:560px;height:560px;background:#ffb3d1;right:-160px;top:420px"></div>
+<div class="b" style="width:600px;height:600px;background:#a6e3ff;left:120px;bottom:-260px"></div>
+<div class="w"><div><span class="pill">{{series}} · {{issue}}</span><h1>{{title_line1}}<br>{{title_line2}}</h1></div>
+<div class="g hero"><div><div class="lab">{{hero_label}}</div><div class="v">{{hero_value}}{{hero_unit}}</div></div>
+<div class="side"><div>{{stat1_value}}<span>{{stat1_label}}</span></div><div style="margin-top:14px">{{stat2_value}}<span>{{stat2_label}}</span></div></div></div>
+<div class="grid">
+{{#metrics}}<div class="g c"><div class="lab">{{label}}</div><div class="n">{{value}}{{#sub}} <i>{{sub_sep}} {{sub}}</i>{{/sub}}</div>{{#pct}}<div class="bar"><b style="width:{{pct}}%"></b></div>{{/pct}}</div>{{/metrics}}
+</div>
+<div class="lab" style="margin-top:-8px">{{footnote}}</div>
+<div class="g t">💡 {{takeaway_html}}</div></div></body></html>

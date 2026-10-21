@@ -1,0 +1,23 @@
+<html><head><meta charset="utf-8"><style>
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1440px;background:#f2efe9;color:#1a1a1a;font-family:"Noto Sans CJK SC";position:relative;overflow:hidden}
+.w{padding:80px 84px;height:100%;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;font:600 22px "Noto Sans CJK SC";letter-spacing:4px;border-bottom:3px solid #1a1a1a;padding-bottom:22px}
+.k{color:#d95e00;font:700 30px "Noto Sans CJK SC";letter-spacing:6px;margin-top:56px}
+h1{font:900 104px/1.12 "Noto Serif CJK SC";margin-top:18px;letter-spacing:-2px}
+.hero{display:flex;align-items:flex-end;gap:36px;margin-top:50px;border-top:1px solid #1a1a1a;padding-top:36px}
+.big{font:900 230px/0.85 "Noto Serif CJK SC";letter-spacing:-8px}.big small{font-size:80px;color:#d95e00}
+.hs{font:500 30px/1.6 "Noto Sans CJK SC";padding-bottom:10px}.hs b{font-size:44px}
+.grid{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;border-top:1px solid #1a1a1a}
+.c{padding:28px 0 28px;border-bottom:1px solid #1a1a1a}.c:nth-child(odd){border-right:1px solid #1a1a1a;padding-right:30px}.c:nth-child(even){padding-left:36px}
+.n{font:900 76px/1 "Noto Serif CJK SC"}.n i{font-style:normal;font-size:40px;color:#888}.l{font:500 26px "Noto Sans CJK SC";color:#555;margin-top:10px}
+.dark{margin-top:auto;background:#1a1a1a;color:#f2efe9;padding:38px 44px;font:700 44px/1.4 "Noto Serif CJK SC"}.dark span{color:#ff8a3d}
+</style></head><body><div class="w">
+<div class="top"><span>{{series}}</span><span>{{handle}}</span></div>
+<div class="k">ISSUE {{issue}} · {{topic}}</div><h1>{{title_line1}}<br>{{title_line2}}</h1>
+<div class="hero"><div class="big">{{hero_value}}<small>{{hero_unit}}</small></div><div class="hs">{{hero_label}}<br>{{stat1_label}} <b>{{stat1_value}}</b><br>{{stat2_label}} {{stat2_value}}</div></div>
+<div class="grid">
+{{#metrics}}<div class="c"><div class="n">{{value}}{{#sub}} <i>/ {{sub}}</i>{{/sub}}</div><div class="l">{{label}}</div></div>{{/metrics}}
+</div>
+<div style="font:500 26px 'Noto Sans CJK SC';color:#555;margin-top:22px">{{footnote}}</div>
+<div class="dark">{{takeaway_html}}。</div>
+</div></body></html>

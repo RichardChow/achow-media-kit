@@ -1,0 +1,64 @@
+{
+  "series": "新号做 X 的学习笔记",
+  "handle": "@aChow_hz",
+  "issue": "01",
+  "topic": "后台概览",
+  "title_line1": "学习笔记 01：",
+  "title_line2": "看懂后台概览",
+  "hero_label": "曝光",
+  "hero_value": "19.2",
+  "hero_unit": "K",
+  "stat1_label": "互动率",
+  "stat1_value": "1.8%",
+  "stat2_label": "互动",
+  "stat2_value": "348",
+  "metrics": [
+    {
+      "label": "回复 &gt; 点赞",
+      "value": "121",
+      "sub": "113",
+      "sub_sep": "&gt;",
+      "pct": 100,
+      "emoji": "💬",
+      "color": "#ffd6e0"
+    },
+    {
+      "label": "主页访问",
+      "value": "106",
+      "sub": "",
+      "sub_sep": "",
+      "pct": 0,
+      "emoji": "🏠",
+      "color": "#d9f5c9"
+    },
+    {
+      "label": "认证粉丝",
+      "value": "516",
+      "sub": "545",
+      "sub_sep": "/",
+      "pct": 94.7,
+      "emoji": "✅",
+      "color": "#fff3b8"
+    },
+    {
+      "label": "活跃粉丝",
+      "value": "535",
+      "sub": "545",
+      "sub_sep": "/",
+      "pct": 98.2,
+      "emoji": "🔥",
+      "color": "#e5dcff"
+    }
+  ],
+  "footnote": "收藏 4 · 转发 4",
+  "takeaway_prefix": "新号先看",
+  "takeaway_highlights": [
+    "回复",
+    "主页访问"
+  ],
+  "tags": [
+    "#曝光",
+    "#互动率",
+    "#粉丝"
+  ]
+}

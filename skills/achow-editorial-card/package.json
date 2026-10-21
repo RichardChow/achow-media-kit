@@ -1,0 +1,13 @@
+{
+  "name": "achow-editorial-card",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "render": "node scripts/render.mjs examples/issue01.json examples/issue01.png"
+  },
+  "dependencies": {
+    "playwright-core": "^1.48.0"
+  }
+}
