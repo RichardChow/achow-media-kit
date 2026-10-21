@@ -1,0 +1,4 @@
+const ch=document.getElementById('chart'),bars=[];
+for(let i=0;i<60;i++){const v=i<35?0.02+0.02*((i*7)%3):Math.min(1,0.05+Math.pow((i-35)/25,2.2)*0.9+((i*13)%5)*0.02);const b=document.createElement('div');b.dataset.v=v;ch.appendChild(b);bars.push(b)}
+for(const [id,c,n] of [['fol','#2B2A27',50],['pr','#B8A98F',50]]){const e=document.getElementById(id);for(let i=0;i<n;i++){const d=document.createElement('div');d.style.cssText=`flex:1;background:${c};height:${i<36?2:10+((i*17)%9)*9}%`;e.appendChild(d)}}
+window.ANIM=(t,seg)=>{bars.forEach((b,i)=>b.style.height=(b.dataset.v*100*seg(t,0.8+i*0.012,1.8+i*0.012))+'%');const S1=T.segs[1];const ci=seg(t,S1.start,S1.start+1.2);document.getElementById('cimp').textContent=(t<S1.start?'0':(48.6*ci).toFixed(1)+'K')};

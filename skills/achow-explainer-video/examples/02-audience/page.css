@@ -1,0 +1,11 @@
+.cols{display:flex;gap:16px;margin-top:16px}.col{flex:1;display:flex;flex-direction:column;gap:16px}
+.card{background:#FFFDF8;border:1px solid #DDD5C6;border-radius:10px;padding:16px 18px}
+.card h3{font:700 22px "Noto Serif CJK SC",serif;color:#1F1E1C}.card .note{font:500 13px "JetBrains Mono",monospace;color:#8A8378;margin-top:2px}
+.br{margin-top:12px}.br .t{display:flex;justify-content:space-between;font-size:17px;color:#3A3732}.br .t b{font:600 17px "JetBrains Mono",monospace}
+.br .k{height:8px;background:#ECE5D7;border-radius:4px;margin-top:5px}.br .k i{display:block;height:100%;background:#2B2A27;border-radius:4px}
+.br.top .k i{background:#D97757}
+.dn{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.lg div{border-left:4px solid;padding-left:10px;margin:8px 0;font-size:15px;color:#6B645A}.lg b{display:block;font:600 22px "JetBrains Mono",monospace;color:#1F1E1C}
+.donut{width:170px;height:170px;border-radius:50%;position:relative}.donut:after{content:"";position:absolute;inset:38px;border-radius:50%;background:#FFFDF8}
+.hm{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:12px}.hm i{height:17px;border-radius:2px;display:block}
+.hmx{display:flex;justify-content:space-around;font:500 13px "JetBrains Mono",monospace;color:#8A8378;margin-top:6px}

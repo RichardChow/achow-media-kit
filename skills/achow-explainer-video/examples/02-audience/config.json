@@ -1,0 +1,10 @@
+{
+ "series": "新号做 X 的学习笔记 · 02",
+ "name": "YourName",
+ "tagline": "Engineer × AI 工具 × 创作",
+ "voice": "zh-CN-YunxiNeural",
+ "rate": "+12%",
+ "em": "时间范围|读者画像|受众|年龄|性别|推断|活跃时段|深色|设备|非粉丝|粉丝|出圈",
+ "presenter": "A",
+ "out": "./out/02.mp4"
+}
