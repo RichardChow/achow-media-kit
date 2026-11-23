@@ -1,0 +1,57 @@
+id: pet-family-wedding
+name:
+  zh: 有宠物家庭温馨婚纱照
+  en: Pet-Inclusive Family Documentary Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - pet-family
+  - warm-domestic
+  - outdoor-and-home
+  - candid-playful
+  - 8-angle
+
+defaults:
+  location:
+    category: forests-meadows-wilderness
+    venue: 阳光温暖的居家客厅窗边、法式庄园草坪野餐区与绿意社区林荫小径 (Sunlit Cozy Home Living Room, Garden Picnic Lawn & Leafy Neighborhood Stroll)
+    atmosphere: 温暖治愈、幽默有爱、以真实小家庭互动为核心的低压力舒适自然光氛围
+    foreground: 柔软地毯或草坪野餐布、宠物专属小领结/花环，以及与宠物齐平的温暖低机位视角
+  bride:
+    dress: 轻盈耐活动象牙白法式方领或V领轻婚纱，剪裁柔软方便蹲下、盘坐草地与爱宠亲密玩耍
+    neckline_hint: 方领或V领在蹲坐与低头互动时依然优雅修饰颈部线条，避免弯腰时领口局促显头大
+    hairstyle: 温柔俏皮高颅顶半扎波浪卷发或松散低马尾，发顶自然蓬松轻盈（自动锁定高颅顶）
+    makeup: 温暖清透白皙精修妆容，面颈锁骨与肩臂整体同步匀净柔亮，自然元气蜜桃颊唇
+    veil_or_accessories: 轻巧中短款白纱与简约珍珠饰品（避免长拖尾绊倒或惊吓宠物）
+  groom:
+    outfit: 柔和浅灰、米白或浅卡其休闲西装搭配舒适白衬衫，方便跪坐草坪与抱起爱宠
+    hairstyle_virtual: 阳光清爽自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 宠物安全无毒绿植与白玫瑰手捧花（避免百合等对猫狗有毒花卉）
+    - 宠物专属迷你白色/黑色小领结、柔和野餐布与宠物小零食（引导自然看镜头）
+  mood:
+    tone: 温暖治愈、幽默自然、真实幸福的三口/多口之家烟火气
+    signature_poses:
+      - 沙发或草坪全家福坐姿，爱宠自然依偎在两人中间，新人忍不住低头宠溺大笑
+      - 与宠物眼睛齐平的低机位奔跑遛狗或地板/草坪互动抓拍
+      - 两人戴婚戒的手与爱宠小爪轻轻叠在一起的温暖细节特写
+  camera:
+    body_and_lens: 50mm 自然家庭纪实定焦与 85mm f/1.8 亲密互动特写（采用与宠物齐平的低机位增强代入感）
+    lighting: 柔和舒适自然窗光或草坪漫射晴日阳光，无刺眼闪光灯，人物肤色整体清透白皙自然
+    color_temperature: 5400K 适配宠物毛色与居家/草坪的温柔中性暖调
+    film_texture: Kodak Portra 400 温暖家庭胶片质感，清晰还原宠物毛发花纹与新人真实微表情
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "宠物家庭温馨婚纱纪实、严格保留上传宠物参考照品种毛色花纹、与宠物齐平低机位互动、高颅顶自然头肩比、面颈锁骨整体清透白皙统一"
+  en_style_keywords: "warm pet-inclusive family wedding documentary, strictly preserve uploaded pet breed coat color and markings, eye-level pet interaction, cozy sunlit home and garden lawn, voluminous high-crown bridal hair, harmonious head-to-shoulder proportions"
+  negative_hints: "changing pet breed or fur markings, oversized fantasy animals, unsafe props or toxic lilies, forced pet restraint, flat pasted hair, oversized head distortion, face-to-neck tone mismatch"

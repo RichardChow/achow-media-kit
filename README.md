@@ -1,6 +1,6 @@
 # achow-media-kit · 自媒体制作工具箱
 
-Engineer × AI 工具 × 创作的自媒体制作工具箱：写稿、去 AI 味、出卡片、做封面、做讲解视频，7 个可直接给 Claude Code / Codex 等 Agent 使用的 Skill。
+Engineer × AI 工具 × 创作的自媒体制作工具箱：写稿、去 AI 味、出卡片、做封面、做讲解视频、婚纱照编排，8 个可直接给 Claude Code / Codex 等 Agent 使用的 Skill。
 
 ## 目录
 
@@ -13,10 +13,11 @@ Engineer × AI 工具 × 创作的自媒体制作工具箱：写稿、去 AI 味
 | 卡片 | [achow-journal-card](skills/achow-journal-card) | 手帐笔记风 3:4 卡：方格纸、胶带标签、彩色描边色块 | <img src="skills/achow-journal-card/examples/issue01.png" width="160"> |
 | 视频 | [achow-explainer-video](skills/achow-explainer-video) | 知识讲解类视频：模拟数据重建后台页面，3D 一镜到底逐项高亮讲解，卡通主讲人 + 配音字幕 + BGM 闪避音效，1080×1920 | <img src="skills/achow-explainer-video/examples/preview.jpg" width="160"> |
 | 封面/数据图 | [dark-tech-social-cards](skills/dark-tech-social-cards) | 5:2 封面 + A vs B 柱状对比卡，深色科技 / 亮色教程两套主题 | <img src="skills/dark-tech-social-cards/examples/dark-cover.png" width="200"> |
+| 摄影 | [wedding-photo-studio-skill](skills/wedding-photo-studio-skill) | 高定 AI 婚纱照编排：虚拟/真人参考图、9 套风格包（默认大理苍山）、多引擎适配与身份/比例护栏 | — |
 
 ## 安装
 
-整个仓库（全部 7 个）：
+整个仓库（全部 8 个）：
 ```bash
 git clone https://github.com/RichardChow/achow-media-kit ~/achow-media-kit
 mkdir -p ~/.claude/skills && cp -r ~/achow-media-kit/skills/* ~/.claude/skills/
@@ -32,6 +33,7 @@ cp -r /tmp/amk/skills/achow-editorial-card ~/.claude/skills/
 - 卡片类：Node 18+，在 skill 目录里 `npm install`，本机 Chrome/Chromium（自动探测，或设 `CHROME_PATH`）
 - 封面类：Python 3.9+，`pip install pillow numpy`
 - 视频类：Node 18+（templates 里 `npm install`）、Chrome、Python 3.9+（`pip install numpy edge-tts pillow`）、ffmpeg
+- 婚纱照编排类：纯文档/YAML Skill，无运行时依赖；选片拼图脚本需 Python 3.9+ 与 Pillow，仓库校验脚本可选 PyYAML
 - 字体：Noto Sans/Serif CJK（Linux `apt install fonts-noto-cjk`）
 
 ### 一句话发给 AI 的安装话术

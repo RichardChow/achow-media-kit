@@ -1,0 +1,75 @@
+# ==============================================================================
+# Style Pack Template (schemas/style-pack.schema.json)
+# ==============================================================================
+# Copy this file to `packs/<your-pack-id>.pack.yaml` and replace all placeholder
+# values. Then run `python scripts/validate_repo.py` to verify schema compliance.
+#
+# IMPORTANT GUARDRAIL RULE:
+# Never set `enforce_high_crown` or `enforce_proportion_blending` to false in a
+# shared pack. Only the end user may explicitly override core guardrails during
+# a live session (see SKILL.md and docs/MERGE_GUIDE.md).
+# ==============================================================================
+
+id: template-pack-id                  # Required: lowercase letters, digits, hyphens only (^[a-z0-9-]+$)
+name:
+  zh: 风格包中文名称（如：法式庄园午后油画婚纱照）
+  en: Style Pack English Name (e.g. French Chateau Afternoon Painterly Wedding)
+version: "1.0.0"
+
+source:
+  origin: native                      # Required: "native" or "adapted-external"
+  reference_url: ""                   # Optional: source repo/inspiration URL if adapted-external
+  license_note: "Original preset"     # Optional: attribution and license note
+
+tags:
+  - outdoor                           # e.g. outdoor / indoor / studio / coastal / chinese / film
+  - editorial
+  - 8-angle
+
+defaults:
+  location:
+    category: european-and-french-estates  # Match a category id from catalogs/locations.yaml
+    venue: 填写具体拍摄场地（中英文均可，推荐双语注明）
+    atmosphere: 填写光线天气、空气层次、天空与背景氛围描述
+    foreground: 填写前景构图元素（如石雕栏杆、草坡、薄雾、花枝、水面倒影等）
+
+  bride:
+    dress: 填写婚纱款式、面料肌理（蕾丝/真丝缎面/刺绣等）与裙摆廓形
+    neckline_hint: 填写领型对头肩比的修饰提示（参考 catalogs/styling-and-props.yaml）
+    hairstyle: 填写新娘发型（须保留自动叠加高颅顶蓬松发根与头包脸修饰）
+    makeup: 填写妆容风格、肤质光感与唇色基调
+    veil_or_accessories: 填写头纱长度/刺绣工艺或头饰耳饰细节
+
+  groom:
+    outfit: 填写新郎西装/礼服颜色、剪裁版型、衬衫与领结/领带细节
+    hairstyle_virtual: 虚拟情侣模式下新郎的默认发型描述
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理
+
+  props:
+    - 填写锁定款式的手捧花（明确花材、主色调与大致数量，确保跨镜头连续性）
+    - 可选互动道具（如透明雨伞、胶片相机、香槟杯、团扇等）
+
+  mood:
+    tone: 填写情绪基调（如：浪漫深情、电影故事感、松弛俏皮等）
+    signature_poses:
+      - 招牌动作 1（建议融入自然3/4侧身姿态以优化头肩比）
+      - 招牌动作 2（清晰说明手部动作、视线交互与头纱/道具互动）
+      - 招牌动作 3（真实幸福微表情描述）
+
+  camera:
+    body_and_lens: 填写推荐机身与焦段（主力推荐 85mm f/1.8，远景平滑切换 35mm/50mm）
+    lighting: 填写主光方向、轮廓逆光或棚拍柔光布置与面部补光细节
+    color_temperature: 填写色温与影调基调（如：5500K 暖色调色温）
+    film_texture: 填写清晰度、胶片颗粒模拟（如 Kodak Portra 400）与散景层次
+    aspect_ratio: "3:4"               # Default vertical 3:4; options: "3:4", "2:3", "9:16", "16:9"
+
+  shot_matrix: matrices/8-angle-cinematic.yaml  # Must point to an existing file in matrices/
+
+guardrail_overrides:
+  enforce_high_crown: true            # Mandatory default: true (guardrails/bridal-aesthetics.md)
+  enforce_proportion_blending: true   # Mandatory default: true (guardrails/identity-and-proportion.md)
+
+prompt_modifiers:
+  zh_style_keywords: "填写中文核心视觉风格关键词，需包含高颅顶与自然头肩比衔接关键词"
+  en_style_keywords: "English core visual style keywords including voluminous high-crown hair and natural head-to-shoulder proportion blending"
+  negative_hints: "flat pasted hair, oversized head on tiny body, narrow distorted shoulders, stiff neck seam, mismatched face and neck skin tone, duplicated poses across frames, plastic over-smoothed skin"

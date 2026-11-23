@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WeddingShotPlan",
+  "description": "Compiled multi-angle shot plan produced in Phase 3 after guardrail injection, directing-table diversity verification, and continuity locking, ready for adapter formatting in Phase 4.",
+  "type": "object",
+  "required": ["session_id", "guardrails_applied", "shots"],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "Links back to the SessionState that generated this plan."
+    },
+    "pack_id": {
+      "type": "string",
+      "description": "Base style pack ID or 'custom'."
+    },
+    "matrix_id": {
+      "type": "string",
+      "description": "Shot matrix identifier used to compile frames, e.g. 8-angle-cinematic, 4-angle-editorial, story-timeline-8."
+    },
+    "adapter": {
+      "type": "string",
+      "enum": ["native-multimodal", "midjourney", "flux-comfyui", "cn-platforms"],
+      "default": "native-multimodal"
+    },
+    "aspect_ratio": {
+      "type": "string",
+      "default": "3:4"
+    },
+    "delivery_format": {
+      "type": "string",
+      "enum": ["individual-images", "multi-panel-preview"],
+      "default": "individual-images"
+    },
+    "guardrails_applied": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "guardrails/identity-and-proportion.md",
+          "guardrails/bridal-aesthetics.md",
+          "guardrails/set-continuity-qa.md"
+        ]
+      },
+      "description": "List of guardrail modules injected into every shot in this plan."
+    },
+    "continuity_anchors": {
+      "type": "object",
+      "description": "Shared visual locks that must remain invariant across every frame and batch.",
+      "properties": {
+        "canonical_identity_lock": { "type": "string" },
+        "bride_outfit_lock": { "type": "string" },
+        "bride_hair_and_veil_lock": { "type": "string" },
+        "bride_skin_finish_lock": { "type": "string" },
+        "groom_outfit_and_hair_lock": { "type": "string" },
+        "pet_identity_lock": { "type": "string" },
+        "bouquet_and_props_lock": { "type": "string" },
+        "lighting_and_color_lock": { "type": "string" }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_index",
+          "role",
+          "framing",
+          "angle",
+          "pose",
+          "prompt_zh",
+          "prompt_en",
+          "negative_prompt"
+        ],
+        "properties": {
+          "shot_index": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-based sequence number within the set."
+          },
+          "batch_index": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Optional batch number when delivering individual images in batches (e.g. 1 for shots 1-4, 2 for shots 5-8)."
+          },
+          "role": {
+            "type": "string",
+            "description": "Narrative role of the shot in the set, e.g. Epic Establishing Wide Shot."
+          },
+          "micro_zone": {
+            "type": "string",
+            "description": "Concrete shootable sub-location inside the venue (e.g. sunlit window threshold, carved stone steps)."
+          },
+          "framing": {
+            "type": "string",
+            "description": "Shot scale and composition rule, e.g. Full-body wide shot, rule-of-thirds right placement."
+          },
+          "angle": {
+            "type": "string",
+            "description": "Camera angle and focal perspective, e.g. Eye-level 3/4 side profile, 85mm f/1.8."
+          },
+          "pose": {
+            "type": "string",
+            "description": "Specific micro-action, gaze direction, and couple interaction unique to this shot."
+          },
+          "bride_hand_action": {
+            "type": "string",
+            "description": "Explicit placement and action of the bride's hands (e.g. lifting floating veil edge with one hand, holding bouquet or resting on groom's arm)."
+          },
+          "groom_hand_action": {
+            "type": "string",
+            "description": "Explicit placement and action of the groom's hands (e.g. holding the blush rose bouquet, gently supporting bride's waist or holding her hand)."
+          },
+          "handheld_prop_state": {
+            "type": "string",
+            "description": "Explicit handheld item state and reference-object cleanup directive (e.g. remove all reference pamphlets/everyday objects; hold 15-rose bouquet only; veil flowing dynamically in breeze)."
+          },
+          "body_mechanics": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "maxItems": 4,
+            "description": "2-4 framing-visible key body mechanics points (never describe unseen limbs)."
+          },
+          "contact_topology": {
+            "type": "string",
+            "description": "Couple relationship topology: initiator/respondent, spacing, contact point, orientation, weight counterbalance."
+          },
+          "expression_gaze": {
+            "type": "string",
+            "description": "Reactive expression beat and gaze pattern (de-locked from reference photo static expression)."
+          },
+          "panel_identity_reset": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true (multi-panel preview mode), injects explicit per-panel identity reconstruction from canonical original reference."
+          },
+          "prompt_zh": {
+            "type": "string",
+            "minLength": 20,
+            "description": "Complete Chinese generation prompt with all active guardrails injected."
+          },
+          "prompt_en": {
+            "type": "string",
+            "minLength": 20,
+            "description": "Complete English generation prompt with all active guardrails injected."
+          },
+          "negative_prompt": {
+            "type": "string",
+            "description": "Anti-artifact constraints preventing proportion distortion, flat hair, and continuity drift."
+          }
+        }
+      }
+    },
+    "share_card": {
+      "type": "object",
+      "description": "Optional social media share card compiled for sharing or remixing the set.",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["ready", "skipped"]
+        },
+        "story_card_name": { "type": "string" },
+        "share_hook": { "type": "string" },
+        "reproduction_prompt": { "type": "string" },
+        "hashtags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "cta": { "type": "string" }
+      }
+    }
+  }
+}

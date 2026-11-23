@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WeddingSessionState",
+  "description": "Single-session 5-module configuration contract initialized during Phase 1 and finalized after Phase 2 user confirmation, with canonical identity reference tracking and single-variable Remix state.",
+  "type": "object",
+  "required": [
+    "input_mode",
+    "selected_pack",
+    "location",
+    "styling",
+    "mood_and_poses",
+    "camera_and_delivery"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "Optional unique identifier for the shooting session, e.g. wps-20261122-001."
+    },
+    "input_mode": {
+      "type": "object",
+      "description": "Module 1: Subject source, canonical reference photos (couple + optional pet), and identity policy.",
+      "required": ["mode"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["real-couple-reference", "virtual-couple"],
+          "description": "Triggered automatically from attachments in Phase 1."
+        },
+        "reference_images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["role", "uri"],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["couple", "bride", "groom", "pet", "extra-angle"]
+              },
+              "uri": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          },
+          "description": "Uploaded real couple (and optional pet) reference photos when mode is real-couple-reference."
+        },
+        "canonical_original_references": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "URIs of the initially uploaded original photos; never silently overwritten by AI-derived outputs."
+        },
+        "active_identity_references": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Currently active facial identity references (defaults to canonical_original_references unless user explicitly promotes a derived image)."
+        },
+        "virtual_subject_profile": {
+          "type": "string",
+          "default": "25-30-year-old Chinese young couple with natural, authentic chemistry",
+          "description": "Subject description used in virtual-couple mode."
+        },
+        "groom_hairstyle_mode": {
+          "type": "string",
+          "enum": ["keep-original-groomed", "editorial-redesign"],
+          "default": "keep-original-groomed",
+          "description": "In Real Photo Mode, defaults to keeping the groom's original hairstyle cleanly groomed, or optionally switches to editorial theme-adapted redesign."
+        },
+        "groom_keep_original_hairstyle": {
+          "type": "boolean",
+          "default": true,
+          "description": "Backwards-compatible boolean mirror of groom_hairstyle_mode == 'keep-original-groomed'."
+        },
+        "reference_pose_and_props_policy": {
+          "type": "string",
+          "enum": [
+            "replace-with-bridal-poses",
+            "keep-reference-pose-only",
+            "keep-reference-keepsake"
+          ],
+          "default": "replace-with-bridal-poses",
+          "description": "Controls whether casual poses and everyday handheld items (brochures, phones, bags) from the reference photo are completely removed and replaced by fresh bridal hand actions/bouquet (default), pose kept without clutter, or a user-specified keepsake retained."
+        },
+        "kept_keepsake_description": {
+          "type": "string",
+          "description": "Used only when reference_pose_and_props_policy is 'keep-reference-keepsake' to name the specific original object to retain."
+        },
+        "proportion_guardrail_locked": {
+          "type": "boolean",
+          "default": true,
+          "description": "Mandatory true in real-couple-reference mode."
+        }
+      }
+    },
+    "selected_pack": {
+      "type": "string",
+      "pattern": "^([a-z0-9-]+|custom)$",
+      "default": "dali-cangshan-sunrise",
+      "description": "Pack ID from packs/ (e.g. dali-cangshan-sunrise, korean-minimal-airy) or 'custom' when built purely from catalogs/ or discovery shortcuts."
+    },
+    "discovery_mode": {
+      "type": "string",
+      "enum": ["standard-menu", "abc-directions", "blind-draw"],
+      "default": "standard-menu",
+      "description": "Optional on-demand entry shortcut: standard 5-module menu (default), A/B/C 3-direction inspiration cards (2 contemporary landmarks + 1 time-travel), or blind-box '抽卡' auto-draw."
+    },
+    "used_spacetime_anchors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Previously proposed or drawn spacetime/location anchors in the session to prevent repetition across rerolls and consecutive draws."
+    },
+    "location": {
+      "type": "object",
+      "description": "Module 2: Venue category, specific location, atmosphere, foreground, and shot micro-zones.",
+      "required": ["category", "venue", "atmosphere", "foreground"],
+      "properties": {
+        "category": { "type": "string" },
+        "preset_id": { "type": "string" },
+        "venue": { "type": "string" },
+        "atmosphere": { "type": "string" },
+        "foreground": { "type": "string" },
+        "micro_zones": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Concrete shootable spots inside the venue (e.g. window edge, stone steps, archway)."
+        },
+        "custom_notes": { "type": "string" }
+      }
+    },
+    "styling": {
+      "type": "object",
+      "description": "Module 3: Bride and groom outfits, hair, makeup, unified skin finish, veil/accessories, and props.",
+      "required": ["bride", "groom", "props"],
+      "properties": {
+        "bride": {
+          "type": "object",
+          "required": ["dress", "hairstyle", "makeup", "veil_or_accessories"],
+          "properties": {
+            "dress": { "type": "string" },
+            "neckline": { "type": "string" },
+            "neckline_proportion_hint": { "type": "string" },
+            "hairstyle": { "type": "string" },
+            "hair_design_details": {
+              "type": "object",
+              "properties": {
+                "fringe_strategy": { "type": "string" },
+                "parting": { "type": "string" },
+                "ear_neck_exposure": { "type": "string" }
+              }
+            },
+            "enforce_high_crown": {
+              "type": "boolean",
+              "default": true
+            },
+            "skin_finish": {
+              "type": "string",
+              "enum": ["luminous-fair-unified", "studio-soft-glow", "natural-authentic"],
+              "default": "luminous-fair-unified",
+              "description": "Complexion finish uniformly applied across face, jawline, neck, collarbones, and shoulders with zero color seam."
+            },
+            "face_contour_mode": {
+              "type": "string",
+              "enum": ["none-zero-slimming", "subtle-soft-contour"],
+              "default": "none-zero-slimming",
+              "description": "Facial geometry preservation policy: 'none-zero-slimming' (default: 0% geometric slimming, exact original cheek width and jawline locked) or 'subtle-soft-contour' (optional: minimal soft-tissue cheek refinement capped at <=2% bilateral width in QA with immediate rollback to 0 if likeness drops)."
+            },
+            "makeup": { "type": "string" },
+            "veil_or_accessories": { "type": "string" }
+          }
+        },
+        "groom": {
+          "type": "object",
+          "required": ["outfit", "hairstyle"],
+          "properties": {
+            "outfit": { "type": "string" },
+            "hairstyle": { "type": "string" },
+            "accessories": { "type": "string" }
+          }
+        },
+        "pet": {
+          "type": "object",
+          "description": "Optional pet identity lock when a pet appears in the shoot.",
+          "properties": {
+            "species_and_breed": { "type": "string" },
+            "coat_and_markings": { "type": "string" },
+            "accessories": { "type": "string" }
+          }
+        },
+        "props": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "mood_and_poses": {
+      "type": "object",
+      "description": "Module 4: Emotional tone, couple interaction poses, and shot matrix reference.",
+      "required": ["mood_tone", "poses", "shot_matrix"],
+      "properties": {
+        "mood_preset_id": { "type": "string" },
+        "mood_tone": { "type": "string" },
+        "poses": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "shot_matrix": {
+          "type": "string",
+          "default": "matrices/8-angle-cinematic.yaml",
+          "description": "Relative path to a shot matrix YAML in matrices/."
+        },
+        "shot_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12,
+          "default": 8
+        }
+      }
+    },
+    "camera_and_delivery": {
+      "type": "object",
+      "description": "Module 5: Optical spec, lighting, color temperature, aspect ratio, adapter, and flexible delivery mode.",
+      "required": [
+        "body_and_lens",
+        "lighting",
+        "color_temperature",
+        "film_texture",
+        "aspect_ratio",
+        "adapter",
+        "delivery_format"
+      ],
+      "properties": {
+        "body_and_lens": { "type": "string" },
+        "lighting": { "type": "string" },
+        "color_temperature": { "type": "string" },
+        "film_texture": { "type": "string" },
+        "aspect_ratio": {
+          "type": "string",
+          "enum": ["3:4", "2:3", "4:5", "9:16", "16:9", "1:1"],
+          "default": "3:4"
+        },
+        "adapter": {
+          "type": "string",
+          "enum": ["native-multimodal", "midjourney", "flux-comfyui", "cn-platforms"],
+          "default": "native-multimodal"
+        },
+        "delivery_format": {
+          "type": "string",
+          "enum": ["individual-images", "multi-panel-preview"],
+          "default": "individual-images",
+          "description": "User-selectable: 'individual-images' (default recommended for sharp faces) or 'multi-panel-preview' (8-grid selection board with PANEL IDENTITY RESET)."
+        },
+        "representative_first": {
+          "type": "boolean",
+          "default": false,
+          "description": "Optional fast-check mode: render 1 representative shot first to confirm likeness/proportions/tone before generating the rest."
+        },
+        "emit_share_card": {
+          "type": "boolean",
+          "default": false,
+          "description": "Optional social media share card output (short title, hook, reusable prompt command, 4-7 hashtags)."
+        },
+        "batch_size": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8,
+          "default": 4
+        }
+      }
+    },
+    "remix_context": {
+      "type": "object",
+      "description": "Tracks single-variable partial remix updates so unaffected modules remain frozen (see scripts/remix_resolver.py).",
+      "properties": {
+        "target_dimension": {
+          "type": "string",
+          "enum": ["location", "dress", "hairstyle", "makeup", "mood", "lighting", "color_palette", "shot_matrix"]
+        },
+        "frozen_modules": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "invalidated_modules": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "guardrail_overrides": {
+      "type": "object",
+      "description": "Explicit user-confirmed overrides only. External packs may never disable core guardrails automatically.",
+      "properties": {
+        "enforce_high_crown": { "type": "boolean", "default": true },
+        "enforce_proportion_blending": { "type": "boolean", "default": true },
+        "user_override_reason": { "type": "string" }
+      }
+    }
+  }
+}

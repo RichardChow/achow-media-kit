@@ -1,0 +1,57 @@
+id: road-trip-wedding
+name:
+  zh: 公路旅行电影感婚纱照
+  en: Open Road Trip Cinematic Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - outdoor
+  - road-trip
+  - cinematic-elopement
+  - vintage-car
+  - 8-angle
+
+defaults:
+  location:
+    category: urban-street-and-film
+    venue: 旷野景观公路、复古加油站、路边小店、海岸或荒漠公路落日停靠点与复古敞篷车内 (Open Scenic Highway, Vintage Gas Station, Roadside Diner/Motel & Parked Classic Convertible)
+    atmosphere: 自由浪漫、充满私奔冒险精神的美国/西部公路电影剧照氛围，所有互动均在安全静止停靠状态下进行
+    foreground: 复古敞篷车镀铬后视镜、方向盘与引擎盖地图、车窗框景及延展公路透视线
+  bride:
+    dress: 利落轻盈的象牙白法式方领或抹胸轻婚纱（便于上下车与风中行走），可搭配短款牛仔/机车感披肩点缀
+    neckline_hint: 方领或心形抹胸干净展露锁骨与自然肩线，车内半身构图头肩比例尤其舒展利落
+    hairstyle: 随性酷感高颅顶蓬松大卷或高马尾半扎，迎风飞扬仍保持发顶立体饱满（自动锁定高颅顶）
+    makeup: 明快细腻电影白皙妆容，面颈锁骨与肩臂整体同步匀净柔亮，自然微醺颊彩与质感玫瑰红唇
+    veil_or_accessories: 随风扬起的复古中长轻头纱、复古墨镜（部分镜头手持或轻架发顶）
+  groom:
+    outfit: 松弛合身的深色复古休闲西装或挺括白衬衫配高腰西裤，不系领带显公路电影随性感
+    hairstyle_virtual: 利落复古微背头或清爽短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 简约白色玫瑰与野草感公路私奔小捧花
+    - 经典奶油白或墨绿复古敞篷老爷车（静止安全停靠）、纸质公路地图、两杯路边咖啡/汽水
+  mood:
+    tone: 自由不羁、电影冒险感、亲密随性的私奔浪漫
+    signature_poses:
+      - 停靠的复古敞篷车内近距离甜蜜对视或靠在车门边展看公路地图
+      - 复古加油站或路边小店前牵手大笑、共喝一瓶复古汽水
+      - 黄昏公路边倚靠引擎盖逆光相拥，或车头灯/机顶直闪拍出微暗夜色胶片剧照
+  camera:
+    body_and_lens: 35mm 公路电影人文广角与 85mm f/1.8 车内亲密人像定焦结合
+    lighting: 清澈日光、仪表盘微光、黄昏黄金逆光炫光与夜晚复古机顶直闪按分镜交替
+    color_temperature: 5400K-6000K 雾霾蓝、柏油灰、奶油白与落日琥珀电影色温
+    film_texture: 35mm Kodak Portra 400 / Cinestill 800T 公路电影胶片颗粒与柔和炫光，真实皮肤肌理
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "公路私奔电影剧照、复古敞篷车安全停靠、雾蓝柏油与落日琥珀色调、高颅顶随性卷发、自然头肩比与面颈整体匀净白皙"
+  en_style_keywords: "cinematic road trip elopement wedding, parked vintage convertible, open highway and roadside stops, dusty blue asphalt cream and sunset amber palette, voluminous high-crown bridal hair, harmonious head-to-shoulder proportions"
+  negative_hints: "unsafe poses in moving traffic, stiff luxury car commercial look, unrelated urban skyline, flat pasted hair, oversized head distortion, neck skin color seam, plastic skin"

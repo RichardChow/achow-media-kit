@@ -1,0 +1,264 @@
+# Atomic Catalog: Emotional Moods & Couple Interaction Poses
+# Referenced by SKILL.md Phase 2 (Module 4) and compiled into ShotPlan frames.
+
+version: "1.0.0"
+
+moods:
+  - id: romantic-affectionate
+    name:
+      zh: 浪漫深情
+      en: Romantic & Deeply Affectionate
+    prompt_zh: 浪漫深情、温柔克制、充满爱意的眼神交流与自然松弛的幸福呼吸感
+    prompt_en: deeply romantic, tender affectionate gaze, serene authentic intimacy, timeless warmth
+  - id: cinematic-storytelling
+    name:
+      zh: 电影故事感
+      en: Cinematic Storytelling
+    prompt_zh: 极具电影叙事张力与情绪留白，仿佛爱情文艺片中的经典定格剧照，松弛不摆拍
+    prompt_en: evocative film-still storytelling, poetic emotional negative space, unposed cinema frame quality
+  - id: playful-candid-laughter
+    name:
+      zh: 松弛俏皮大笑
+      en: Playful, Relaxed & Candid Laughter
+    prompt_zh: 轻松自在、开怀大笑、充满青春生命力与真实甜蜜互动的生活流纪实感
+    prompt_en: carefree joyful laughter, vibrant youthful chemistry, spontaneous unscripted candid energy
+  - id: high-fashion-editorial
+    name:
+      zh: 杂志高级冷艳
+      en: High-Fashion Cool Editorial
+    prompt_zh: 高级时装杂志大片质感，克制舒展的肢体线条、从容自信的微冷眼神与雕塑般优雅气质
+    prompt_en: Vogue high-fashion editorial poise, composed confident gaze, sculptural relaxed posture, understated luxury
+  - id: oriental-graceful-poetic
+    name:
+      zh: 中式端庄含蓄
+      en: Oriental Graceful & Poetic Restraint
+    prompt_zh: 温润端庄、含蓄内敛的东方情感美学，眉眼含情、举手投足如古画般温婉雅致
+    prompt_en: graceful Oriental poetic restraint, gentle tender glances, serene dignified classical elegance
+
+pose_libraries:
+  - category_id: classic-ceremonial
+    name:
+      zh: 经典仪式互动
+      en: Classic Ceremonial Poses
+    poses:
+      - id: veil-lift-and-gaze
+        name:
+          zh: 撩纱对望
+          en: Veil Lift & Tender Gaze
+        prompt_zh: 新娘侧身轻撩随风扬起的长头纱并展露灿烂笑容，新郎手捧鲜花以3/4身姿深情凝望新娘
+        prompt_en: bride gently lifts the wind-swept bridal veil with a radiant smile while groom holds the bouquet in a natural 3/4 stance gazing lovingly at her
+        proportion_friendly_tip: 两人保持3/4微侧身姿并利用飘逸头纱自然柔化肩颈线条
+      - id: arm-in-arm-ceremonial-stroll
+        name:
+          zh: 挽臂缓行仪式感
+          en: Arm-in-Arm Ceremonial Walk
+        prompt_zh: 新娘轻挽新郎手臂缓缓并行，身体微微向彼此倾斜，目光温柔交汇
+        prompt_en: bride loops her arm gracefully through the groom's as they walk slowly side by side, leaning softly inward with affectionate eye contact
+        proportion_friendly_tip: 舒展双肩自然垂落，避免紧绷耸肩压缩颈部线条
+      - id: back-embrace-horizon
+        name:
+          zh: 背后轻拥望向远方
+          en: Gentle Back Embrace Facing Horizon
+        prompt_zh: 新郎从身后轻环新娘腰际，下巴轻靠新娘肩侧低语，新娘手握捧花微笑微仰望向晨光
+        prompt_en: groom wraps his arms gently around the bride's waist from behind, whispering softly near her temple as she holds the bouquet and smiles toward the light
+        proportion_friendly_tip: 新娘微转45度侧颜凸显高颅顶轮廓与清晰下颌线
+      - id: forehead-touch-eyes-closed
+        name:
+          zh: 额头轻抵闭目微笑
+          en: Forehead Touch With Closed-Eye Smiles
+        prompt_zh: 两人额头轻柔相抵、双目微闭，嘴角扬起克制而真实的幸福笑意，头纱在微风中轻笼肩侧
+        prompt_en: couple rests foreheads gently together with eyes softly closed and authentic serene smiles as the translucent veil floats softly around their shoulders
+        proportion_friendly_tip: 中长焦侧拍构图保持双方头部大小比例绝对真实协调
+
+  - category_id: dynamic-candid
+    name:
+      zh: 动态抓拍互动
+      en: Dynamic Candid Movement
+    poses:
+      - id: hand-in-hand-running
+        name:
+          zh: 牵手奔跑回头笑
+          en: Hand-in-Hand Running & Looking Back
+        prompt_zh: 新郎牵着新娘的手在开阔场景中轻快奔跑，新娘回头畅笑，白色大裙摆与长头纱在身后划出灵动弧线
+        prompt_en: groom leads the bride by the hand jogging joyfully across the open landscape while she looks back laughing, gown skirt and long veil trailing dynamically
+        proportion_friendly_tip: 远中景动态抓拍最显修长自然头身比
+      - id: bridal-twirl-skirt-bloom
+        name:
+          zh: 轻盈转圈甩纱抓拍
+          en: Joyful Bridal Twirl & Veil Sweep
+        prompt_zh: 新郎单手高举牵引新娘轻盈旋转，婚纱裙摆如花瓣舒展扬起，两人开怀大笑
+        prompt_en: groom holds one hand aloft guiding the bride into a graceful twirl, bridal skirt blooming mid-motion as both laugh candidly
+        proportion_friendly_tip: 身体微倾带动肩颈舒展延展，画面充满松弛电影呼吸感
+      - id: shared-veil-wind-shelter
+        name:
+          zh: 共披头纱避风私语
+          en: Under-the-Veil Whisper
+        prompt_zh: 轻薄刺绣头纱随风扬起轻覆两人头顶上方，两人在朦胧逆光白纱下贴近低语微笑
+        prompt_en: translucent embroidered veil arcs lightly overhead in the breeze, sheltering the couple as they lean close sharing a quiet smile in luminous backlight
+        proportion_friendly_tip: 头纱轻悬于高颅顶上方切勿压塌发顶，柔光自然统一面部与肩颈肤色
+      - id: playful-bouquet-peek
+        name:
+          zh: 捧花掩面俏皮互动
+          en: Playful Bouquet Peek-a-Boo
+        prompt_zh: 新娘俏皮地将手捧花举至胸前微侧望向新郎，新郎忍不住宠溺大笑，轻松自然无摆拍感
+        prompt_en: bride playfully lifts the rose bouquet near chest level glancing cheekily toward the groom, sparking an affectionate candid laugh
+        proportion_friendly_tip: 捧花置于胸口下方而非紧贴下巴，保留脖颈与锁骨舒展呼吸空间
+
+  - category_id: intimate-documentary
+    name:
+      zh: 亲密纪实微表情
+      en: Intimate Documentary & Micro-Moments
+    poses:
+      - id: tender-hair-tuck
+        name:
+          zh: 轻拂耳畔碎发
+          en: Tenderly Tucking Stray Hair
+        prompt_zh: 新郎温柔抬手帮新娘轻拨被风吹乱的耳畔碎发，新娘含笑低眸，真实细腻的爱意流露
+        prompt_en: groom gently tucks a wind-blown strand of hair behind the bride's ear as she smiles warmly with soft downcast eyes
+        proportion_friendly_tip: 85mm中长焦半身构图，避免广角近拍产生头部放大畸变
+      - id: shoulder-lean-quiet-moment
+        name:
+          zh: 依偎肩头静谧时刻
+          en: Resting Head on Shoulder
+        prompt_zh: 新娘轻盈侧身将脸颊温柔倚靠在新郎肩头，两人十指相扣静享晨昏光影
+        prompt_en: bride rests her cheek softly against the groom's shoulder while their fingers intertwine quietly in golden natural light
+        proportion_friendly_tip: 新郎挺拔自然肩宽作为视觉支撑，突出和谐的男女身高差与头肩比
+      - id: cheek-or-forehead-kiss
+        name:
+          zh: 轻吻额头或脸颊
+          en: Gentle Forehead or Cheek Kiss
+        prompt_zh: 新郎微俯身轻吻新娘额角或发际，新娘手握捧花自然微仰展露恬静幸福的微笑
+        prompt_en: groom leans in tenderly to kiss the bride's forehead while she holds the bouquet with a tranquil joyful smile
+        proportion_friendly_tip: 侧后方45度机位兼顾双方清晰五官辨识度与柔美肩颈线条
+      - id: intertwined-hands-and-veil-detail
+        name:
+          zh: 十指相扣与捧花头纱特写
+          en: Intertwined Hands, Rings & Bouquet Detail
+        prompt_zh: 透过半透刺绣头纱轻柔构图，聚焦两人十指紧扣戴着婚戒的双手与手捧花，背景隐约柔和虚化出两人幸福笑颜
+        prompt_en: framed softly through a translucent embroidered veil, focusing on their intertwined hands with wedding bands beside the bouquet while their smiling silhouettes melt into creamy bokeh
+        proportion_friendly_tip: 绝佳的套图收尾特写，与人物正面/侧面镜头形成丰富视觉节奏
+
+# Reactive Expression Vocabulary (因果反应式表情词库 — 杜绝全套统一AI假笑，配合“参考图只锁身份不锁表情”)
+reactive_expressions:
+  - id: whispered-joke-unguarded-laugh
+    zh: 一人凑近耳畔低语趣事，另一人忍不住眉眼弯弯、开怀大笑
+    en: one partner whispers a playful joke near the other's ear, triggering an unguarded genuine laugh
+  - id: post-walk-soft-eye-contact
+    zh: 并肩走过几步后自然停步对视，两人嘴角同时扬起温柔克制的浅笑
+    en: pausing mid-stroll to lock eyes as both soften into a quiet affectionate smile
+  - id: unaware-admiring-glance
+    zh: 一人望向远方光影或窗外，另一人安静偏头凝视对方侧脸，充满温柔爱意
+    en: one partner looks serenely toward the horizon/window while the other gazes admiringly at their profile
+  - id: forehead-touch-peaceful-eyes-closed
+    zh: 额头轻抵瞬间双目微闭，神情松弛恬静、仿佛世界安静下来
+    en: both gently close their eyes during a forehead touch with tranquil breathless contentment
+  - id: playful-surprise-or-breathless-grin
+    zh: 转圈或奔跑停下瞬间略带惊喜与微喘的灿烂笑容，富有电影纪实生命力
+    en: breathless joyful grin right after a twirl or quick run, full of candid cinematic energy
+
+# Couple Contact Topology (情侣接触关系拓扑 — 避免两个独立Pose生硬拼接)
+couple_contact_topology:
+  description: 每张双人分镜应明确以下6维接触拓扑，且8张内需交替覆盖接触/非接触、同向/相向、前后错位等结构
+  dimensions:
+    - id: initiator_and_respondent
+      zh: 主动方与回应方（谁先伸手/揽腰/低语，谁侧头/微倾回应）
+      en: Who initiates the action and how the partner responds
+    - id: body_distance
+      zh: 身体距离（贴近依偎 / 一臂牵手 / 错位呼应留白）
+      en: Physical spacing (close embrace / arm's-length hand-hold / offset spatial echo)
+    - id: contact_point
+      zh: 具体接触点（十指相扣 / 轻扶腰际 / 额头轻抵 / 轻拂耳畔碎发 / 无接触但视线相连）
+      en: Concrete point of contact or non-contact visual tether
+    - id: body_orientation
+      zh: 双方身体朝向（3/4同向漫步 / 相对微侧45度 / 一前一后错位回眸）
+      en: Relative torso orientation (3/4 parallel stroll / angled face-to-face / staggered front-back turn)
+    - id: weight_response
+      zh: 重心呼应（新娘重心微倾倚靠新郎肩侧，新郎稳固承托）
+      en: Mutual weight counterbalance and posture support
+    - id: gaze_network
+      zh: 视线关系（双向对视 / 单向凝望 / 同望远方 / 仅≤2帧直视镜头）
+      en: Gaze direction pattern (mutual / asymmetric admiring / shared horizon / max 2 direct-to-camera)
+
+# Framing-Adapted Body Mechanics (景别适配身体力学 — 每帧仅写2-4个画面可见的关键力学点)
+framing_adapted_body_mechanics:
+  full_body:
+    zh: 全身镜：写清支撑脚与放松脚、步态前倾方向、骨盆与肩线扭转、裙摆受风/运动轨迹（2-4点）
+    en: Full-body shots specify weight-bearing leg, stride lean, torso/shoulder twist, and gown/veil trailing inertia (2-4 visible points)
+  medium_or_three_quarter:
+    zh: 半身/七分身：聚焦肩线自然下沉舒展、躯干微侧角度、手部落点（轻提头纱/持花/扶腰）与颈部延展；不强写镜头外脚位
+    en: Medium/3-quarter shots focus on relaxed open shoulder line, subtle 3/4 torso twist, hand placement, and neck elongation (omit unseen feet)
+  close_up_or_detail:
+    zh: 近景/特写：仅写头颈微倾角度、下颌线与光影关系、眼神落点及可见手指动作；禁止描述不可见下半身姿态
+    en: Close-ups specify only head/neck tilt, jawline light falloff, gaze target, and visible hand gestures (never describe unseen lower body)
+
+# Pose-Family Semantic Dedupe Dimensions (姿势家族语义去重检查维度)
+pose_family_dedupe_dimensions:
+  - load_bearing_structure: 承重结构（双脚站立 / 迈步动态 / 坐姿 / 倚靠 / 俯仰互动）
+  - body_axis: 身体主轴（直立对称 / 3/4微倾 / 旋转动态弧线 / 前后错位）
+  - environmental_contact: 环境接触（无支撑开放空间 / 门框窗边轻倚 / 坐于台阶草坡 / 车内互动）
+  - relationship_geometry: 关系几何（独立高光 / 牵手并肩 / 背后拥抱 / 面对面贴近 / 局部特写）
+
+# Reference Photo Pose & Handheld-Object Policy (参考图原动作与原手持物处理可选项)
+reference_pose_and_props_policies:
+  - id: replace-with-bridal-poses
+    name:
+      zh: 清除原图杂物与站姿，全面替换为新婚纱互动手势与道具（默认推荐）
+      en: Remove Reference Clutter/Pose & Replace With Bridal Hand Actions & Props (Default)
+    recommended_default: true
+    description_zh: 彻底清除参考图中的日常服饰与非婚纱手持物（如宣传册、卡片、手机、包包、饮品等），每帧明确分配新娘双手、新郎双手、手捧花持握与头纱飘动动态
+    description_en: Remove all casual clothes and everyday handheld items from the reference photo (pamphlets, phones, cards, bags) and replace with explicit per-person bridal hand placement, bouquet holding, and dynamic veil flow
+  - id: keep-reference-pose-only
+    name:
+      zh: 保留参考图原互动动作，仅清除日常杂物并换婚纱道具（可选）
+      en: Keep Reference Pose Only, Replace Everyday Items With Bridal Props (Optional)
+    recommended_default: false
+    description_zh: 保留原图中用户喜欢的双人手势或站位，但清除日常杂物（如宣传单/手机），改为牵手、轻撩头纱或手持捧花
+    description_en: Preserve the couple's original stance/gesture from the reference photo while replacing everyday items with clasped hands, veil lift, or bridal bouquet
+  - id: keep-reference-keepsake
+    name:
+      zh: 保留参考图中用户指定的纪念手持物（可选）
+      en: Retain User-Specified Keepsake From Reference Photo (Optional)
+    recommended_default: false
+    description_zh: 仅当用户明确要求保留某件纪念物（如结婚证、特定门票、玩偶、手写信）时保留该物件，其余替换为婚纱照服装与场景
+    description_en: Retain a specific meaningful keepsake explicitly requested by the user while transforming wardrobe, background, and lighting into bridal couture
+
+# Explicit Per-Person Hand & Prop Action Presets (显式双手动作与持物分配模板 — 杜绝双手僵硬或残留参考图杂物)
+explicit_hand_and_prop_patterns:
+  - id: veil-lift-and-groom-bouquet-ref-orientation
+    name:
+      zh: 按原图朝向 + 新娘轻撩头纱 + 新郎持捧花（主镜头默认推荐，锁脸最稳）
+      en: Follow Reference Orientation + Bride Lifts Flowing Veil + Groom Holds Bouquet (Primary Hero Default)
+    recommended_default: true
+    orientation_gaze_zh: 顺应参考图两人的自然身体与头部朝向（保留最稳的五官角度与辨识度），展露真实幸福的自然微笑（可选改为两人深情对视）
+    bride_hands_zh: 新娘一只手轻柔抬起撩动随风飘动的长头纱，另一只手自然轻搭新郎手臂或轻提裙摆
+    groom_hands_zh: 新郎一手稳稳手持手捧花置于身前自然高度，另一手自然轻扶新娘腰侧
+    dynamic_motion_zh: 长款刺绣头纱随微风向侧后方自然扬起（具轻盈动态感），彻底清除参考图中的宣传册/日常杂物
+  - id: veil-lift-and-groom-bouquet-mutual-gaze
+    name:
+      zh: 两人深情对视 + 新娘轻撩头纱 + 新郎持捧花（可选互动变体）
+      en: Mutual Tender Gaze + Bride Lifts Flowing Veil + Groom Holds Bouquet (Optional)
+    orientation_gaze_zh: 两人以3/4微侧身姿面向彼此，温柔对视、眼神轻柔交汇
+    bride_hands_zh: 新娘一只手轻柔抬起撩动随风飘动的长头纱，另一只手自然轻搭新郎手臂或轻提裙摆
+    groom_hands_zh: 新郎一手稳稳手持手捧花置于身前自然高度，另一手轻扶新娘腰侧
+    dynamic_motion_zh: 长款刺绣头纱随微风向侧后方自然扬起（具轻盈动态感），无任何参考图残留日常杂物
+  - id: hand-in-hand-outer-bouquet
+    name:
+      zh: 十指相扣牵手漫步 + 外侧手持捧花
+      en: Intertwined Hands Strolling + Outer Hand Holding Bouquet
+    bride_hands_zh: 新娘内侧手与新郎十指紧扣，外侧手轻提蓬蓬婚纱裙摆方便步态舒展
+    groom_hands_zh: 新郎内侧手牵住新娘，外侧手自然垂持手捧花
+    dynamic_motion_zh: 头纱与多层白纱裙摆随步履轻柔向后延展飘动
+  - id: bride-holds-bouquet-groom-tucks-hair
+    name:
+      zh: 新娘胸下双手持花 + 新郎轻拂耳畔碎发
+      en: Bride Holds Bouquet Below Chest + Groom Gently Tucks Stray Hair
+    bride_hands_zh: 新娘双手轻柔合握捧花丝带置于胸口下方（保留锁骨与脖颈舒展留白）
+    groom_hands_zh: 新郎一只手温柔抬起轻拂新娘耳畔微风吹起的碎发，另一手自然轻揽肩背
+    dynamic_motion_zh: 碎发与半透头纱边缘在逆光微风中泛起柔和金边动态
+  - id: empty-hands-intimate-embrace
+    name:
+      zh: 空手亲密相拥（捧花置旁或下缘虚化）
+      en: Empty-Handed Intimate Embrace (Bouquet Set Aside or Lower Frame)
+    bride_hands_zh: 新娘双手轻搭新郎西装胸前或轻环肩颈，手指自然舒展放松
+    groom_hands_zh: 新郎双手稳稳环抱新娘腰际，手部彻底清空无任何杂物
+    dynamic_motion_zh: 长头纱如轻雾般随风环绕两人肩背飘动

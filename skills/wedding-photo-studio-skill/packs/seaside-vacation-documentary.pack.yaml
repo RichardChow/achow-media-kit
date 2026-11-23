@@ -1,0 +1,57 @@
+id: seaside-vacation-documentary
+name:
+  zh: 海边度假私奔纪实婚纱照
+  en: Seaside Vacation Documentary Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - outdoor
+  - coastal
+  - vacation-documentary
+  - breezy-candid
+  - 8-angle
+
+defaults:
+  location:
+    category: coastlines-and-islands
+    venue: 阳光海岸白沙滩、海边白色木屋廊台、沿海公路与浅石礁岸 (Sunlit Beach, Coastal Cottage Porch, Seaside Road & Rocky Shore)
+    atmosphere: 如私人海岛假期般轻松俏皮、明媚通透，海风吹拂发丝与白纱的自由旅行纪实感
+    foreground: 浅滩清透白浪、海岸礁石、复古单车或野餐布，以及海风中飘动的半透白纱
+  bride:
+    dress: 轻盈飘逸白色V领法式雪纺轻婚纱，自在摆动裙摆适合赤脚踏浪与骑行奔跑
+    neckline_hint: 柔和V领自然展露锁骨与舒展肩颈比例，兼顾海风动态抓拍的轻盈美感
+    hairstyle: 慵懒海风感高颅顶波浪大卷或松散半扎发，发根饱满蓬松不贴头皮、发丝在阳光下通透发光（自动锁定高颅顶）
+    makeup: 清爽防晒水光白皙精修妆容，面颈锁骨与肩臂整体同步匀净清亮，柔嫩蜜桃唇颊
+    veil_or_accessories: 轻薄短至中长款素白头纱、简约贝壳/珍珠耳饰
+  groom:
+    outfit: 白色透气亚麻衬衫（自然解开领口第一粒扣）、浅沙色或米白修身休闲西裤，赤脚或浅色乐福鞋
+    hairstyle_virtual: 清爽海风微凌乱自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 浅白玫瑰、洋甘菊与绿叶组成的清新度假感手捧花
+    - 复古奶油白单车、海边野餐篮或复古敞篷车（按分镜选用）
+  mood:
+    tone: 轻松俏皮、阳光自由、不完美却动人的真实假期纪实感
+    signature_poses:
+      - 牵手赤脚在水线浅滩奔跑踏浪，溅起水花后忍不住开怀大笑
+      - 海边木屋廊台倚坐轻声聊天，或并肩骑行于沿海公路迎风回眸
+      - 落日逆光下迎风轻拥或牵手走向金色海面
+  camera:
+    body_and_lens: 35mm 与 50mm 旅行纪实定焦（近景风吹发丝人像切换 85mm 保持头肩比自然无畸变）
+    lighting: 明媚海岸自然日光与黄昏温暖落日逆光，海面反光自然提亮整体面颈肤色
+    color_temperature: 5400K-5800K 海蓝、晒白、暖沙与落日金交织的胶片影调
+    film_texture: 细腻 Kodak Portra 400 35mm 胶片颗粒，生动定格飞扬水花与发丝，真实肤质微纹理
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "海边私人度假旅拍纪实、海风扬纱踏浪大笑、清爽亚麻轻婚纱、高颅顶风吹空气发丝、自然头肩比与面颈肩整体清透白皙统一"
+  en_style_keywords: "seaside holiday documentary wedding, sunlit coastline, wind-swept bridal dress and hair, sea blue and sun-bleached white palette, joyful candid laughter, voluminous high-crown bridal hair, harmonious head-to-shoulder proportions"
+  negative_hints: "stiff ballroom poses, heavy dark tuxedo on beach, artificial studio lighting, cheesy resort clichés, flat wind-plastered hair, oversized head distortion, neck skin mismatch"

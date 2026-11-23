@@ -1,0 +1,57 @@
+id: french-vintage-garden
+name:
+  zh: 法式复古庄园花园婚纱照
+  en: French Vintage Manor Garden Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - outdoor
+  - european-estate
+  - french-vintage
+  - dappled-light
+  - 8-angle
+
+defaults:
+  location:
+    category: european-and-french-estates
+    venue: 法式复古石灰岩庄园花园、雕花铁艺花廊与复古石阶露台 (French Vintage Stone Manor, Garden Colonnade & Ironwork Terrace)
+    atmosphere: 浪漫优雅且灵动松弛的旧世界庄园氛围，午后暖阳穿过繁茂树冠投下斑驳立体光影
+    foreground: 雕花石拱门框景、攀援复古花园玫瑰、法式复古户外茶桌与斑驳树叶前景
+  bride:
+    dress: 法式复古一字肩立体睫毛蕾丝轻拖尾婚纱，精致收腰与温润象牙白层次蕾丝
+    neckline_hint: 一字肩优雅拓宽肩线并展露锁骨与修长脖颈，极利于塑造协调舒展的头肩比
+    hairstyle: 浪漫法式高颅顶蓬松波浪大卷或低盘发，发间点缀细腻花艺/珍珠发饰（自动锁定高颅顶）
+    makeup: 法式精致清透白皙微醺妆，面颈锁骨肩臂同步匀净柔亮，蜜桃杏腮红与复古玫瑰豆沙唇
+    veil_or_accessories: 复古蕾丝镶边长头纱，配巴洛克珍珠耳饰与细腻花卉发梳
+  groom:
+    outfit: 经典黑色枪驳领高定礼服西装、挺括白衬衫、黑色丝绒领结与复古胸花
+    hairstyle_virtual: 复古绅士微偏分自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 象牙白玫瑰、焦糖暖橙花园玫瑰与常春藤叶组成的法式自然系手捧花
+    - 复古铁艺花园茶桌、陶瓷茶杯与雕花长椅
+  mood:
+    tone: 浪漫典雅、旧世界电影感、灵动而非僵硬摆拍
+    signature_poses:
+      - 透过庄园雕花门框或拱廊自然取景，两人在斑驳树影下贴近低语微笑
+      - 复古花园茶桌旁执手轻笑或伴随音乐在石阶间优雅轻舞旋转
+      - 穿过花廊迎光漫步，新娘轻挽新郎手臂回眸浅笑
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 与 50mm f/1.4 交替呈现油画纵深
+    lighting: 午后暖金斑驳树影侧逆光，人物面部受光均匀通透、背景阴影富有胶片层次
+    color_temperature: 5600K 暖石与深绿交织的法式胶片暖调
+    film_texture: 细腻 35mm Kodak Portra 400 胶片质感，真实蕾丝与石材触感，自然微纹理肤质
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "法式复古庄园花园、斑驳暖阳树影、拱门画框构图、高颅顶蓬松发丝、一字肩自然头肩比、面颈锁骨整体白皙匀净、法式胶片质感"
+  en_style_keywords: "French vintage stone manor garden, warm dappled afternoon sunlight, doorway and colonnade framing, delicate ivory lace, voluminous high-crown bridal hair, natural harmonious head-to-shoulder proportions, unified luminous fair skin across face and shoulders"
+  negative_hints: "cool blue color grading, modern neon elements, tacky palace extravagance, plastic airbrushed skin, flat pasted hair, oversized head on tiny body, neck color mismatch, stiff frozen posture"

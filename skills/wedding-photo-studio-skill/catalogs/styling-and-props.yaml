@@ -1,0 +1,342 @@
+# Atomic Catalog: Bride & Groom Styling, Neckline Proportion Guidance, and Props
+# Works hand-in-hand with guardrails/identity-and-proportion.md and guardrails/bridal-aesthetics.md.
+
+version: "1.0.0"
+
+bride_dresses:
+  - category_id: main-ballgown
+    name:
+      zh: 仪式感主纱
+      en: Couture Main Ballgowns
+    options:
+      - id: strapless-sweetheart-lace-ballgown
+        name:
+          zh: 无肩带心形抹胸蕾丝蓬蓬主纱
+          en: Strapless Sweetheart 3D Lace Ballgown
+        description_zh: 无肩带白色立体花卉蕾丝蓬蓬婚纱，精致收腰与多层轻盈大拖尾薄纱
+        description_en: Strapless white bridal ballgown with 3D floral lace bodice and billowing multi-layer tulle train
+        neckline_proportion_note: 心形抹胸自然展露锁骨与舒展肩颈线，极利于建立协调头肩比（推荐）
+      - id: off-shoulder-cathedral-satin
+        name:
+          zh: 一字肩重工锻面大拖尾主纱
+          en: Off-the-Shoulder Heavy Satin Cathedral Gown
+        description_zh: 象牙白高定重工缎面一字肩主纱，自然褶皱裹肩与挺括大裙摆
+        description_en: Ivory couture off-the-shoulder heavy silk satin ballgown with sculpted folded collar and dramatic train
+        neckline_proportion_note: 一字肩横向延展肩线并优雅露出颈部与锁骨，是修饰头肩比的黄金领型（强烈推荐）
+      - id: draped-sleeve-tulle-princess
+        name:
+          zh: 落肩轻纱星光大拖尾主纱
+          en: Draped-Sleeve Ethereal Tulle Gown
+        description_zh: 温柔落肩薄纱袖立体亮片刺绣婚纱，轻盈仙气蓬松裙摆
+        description_en: Soft draped-sleeve tulle wedding gown adorned with delicate shimmer embroidery and airy full skirt
+        neckline_proportion_note: 落肩柔纱在自然拓宽肩宽的同时柔化大臂线条，兼顾头肩比与手臂修饰（推荐）
+
+  - category_id: french-light-bridal
+    name:
+      zh: 轻婚纱与法式极简
+      en: French Minimalist & Light Bridal
+    options:
+      - id: french-square-neck-satin
+        name:
+          zh: 法式方领珍珠缎面轻婚纱
+          en: French Square-Neck Pearl Satin Gown
+        description_zh: 简约法式方领真丝缎面A字轻婚纱，细腻珍珠光泽与自然垂坠裙摆
+        description_en: Minimalist French square-neck silk satin A-line wedding dress with luminous pearl sheen and fluid drape
+        neckline_proportion_note: 法式方领精准平衡颈部纵向留白与肩部横向宽度，显颈长且头肩比极自然（强烈推荐）
+      - id: deep-v-lace-boho
+        name:
+          zh: 优雅V领法式蕾丝轻婚纱
+          en: Romantic V-Neck French Lace Dress
+        description_zh: 柔和V领法式睫毛蕾丝轻婚纱，轻盈飘逸雪纺裙摆，适合户外奔跑与旅拍
+        description_en: Soft V-neck French eyelash-lace bridal gown with lightweight flowing chiffon skirt for outdoor movement
+        neckline_proportion_note: V领形成自然纵向延伸线，拉长脖颈比例并视觉柔化圆润脸型（强烈推荐）
+      - id: minimalist-silk-slip
+        name:
+          zh: 极简真丝鱼尾吊带轻婚纱
+          en: Minimalist Silk Bias-Cut Slip Gown
+        description_zh: 象牙白斜裁真丝吊带微鱼尾轻婚纱，高级垂顺光泽与干净剪裁
+        description_en: Ivory bias-cut silk satin slip wedding dress with subtle mermaid flare and clean minimalist tailoring
+        neckline_proportion_note: 细吊带配合开放式锁骨留白显舒展轻盈，需搭配自然肩宽与蓬松卷发平衡头身比
+
+  - category_id: chinese-traditional
+    name:
+      zh: 中式嫁衣与新中式
+      en: Traditional & New Chinese Bridal Attire
+    options:
+      - id: classic-xiuhe-gold-embroidery
+        name:
+          zh: 经典正红金丝刺绣秀禾服
+          en: Classic Crimson & Gold Embroidered Xiuhe Gown
+        description_zh: 正红色真丝重工盘金绣龙凤花鸟秀禾服，精致云肩与温润马面百褶裙
+        description_en: Rich crimson silk Xiuhe bridal attire with intricate gold-thread embroidery, sculpted cloud collar, and pleated Mamian skirt
+        neckline_proportion_note: 中式立领建议选择微低立领+宽阔云肩设计，通过云肩横向拓宽肩部视觉，避免高紧领显头大或脖短
+      - id: new-chinese-champagne-qipao
+        name:
+          zh: 新中式香槟珍珠提花改良旗袍
+          en: New-Chinese Champagne Jacquard Modern Qipao
+        description_zh: 香槟浅金色真丝提花暗纹新中式婚纱旗袍，水滴微镂空领口与轻纱披肩
+        description_en: Champagne-ivory silk jacquard modern Chinese wedding qipao with teardrop keyhole neckline and sheer organza cape
+        neckline_proportion_note: 水滴镂空领搭配轻薄立肩披纱，既保留东方韵味又避免领口局促压迫颈部比例
+
+  - category_id: editorial-casual
+    name:
+      zh: 纪实轻礼服与都市休闲
+      en: Editorial Mini Dresses & Casual Chic
+    options:
+      - id: satin-mini-dress-bow
+        name:
+          zh: 缎面抹胸蝴蝶结短款轻礼服
+          en: Sculpted Satin Mini Bridal Dress with Bow
+        description_zh: 俏皮高级象牙白缎面抹胸短款婚纱，后腰立体蝴蝶结，搭配白色短头纱
+        description_en: Chic ivory sculpted satin strapless bridal mini dress with statement back bow and playful short veil
+        neckline_proportion_note: 抹胸短礼服自然露出肩颈与腿部线条，活泼轻盈且头身比例舒展
+      - id: vintage-white-shirt-tulle-skirt
+        name:
+          zh: 纪实白衬衫与轻纱长裙
+          en: Editorial Crisp White Shirt & Tulle Skirt
+        description_zh: 解开两粒扣的法式廓形白衬衫搭配轻盈白纱长裙，随性都市电影感
+        description_en: Relaxed unbuttoned crisp white shirt tucked into an airy tulle bridal skirt for candid street cinema vibes
+        neckline_proportion_note: 衬衫微敞形成自然小V领并带有挺括肩线，极佳修饰脖颈与头肩比
+
+bride_hairstyles:
+  # Every hairstyle strictly inherits guardrails/bridal-aesthetics.md (mandatory high crown).
+  - id: romantic-high-crown-waves
+    name:
+      zh: 浪漫高颅顶波浪大卷发
+      en: Romantic High-Crown Soft Waves
+    prompt_zh: 浪漫蓬松法式波浪大卷发，高颅顶发根自然挺立，轻盈八字碎发柔和修饰颧骨与脸颊轮廓
+    prompt_en: romantic voluminous French soft waves with naturally lifted high crown and airy face-framing temple strands
+    high_crown_adaptation: 发根隐形垫高+两侧空气感大卷形成自然头包脸比例
+  - id: french-high-crown-low-chignon
+    name:
+      zh: 法式慵懒高颅顶低盘发
+      en: Effortless French High-Crown Low Chignon
+    prompt_zh: 典雅法式慵懒低盘发，头顶与后脑勺饱满蓬松高颅顶弧度，耳侧自然垂落空气感碎发
+    prompt_en: effortless French low chignon with sculpted voluminous high crown, rounded back-head fullness, and delicate wispy tendrils
+    high_crown_adaptation: 保留饱满圆润颅顶与后脑勺廓形，头纱固定于低发髻上方不压塌头顶
+  - id: hepburn-high-bun
+    name:
+      zh: 赫本高颅顶丸子盘发
+      en: Hepburn High-Crown Ballet Bun
+    prompt_zh: 经典优雅赫本高丸子盘发，发顶蓬松饱满不贴头皮，配纤细珍珠发冠增添皇室高贵感
+    prompt_en: classic Hepburn high ballet bun with airy lifted crown silhouette (never flat or slick-pasted) accented by a delicate pearl tiara
+    high_crown_adaptation: 柔和抓松发顶与鬓角发丝，避免紧绷贴头皮导致脸部显大
+  - id: woodland-airy-braids
+    name:
+      zh: 森系高颅顶空气感编发
+      en: Woodland High-Crown Ethereal Braids
+    prompt_zh: 仙气森系高颅顶半扎编发，发顶自然抽丝蓬松饱满，发间点缀细碎满天星与珍珠丝带
+    prompt_en: ethereal woodland half-up braided hairstyle with teased airy high-crown roots woven with baby's-breath and silk ribbon
+    high_crown_adaptation: 头顶发束轻柔抽丝打造空气蓬松层次，搭配长拖尾头纱更显灵动
+  - id: chinese-high-crown-updo
+    name:
+      zh: 中式饱满高颅顶盘发
+      en: Oriental High-Crown Bridal Updo
+    prompt_zh: 典雅中式饱满高颅顶盘发，温润发髻自然托起金丝发簪与步摇，微弧度柔和鬓角修饰脸型
+    prompt_en: refined Oriental bridal updo built on a rounded voluminous high-crown base supporting gold hairpins with softly sculpted hairline curves
+    high_crown_adaptation: 以饱满高颅顶底盘承托中式发饰，杜绝发饰下压造成的头顶扁塌
+
+bride_makeup:
+  - id: korean-dewy-translucent
+    name:
+      zh: 韩系清透白皙水光妆
+      en: Korean Dewy Luminous-Fair Bridal Makeup
+    prompt_zh: 韩系精致清透白皙妆容，面部、脖颈、锁骨与肩臂整体同步匀净白皙提亮，保留真实皮肤微纹理，根根分明灵动睫毛，柔和玫瑰奶茶调唇妆
+    prompt_en: refined Korean luminous-fair bridal makeup with uniformly brightened skin tone across face, neck, collarbones, and shoulders while preserving authentic micro skin texture, wispy lashes, soft rose-petal lips
+  - id: french-effortless-warm
+    name:
+      zh: 法式微醺自然白皙妆
+      en: French Effortless Sun-Kissed Fair Makeup
+    prompt_zh: 法式自然清透白皙底妆，面颈锁骨肩臂整体同步匀净柔亮并保留真实肤质微纹理，微醺蜜桃杏色腮红，柔和复古豆沙红唇
+    prompt_en: effortless French bridal makeup with unified luminous fair skin tone across face and shoulders preserving authentic micro-texture, warm peach-apricot blush, muted rosewood lips
+  - id: editorial-sculpted-chic
+    name:
+      zh: 清冷高级杂志白皙妆
+      en: Sculpted High-Fashion Editorial Fair Makeup
+    prompt_zh: 高级清冷杂志感匀净白皙哑光缎面底妆（面颈肩同步统一无色差），精致立体眉眼轮廓，低饱和裸杏色柔雾唇妆
+    prompt_en: high-fashion satin-matte editorial makeup with seamless fair tone across face, neck, and shoulders, cleanly defined brows and lashes, understated nude-apricot velvet lips
+  - id: oriental-classic-radiance
+    name:
+      zh: 中式端庄古典白皙妆
+      en: Oriental Classic Graceful Fair Makeup
+    prompt_zh: 端庄清雅中式新娘匀净白皙妆（面颈锁骨与耳颈色调高度统一），远山柔和眉形，细腻珠光眼妆与温润正红或柿子红唇色
+    prompt_en: graceful Oriental bridal makeup with seamless unified fair porcelain complexion across face and neck, softly arched brows, subtle luminous eyes, classic refined crimson lips
+
+# Bride Skin Finish Options (新娘肤质与白皙精修度可选档位 — 核心底线：白皙可以，但面部/脖颈/锁骨/肩臂必须整体同步统一!)
+bride_skin_finishes:
+  - id: luminous-fair-unified
+    name:
+      zh: 自然清透白皙精修（默认推荐）
+      en: Unified Luminous Fair Bridal Finish (Recommended Default)
+    recommended_default: true
+    prompt_zh: 整体清透白皙且匀净透亮的健康肤色，温和淡化临时瑕疵与黑眼圈同时保留真实细腻皮肤微纹理；面部、下颌线、脖颈、锁骨与裸露肩臂同步采用完全一致的白皙肤色冷暖与受光过渡，严禁脸白脖子黑或过度塑料磨皮
+    prompt_en: naturally luminous fair and even healthy complexion across face, jawline, neck, collarbones, and exposed shoulders uniformly, gently softening blemishes and dark circles while retaining authentic fine skin texture with zero face-to-neck color seam or plastic airbrushing
+  - id: studio-soft-glow
+    name:
+      zh: 影楼高定柔焦白皙精修
+      en: Couture Studio Soft-Glow Fair Finish
+    recommended_default: false
+    prompt_zh: 高定影楼柔焦匀净白皙肤质，柔和提亮气色与细腻柔光晕，且面部、脖颈、锁骨与肩臂整体同步保持均匀白皙光感，不改真实五官骨相、无面颈割裂色差
+    prompt_en: couture studio soft-focus radiant fair complexion applied evenly and seamlessly across face, neck, collarbones, and shoulders without altering facial bone structure or introducing a neck tone seam
+  - id: natural-authentic
+    name:
+      zh: 原生真实肤色质感
+      en: Natural Authentic Skin Tone & Texture
+    recommended_default: false
+    prompt_zh: 忠实保留参考图人物原生自然肤色与真实皮肤纹理，仅做轻微气色整理与自然光线柔和过渡，面颈肩肤色高度一致
+    prompt_en: faithfully preserve authentic original skin tone and natural pores/texture from reference photo with subtle healthy glow and seamless face-to-neck light continuity
+
+# Explicit Bridal Hair Design Dimensions (新娘发型细化决策维度 — 全部建立在强制高颅顶基础之上)
+bride_hair_design_dimensions:
+  mandatory_foundation: 高颅顶头顶发根饱满蓬松（guardrails/bridal-aesthetics.md 始终锁定）
+  configurable_levers:
+    - id: fringe_strategy
+      zh: 刘海策略（显式决策）：八字空气刘海 / 龙须碎发修饰颧骨 / 轻法式漫画刘海 / 饱满高颅顶露额
+      en: Explicit fringe/bangs decision (airy curtain bangs / cheekbone tendrils / soft French fringe / lifted open forehead)
+    - id: parting
+      zh: 发缝方式：自然隐形Z字微偏分 / 柔和中分 / 无明显发缝后梳
+      en: Hair parting (soft natural off-center / subtle middle part / swept-back crown)
+    - id: ear_neck_exposure
+      zh: 露耳露颈策略：半露耳饰与修长颈线（推荐优化头肩比）/ 蓬松长卷柔化肩颈转折
+      en: Ear and neck exposure (revealing pearl earrings and elongated neck to flatter head-to-shoulder ratio)
+
+veils_and_accessories:
+  - id: long-embroidered-cathedral-veil
+    name:
+      zh: 长款刺绣拖尾头纱
+      en: Long Embroidered Cathedral Veil
+    prompt_zh: 3米长款精致蕾丝刺绣拖尾薄纱头纱，轻盈通透可随风高高扬起
+    prompt_en: 3-meter cathedral-length translucent tulle veil with delicate lace edge embroidery floating effortlessly in the breeze
+  - id: minimalist-sheer-veil
+    name:
+      zh: 极简通透素纱
+      en: Minimalist Sheer Silk-Tulle Veil
+    prompt_zh: 极简无装饰超透薄白头纱，干净纯粹凸显光影透射美感
+    prompt_en: minimalist unadorned ultra-sheer white silk-tulle veil capturing clean translucent light
+  - id: french-pearl-fascinator-short-veil
+    name:
+      zh: 法式复古珍珠短网纱
+      en: French Vintage Pearl Birdcage / Short Veil
+    prompt_zh: 复古法式点缀细小珍珠的俏皮短款蓬纱与巴洛克珍珠耳钉
+    prompt_en: playful French short pearl-dotted tulle veil paired with luminous baroque pearl stud earrings
+  - id: chinese-phoenix-hairpins
+    name:
+      zh: 中式金丝步摇与团扇配饰
+      en: Chinese Gold Hairpins & Embroidered Round Fan
+    prompt_zh: 精致非遗点翠或鎏金珍珠发簪、轻摇流苏步摇与苏绣真丝团扇
+    prompt_en: intricate gilded pearl Chinese hairpins, delicate swaying tassels, and hand-embroidered silk round fan
+
+groom_styling:
+  hairstyle_policy:
+    default_reference_mode: keep-original-groomed
+    reference_mode_options:
+      - id: keep-original-groomed
+        name:
+          zh: 保持参考图原发型并自然整理（默认推荐）
+          en: Keep Reference Hairstyle Cleanly Groomed (Default)
+        prompt_zh: 保持上传参考图新郎原发型与发际线特征并自然整洁打理，不擅自换成陌生发型
+        prompt_en: preserve the groom's original hairstyle and hairline from the reference photo cleanly groomed without replacing his signature look
+      - id: editorial-redesign
+        name:
+          zh: 按主题交由发型师重塑适配发型（可选）
+          en: Editorial Theme-Adapted Hairstyle Redesign (Optional)
+        prompt_zh: 严格锁定新郎真实五官与脸型，发丝按本套婚纱主题重新设计为更契合礼服气质的精致造型（见选定发型款式）
+        prompt_en: strictly preserve groom's exact facial likeness while styling his hair to match the wedding theme's editorial aesthetic
+    reference_mode_default_zh: 保持上传参考图新郎原发型并自然整洁打理（用户亦可在 Phase 2 选改为按主题重塑发型）
+    reference_mode_default_en: preserve the groom's original hairstyle from the reference photo cleanly groomed by default (or switch to editorial redesign on user request)
+    virtual_mode_options:
+      - id: clean-short-natural
+        zh: 清爽利落自然短发
+        en: clean natural short hair neatly styled
+      - id: textured-side-part
+        zh: 韩系纹理微偏分短发
+        en: softly textured Korean side-parted short hair
+      - id: slicked-back-classic
+        zh: 复古背头绅士短发
+        en: classic subtly swept-back gentleman hairstyle
+      - id: airy-slight-wave
+        zh: 自然法式微卷蓬松短发
+        en: natural airy slightly wavy French gentleman short hair
+  outfits:
+    - id: classic-black-tuxedo
+      name:
+        zh: 经典黑色高定西装+领结
+        en: Classic Tailored Black Tuxedo & Bow Tie
+      prompt_zh: 黑色定制修身枪驳领西装、挺括白色法式衬衫、经典黑色丝绒领结与白色口袋巾
+      prompt_en: tailored black peak-lapel tuxedo, crisp white dress shirt, classic black silk bow tie, neat white pocket square
+    - id: ivory-cream-linen-suit
+      name:
+        zh: 象牙白/奶咖法式休闲西装
+        en: Ivory / Cream-Beige French Linen Suit
+      prompt_zh: 浅象牙白或暖奶咖色轻薄亚麻混纺修身西装、解开第一粒扣的白衬衫，松弛度假感
+      prompt_en: tailored ivory or warm cream linen-blend suit with relaxed open-collar white shirt
+    - id: charcoal-double-breasted
+      name:
+        zh: 炭灰双排扣复古英伦西装
+        en: Charcoal Double-Breasted Vintage Suit
+      prompt_zh: 高级深炭灰色双排扣毛呢西装、素雅真丝领带，沉稳绅士杂志感
+      prompt_en: sophisticated charcoal-grey double-breasted wool suit with understated silk tie
+    - id: new-chinese-zhongshan-suit
+      name:
+        zh: 新中式立领中山装/刺绣马褂
+        en: New-Chinese Stand-Collar Zhongshan / Embroidered Jacket
+      prompt_zh: 墨黑或玄青色高定暗纹新中式立领修身中山装，温润盘扣细节呼应新娘中式嫁衣
+      prompt_en: tailored ink-black jacquard New-Chinese stand-collar Zhongshan suit with refined frog buttons matching bridal attire
+    - id: smart-casual-editorial
+      name:
+        zh: 都市纪实白衬衫背带裤
+        en: Candid Editorial White Shirt & Suspenders
+      prompt_zh: 剪裁利落的纯白牛津衬衫、深色高腰西裤与复古背带，清新自然电影纪实感
+      prompt_en: crisp tailored white shirt paired with dark high-waisted trousers and vintage suspenders
+
+bouquets_and_props:
+  bouquets:
+    - id: blush-pink-15-roses
+      name:
+        zh: 15朵浅粉玫瑰绿叶捧花
+        en: 15 Blush Pink Roses & Fresh Greenery Bouquet
+      prompt_zh: 15朵浅粉色玫瑰搭配清新尤加利与绿叶组成的手捧花，白色丝带自然垂落
+      prompt_en: hand-tied bridal bouquet of 15 blush pink roses and fresh eucalyptus greenery wrapped in flowing white silk ribbon
+    - id: white-calla-tulip-minimal
+      name:
+        zh: 韩系极简白马蹄莲郁金香捧花
+        en: Minimalist White Calla Lily & Tulip Bouquet
+      prompt_zh: 极简韩系纯白马蹄莲与白绿色郁金香手捧花，干净清冷线条感
+      prompt_en: minimalist Korean-style bouquet of pure white calla lilies and white tulips with clean architectural stems
+    - id: french-cascading-orchids
+      name:
+        zh: 法式瀑布蝴蝶兰手捧花
+        en: French Cascading White Orchid Bouquet
+      prompt_zh: 飘逸法式白色蝴蝶兰瀑布形手捧花，浪漫高定轻盈垂坠感
+      prompt_en: sculptural French cascading white phalaenopsis orchid bridal bouquet with airy organic movement
+    - id: chinese-red-persimmon-floral
+      name:
+        zh: 中式红果海棠古典捧花
+        en: Oriental Red Berry & Begonia Bouquet
+      prompt_zh: 雅致中式红果、红玫瑰与金枝绿叶手捧花，搭配苏绣真丝流苏丝带
+      prompt_en: Oriental bridal bouquet of red berries, deep roses, and greenery tied with embroidered silk tassels
+  interactive_props:
+    - id: vintage-film-camera
+      zh: 复古银黑双反或旁轴胶片相机
+      en: vintage silver-and-black rangefinder film camera
+    - id: champagne-flutes
+      zh: 两只纤细水晶香槟杯（轻碰举杯）
+      en: two slender crystal champagne flutes for a playful toast
+    - id: clear-umbrella
+      zh: 透明极简长柄雨伞（适合海边微雨、森林或城市街拍）
+      en: clear minimalist transparent umbrella
+    - id: chinese-silk-fan-and-oil-paper-umbrella
+      zh: 中式刺绣团扇与竹骨油纸伞
+      en: hand-embroidered Chinese silk round fan and bamboo oil-paper umbrella
+    - id: vintage-bicycle-or-convertible
+      zh: 奶油白复古单车或经典敞篷老爷车
+      en: cream vintage bicycle or classic convertible car
+    - id: red-xi-ribbon
+      zh: 传统正红真丝喜字长绸带（中式互动牵引）
+      en: traditional crimson silk ribbon for ceremonial couple interaction
+
+# Pet Reference Lock (宠物参考照保护规范 — 用于有宠物家庭婚纱照或任意带宠拍摄)
+pet_reference_lock:
+  when_to_apply: 用户上传宠物参考图或选择 pet-family-wedding 风格包时启用
+  prompt_zh: 严格保留上传宠物参考照中的真实品种、体型比例、毛色分布、花纹斑点与耳眼特征，绝不擅自更换品种或放大成失真体型；采用与宠物齐平的低机位与宠物安全无毒道具（避开百合等对猫狗有毒花材）
+  prompt_en: strictly preserve exact pet breed, realistic body scale, coat color, markings, ear shape, and eyes from the uploaded pet reference photo; use low eye-level camera perspectives and pet-safe non-toxic floral props (never toxic lilies)

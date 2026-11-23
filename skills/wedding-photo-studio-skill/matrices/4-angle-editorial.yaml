@@ -1,0 +1,86 @@
+# Shot Matrix: 4-Angle High-Fashion Editorial Wedding Set
+# Ideal for fast single-batch generation, minimalist indoor studios, or curated highlight previews.
+
+id: 4-angle-editorial
+name:
+  zh: 4角度高定精修分镜矩阵
+  en: 4-Angle Couture Editorial Shot Matrix
+version: "1.0.0"
+shot_count: 4
+recommended_batches:
+  - batch_index: 1
+    shots: [1, 2, 3, 4]
+    note: 单批次完整4张高定精修成片（确立场景、三分法经典、逆光半身、高光/细节特写）
+
+anti_repetition_rule:
+  zh: 4张精修成片分别覆盖大景环境、三分法中景、逆光半身与高光特写，确保零构图重复且人物五官、头肩比、高颅顶与服装光影全程锁定。
+  en: Four curated frames span establishing wide, rule-of-thirds medium, backlit waist-up, and hero/detail close-up with zero framing overlap and strict visual continuity.
+
+shots:
+  - shot_index: 1
+    role:
+      zh: 远景确立场景与空间格局
+      en: Establishing Wide Environmental Shot
+    framing:
+      zh: 全身环境远景构图，完整呈现场地建筑线条或自然风光气势，人物与大拖尾礼服成为画面视觉重心
+      en: Full-body environmental wide shot establishing venue grandeur and atmosphere while showcasing the complete bridal silhouette and gown train
+    angle:
+      zh: 开阔平视偏低视角（35mm 定焦视角），干净建筑或自然地平线纵深
+      en: Clean wide 35mm establishing angle with balanced horizon and architectural/natural depth
+    pose_guidance:
+      zh: 情侣手牵手自然漫步或并肩驻足于场景黄金透视点，长头纱轻扬营造电影开篇氛围
+      en: Couple strolling hand-in-hand or poised together along the primary leading lines with flowing veil movement
+    guardrail_focus:
+      zh: 确立全套色温光影、服化道细节与自然协调的双人身高头身比基准
+      en: Establishes global lighting grade, garment details, and balanced couple height/body proportions
+
+  - shot_index: 2
+    role:
+      zh: 三分法经典中全景互动
+      en: Classic Rule-of-Thirds Medium Full Shot
+    framing:
+      zh: 经典三分法构图（人物置画面左侧或右侧1/3处），七分身至全身清晰展示婚纱剪裁与双人化学反应
+      en: Classic rule-of-thirds three-quarter to full-length shot presenting couture dress tailoring and effortless couple chemistry
+    angle:
+      zh: 平视自然透视（50mm 定焦），柔美空间虚化层次
+      en: Eye-level 50mm standard perspective with refined spatial separation
+    pose_guidance:
+      zh: 新娘3/4侧身轻撩头纱展露自然微笑，新郎手持捧花温柔注视或轻揽新娘腰际
+      en: Bride in 3/4 stance brushing her veil with a bright natural smile while groom holds the bouquet looking affectionately toward her
+    guardrail_focus:
+      zh: 通过3/4身姿与舒展肩颈线呈现最佳头肩比，确保新娘高颅顶造型饱满空气感十足
+      en: Uses 3/4 posture and open neckline geometry for harmonious head-to-shoulder proportions and lifted high-crown hair
+
+  - shot_index: 3
+    role:
+      zh: 逆光半身近景情感特写
+      en: Backlit Intimate Waist-Up Portrait
+    framing:
+      zh: 腰部以上亲密半身人像，细腻刻画真实眼神交流、发丝金边光晕与清晰五官辨识度
+      en: Intimate waist-up portrait highlighting luminous rim light across hair and veil, genuine smiles, and sharp facial fidelity
+    angle:
+      zh: 85mm f/1.8 中长焦人像视角，自然压缩空间、背景奶油虚化
+      en: 85mm f/1.8 portrait telephoto compression with silky background bokeh
+    pose_guidance:
+      zh: 两人额头轻抵闭目微笑，或新郎温柔轻拨新娘耳侧碎发，自然松弛流露真实幸福感
+      en: Foreheads gently touching or groom softly tucking stray hair behind the bride's ear with authentic warm emotion
+    guardrail_focus:
+      zh: 严格核验真人参考图五官还原度、面颈锁骨无缝肤色光影过渡及男女头部比例协调性
+      en: "Primary likeness and proportion check: exact facial fidelity, seamless face-to-neck skin lighting, and natural scale harmony"
+
+  - shot_index: 4
+    role:
+      zh: 新娘单人高光或互动细节特写
+      en: Bridal Hero Portrait or Intimate Detail Close-Up
+    framing:
+      zh: 高定单人新娘近景高光（展现妆造高颅顶、锁骨领型与蕾丝刺绣），或透过半透头纱拍摄十指紧扣婚戒与手捧花氛围特写
+      en: Couture solo bridal hero close-up highlighting high-crown hair, neckline, and lace craft—or veiled close-up of intertwined ringed hands and bouquet
+    angle:
+      zh: 85mm f/1.8 极浅景深精致视角，焦点锐利落于眼眸或婚戒捧花
+      en: 85mm f/1.8 shallow depth-of-field hero angle with tack-sharp focus on eyes or intertwined hands and blooms
+    pose_guidance:
+      zh: 新娘微侧回眸轻托头纱定格高定封面感，或两人于轻纱后相视浅笑、前景聚焦捧花与紧扣双手
+      en: Bride glancing gently over her shoulder lifting the veil edge for a magazine-cover finish, or soft veiled close-up of hands and bouquet
+    guardrail_focus:
+      zh: 锁定礼服蕾丝纹理、捧花花材种类数量、高颅顶空气发丝及整套一致胶片影调
+      en: Locks lace pattern, bouquet composition, airy high-crown silhouette, and unified film texture across all 4 frames

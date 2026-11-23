@@ -1,0 +1,57 @@
+id: school-to-marriage
+name:
+  zh: 从校服到婚姻·跨时空叙事婚纱照
+  en: From Campus to Marriage Timeline Story Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - story-timeline
+  - campus-nostalgia
+  - narrative-echo
+  - cinematic-film
+  - 8-angle
+
+defaults:
+  location:
+    category: urban-street-and-film
+    venue: 阳光大学校园林荫道、安静图书馆窗边、操场看台，以及与之构图呼应的现代纯白仪式草坪/礼堂 (Sunlit University Campus Lane, Library Window, Bleachers & Echoing Present-Day Wedding Lawn/Chapel)
+    atmosphere: 真挚青春、温暖怀旧的时光跨度电影叙事，前期为明亮澄澈的校园自然日光，后期平滑过渡至温暖神圣的婚礼金光（严格保持成年大学/毕业自然年龄感，绝不幼态化）
+    foreground: 大学教室木桌书页、林荫光斑、回忆老照片、以及当代婚礼的白纱与花束前景呼应
+  bride:
+    dress: 前半段回忆镜穿清爽合体学院风白衬衫与百褶裙/毕业学士感简约裙装，后半段婚礼镜换穿一字肩或心形抹胸白色蕾丝主纱
+    neckline_hint: 学院白衬衫微敞小V领与婚礼一字肩/抹胸均自然延展颈部与肩线，跨服装保持一致的协调头肩比
+    hairstyle: 校园镜为蓬松高颅顶空气感黑长直微卷/高马尾，婚礼镜升级为浪漫高颅顶波浪卷配头纱（全程自动锁定高颅顶）
+    makeup: 校园镜清透自然白皙伪素颜，婚礼镜升级为精致清透新娘白皙妆，面颈锁骨全程同步匀净自然
+    veil_or_accessories: 婚礼镜配长款刺绣拖尾头纱与珍珠耳饰，与校园镜的简约发带形成时光呼应
+  groom:
+    outfit: 前半段回忆镜穿干净白衬衫与深色学院风长裤，后半段婚礼镜换穿黑色高定修身西装与领结
+    hairstyle_virtual: 干净阳光自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 大学笔记本/旧相册或搬家纸箱（时间线过渡镜）
+    - 浅粉玫瑰与满天星婚礼手捧花、婚戒盒（求婚与婚礼高潮镜）
+  mood:
+    tone: 真挚动人、青春怀旧、充满人生重要节点的电影记录感
+    signature_poses:
+      - 图书馆窗边并肩低头共读同一本书，彼此相视偷笑
+      - 同一个校园林荫道或操场看台机位：回忆镜牵手走过，婚礼镜换上婚纱西装复刻同一回眸动作
+      - 婚戒戴上无名指的特写与婚礼退场撒花欢笑收尾
+  camera:
+    body_and_lens: 50mm 人文记录定焦与 85mm f/1.8 情绪特写定焦（跨时空呼应镜保持相同焦段与构图轴线）
+    lighting: 前段清亮通透校园午后日光（5200K），后段渐暖为柔和黄金仪式逆光（5600K）
+    color_temperature: 5200K 青春清透调平滑过渡至 5600K 婚礼暖金色调
+    film_texture: 35mm 温暖日系/电影胶片质感，真实细腻自然肤质，前后段画质与人物年龄感连贯真实
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/story-timeline-8.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "从大学校园到婚礼礼堂时光呼应叙事、成年情侣真挚怀旧电影感、同机位跨时空对仗、高颅顶自然头肩比、面颈整体清透白皙统一"
+  en_style_keywords: "adult university campus to wedding day narrative timeline, paired visual echo compositions, nostalgic sunlit daylight transitioning to warm ceremonial gold, voluminous high-crown bridal hair, consistent adult age and natural head-to-shoulder proportions"
+  negative_hints: "portraying adults as minors, sexualized uniform, inconsistent facial identity across eras, random unrelated locations, flat pasted hair, oversized head distortion, mismatched neck skin tone"
