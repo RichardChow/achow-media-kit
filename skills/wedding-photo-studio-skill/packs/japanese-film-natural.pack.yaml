@@ -1,0 +1,57 @@
+id: japanese-film-natural
+name:
+  zh: 日系胶片自然生活流婚纱照
+  en: Japanese Film Natural Documentary Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - indoor-and-outdoor
+  - japanese-film
+  - candid-documentary
+  - 35mm-grain
+  - 8-angle
+
+defaults:
+  location:
+    category: urban-street-and-film
+    venue: 安静复古木质老屋、书房窗边与梧桐斑驳的老街小巷 (Quiet Wooden Home, Sunlit Book Room & Tree-Lined Old Street)
+    atmosphere: 安静温柔、充满日常烟火怀旧气息的非摆拍生活流氛围，清晨或午后柔和窗光轻洒室内
+    foreground: 木格门框、老旧书架、窗边植物、温热茶杯与街巷自然透视前景
+  bride:
+    dress: 简约象牙白棉麻或真丝法式V领轻婚纱，轻盈自然无繁复厚重拖尾，便于日常走动坐卧
+    neckline_hint: 轻盈柔和V领自然拉长颈部线条、修饰脸型轮廓，让近景人像头肩比更轻松舒展
+    hairstyle: 日系松弛空气感高颅顶低马尾或自然大卷发，发顶蓬松轻盈配柔美八字碎发（自动锁定高颅顶）
+    makeup: 日系清透奶油白皙裸妆，面颈锁骨同步匀净清亮、保留真实自然肌理，淡珊瑚粉颊彩与水润唇色
+    veil_or_accessories: 轻盈短款复古素纱或丝带发结，低调珍珠细链
+  groom:
+    outfit: 克制低调的深炭灰或墨黑宽松复古西装、柔和棉质白衬衫（可不系领带或配细领带）
+    hairstyle_virtual: 清爽自然日系碎短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 小束白绿洋甘菊与尤加利日常手捧花
+    - 复古旁轴胶片相机、手冲咖啡杯或一本旧画册
+  mood:
+    tone: 安静亲密、怀旧松弛、真实日常不摆拍
+    signature_poses:
+      - 窗边温柔帮彼此整理碎发或衣领，阳光透过纱窗洒在肩头
+      - 并肩坐在书桌或厨房台边看旧照片、泡茶或相视大笑
+      - 傍晚老街巷口牵手小跑回头，门框窥视式抓拍自然笑意
+  camera:
+    body_and_lens: 35mm 与 50mm 经典人文定焦（半身情绪近景切换 85mm 保护五官与头肩比例）
+    lighting: 清晨或午后柔和自然侧窗光，柔暖奶油高光与温和低反差暗部
+    color_temperature: 5200K-5400K 柔和奶油暖白配淡淡复古青绿暗部
+    film_texture: Fujifilm Pro 400H / 35mm 胶片柔和颗粒质感，自然空气感散景，杜绝生硬影楼过度修图感
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "日系35mm胶片生活流、木屋窗光老街怀旧、松弛不摆拍日常互动、高颅顶空气碎发、自然头肩比、面颈肩整体清透白皙统一"
+  en_style_keywords: "Japanese 35mm film documentary wedding, warm cream and faded green palette, soft sunlit wooden home and old lane, unposed intimate everyday gestures, voluminous airy high-crown bridal hair, natural harmonious head-to-shoulder proportions"
+  negative_hints: "glossy commercial studio finish, ornate ballroom styling, heavy artificial retouching, exaggerated fake bokeh, flat pasted hair, oversized head distortion, stiff neck seam"

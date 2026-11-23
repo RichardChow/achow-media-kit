@@ -1,0 +1,57 @@
+id: korean-minimal-airy
+name:
+  zh: 韩系极简清透棚拍婚纱照
+  en: Korean Minimal Airy Studio Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - indoor
+  - studio
+  - korean-minimal
+  - airy-high-key
+  - 8-angle
+
+defaults:
+  location:
+    category: minimalist-indoor-studios
+    venue: 极简韩系纯白高定影棚与落地纱帘空间 (Minimalist Korean Pure-White Studio with Sheer Curtains)
+    atmosphere: 高调清透漫射窗光，柔和建筑阴影与半透白纱帘层叠出呼吸感，干净高级无杂乱背景
+    foreground: 柔焦半透白纱帘、极简几何木座/台阶与自然舒展的婚纱裙摆（避免全套仅靠同一面白墙站拍）
+  bride:
+    dress: 极简象牙白法式方领缎面A字轻婚纱，细腻珍珠光泽与干净利落剪裁
+    neckline_hint: 法式方领精准展露锁骨并平衡肩宽与颈长，头肩比极自然舒展
+    hairstyle: 法式慵懒高颅顶低盘发，发顶与后脑勺饱满蓬松，耳侧轻盈碎发修饰脸型轮廓（自动锁定高颅顶）
+    makeup: 韩系清透白皙精修妆容，面颈锁骨肩臂整体同步匀净提亮、保留真实皮肤微纹理，柔和玫瑰奶茶唇
+    veil_or_accessories: 极简超透素纱长头纱，搭配细腻巴洛克珍珠耳钉
+  groom:
+    outfit: 剪裁利落的黑色或浅炭灰修身西装、挺括白衬衫、极简黑色细领结
+    hairstyle_virtual: 韩系纹理微偏分清爽短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 极简韩系纯白马蹄莲与白绿色郁金香手捧花
+    - 极简浅木色方凳/建筑几何方块用于坐姿与高低层次变化
+  mood:
+    tone: 纯净温柔、松弛克制、高级杂志清透感
+    signature_poses:
+      - 两人并肩坐于极简台阶或方凳，十指相扣转向彼此含笑对视
+      - 穿过落地窗光与半透白纱帘缓步轻转，裙摆带起柔和动态弧度
+      - 亲密半身依偎肩头或额头轻抵，展现真实松弛微表情
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 人像定焦（全身建筑留白切换 50mm 视角）
+    lighting: 高调漫射落地窗自然光配合大型蝴蝶柔光补光，肤色整体匀净白皙通透、阴影干净细腻
+    color_temperature: 5400K 清亮中性偏暖日光色调
+    film_texture: 哈苏中画幅般纯净高定质感叠加极细腻自然颗粒，白纱层次清晰不过曝，零塑料磨皮感
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "韩系极简纯白清透光影、白纱帘层次留白、高颅顶头包脸、自然头肩比、面颈锁骨肩臂整体匀净白皙无缝衔接、克制高级杂志感"
+  en_style_keywords: "Korean minimal airy bridal studio, high-key diffused window daylight, translucent sheer curtain layers, luminous fair unified skin tone across face neck and shoulders with natural micro-texture, voluminous high-crown bridal hair, harmonious head-to-shoulder proportions"
+  negative_hints: "busy cluttered props, harsh direct flash, overly saturated colors, flat pasted hair, oversized head on tiny shoulders, white face darker neck mismatch, plastic over-smoothed skin, repeating identical standing poses against a flat white wall"

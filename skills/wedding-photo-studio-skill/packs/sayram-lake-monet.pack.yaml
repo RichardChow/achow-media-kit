@@ -1,0 +1,56 @@
+id: sayram-lake-monet
+name:
+  zh: 赛里木湖莫奈油画感婚纱照
+  en: Sayram Lake Monet Fine-Art Wedding
+version: "1.0.0"
+source:
+  origin: adapted-external
+  reference_url: "https://github.com/wenyachen/ai-wedding-photo-skill"
+  license_note: "Concept adapted from MIT-licensed ai-wedding-photo-skill (text direction only; restructured to WeddingStylePack v1 with high-crown & proportion guardrails)"
+tags:
+  - outdoor
+  - alpine-lake
+  - painterly-fine-art
+  - snow-mountain
+  - 8-angle
+
+defaults:
+  location:
+    category: snow-mountains-and-plateaus
+    venue: 新疆赛里木湖湛蓝湖岸、高原野花草甸与远景天山雪峰 (Sayram Lake, Alpine Wildflower Meadow & Tianshan Snow Peaks, Xinjiang)
+    atmosphere: 诗意辽阔、澄澈宁静的莫奈印象派自然光色，湖蓝、云白与草甸嫩绿柔和交融（严格保持摄影级真实五官，不给脸部套粗糙油画滤镜）
+    foreground: 湖畔鹅卵石岸线、微风轻拂的紫色与黄色高山野花草坡
+  bride:
+    dress: 落肩轻纱立体蕾丝大拖尾婚纱，轻盈仙气薄纱随高原湖风舒展飘扬
+    neckline_hint: 落肩轻纱自然延伸肩线并温柔露出锁骨，打造优雅修长的头肩比与手臂线条
+    hairstyle: 森系高颅顶空气感浪漫半扎卷发，头顶发根饱满蓬松、风吹碎发灵动轻盈（自动锁定高颅顶）
+    makeup: 清透细腻白皙精修妆容，面颈锁骨与肩臂整体同步匀净柔亮，自然水光肌与清雅玫瑰粉唇
+    veil_or_accessories: 3米超轻盈飘逸刺绣长头纱，在澄澈湖风中划出油画般柔美弧线
+  groom:
+    outfit: 质感暖棕色或燕麦卡其色三件套定制西装、象牙白衬衫与复古针织领带，与草甸湖蓝形成莫奈撞色
+    hairstyle_virtual: 自然清爽微卷短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理（可选：按主题交由发型师微调造型）
+  props:
+    - 蓝白飞燕草、浅黄洋甘菊与白色玫瑰组成的莫奈花园感自然系手捧花
+  mood:
+    tone: 诗意辽阔、柔美静谧、油画电影质感
+    signature_poses:
+      - 湖畔远景牵手漫步，长头纱随湖风高高扬起与雪山湖面融为一体
+      - 坐于野花草甸间并肩轻声交谈微笑，或草地俯拍两人柔和相望
+      - 逆光近景中轻拥依偎，清澈湖面光斑在背景化作柔美散景
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8（湖山全景切换 35mm/70-200mm 空间压缩）
+    lighting: 高原通透柔和日光与轻柔水光反射，面部肤色白皙清透且与脖颈肩臂过渡完全一致
+    color_temperature: 5300K 清透湖蓝与柔暖阳光交织的印象派自然影调
+    film_texture: 胶片感艺术微粒与真实摄影级皮肤、蕾丝纹理，柔和印象派色彩层次但人物五官 100% 写实清晰
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "赛里木湖湛蓝湖光、莫奈印象派柔和色彩层次、雪山野花草甸、飘逸长头纱、真实清晰摄影级五官、高颅顶头包脸、自然头肩比与面颈整体匀净白皙"
+  en_style_keywords: "Sayram Lake turquoise waters, alpine wildflower meadow, distant Tianshan snow peaks, subtle Monet fine-art color harmony with crisp photorealistic faces, floating veil in mountain breeze, voluminous high-crown bridal hair, harmonious head-to-shoulder proportions"
+  negative_hints: "literal oil paint brushstrokes over faces, loss of facial likeness, hyper-saturated artificial sky, fantasy castles, flat pasted hair, oversized head on frail shoulders, face and neck skin mismatch"

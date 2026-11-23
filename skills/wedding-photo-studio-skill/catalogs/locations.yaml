@@ -1,0 +1,452 @@
+# Atomic Catalog: Wedding Photography Locations & Atmospheres
+# Referenced by SKILL.md Phase 2 (Module 2) and style packs.
+
+version: "1.0.0"
+
+groups:
+  - group_id: outdoor-nature
+    name:
+      zh: 户外自然风光
+      en: Outdoor Nature & Scenic Landscapes
+    categories:
+      - id: snow-mountains-and-plateaus
+        name:
+          zh: 雪山高原
+          en: Snow Mountains & Alpine Plateaus
+        presets:
+          - id: dali-cangshan
+            name:
+              zh: 云南大理苍山
+              en: Cangshan Mountain, Dali, Yunnan
+            venue_zh: 中国云南大理苍山高海拔草甸观景点
+            venue_en: High-altitude alpine meadow overlooking Cangshan Mountain, Dali, Yunnan, China
+            atmosphere_zh: 日出日照金山暖金晨光，山间云雾缭绕，天空澄澈湛蓝
+            atmosphere_en: Golden sunrise alpenglow across mountain peaks, drifting valley mist, crisp clear blue sky
+            foreground_zh: 枯黄起伏的高原草坡与自然山野碎石小径
+            foreground_en: Golden-brown alpine grass slope with natural wild highland trail
+          - id: meili-yulong-snow-mountain
+            name:
+              zh: 梅里雪山 / 玉龙雪山
+              en: Meili & Jade Dragon Snow Mountain
+            venue_zh: 云南梅里雪山或玉龙雪山蓝月谷开阔观景草甸
+            venue_en: Expansive alpine plateau facing Meili or Jade Dragon Snow Mountain peaks, Yunnan
+            atmosphere_zh: 巍峨雪峰映照冷暖交织的破晓天光，空气通透如镜
+            atmosphere_en: Towering snow-capped ridges illuminated by crisp dawn alpenglow and crystal-clear alpine air
+            foreground_zh: 冰川溪流、低矮冷杉与风吹起伏的高山牧草
+            foreground_en: Glacial creek, alpine spruce silhouettes, and wind-swept highland meadow grass
+          - id: western-sichuan-yuzixi
+            name:
+              zh: 川西鱼子西
+              en: Yuzixi Plateau, Western Sichuan
+            venue_zh: 四川甘孜川西鱼子西360度雪山星空观景台与山脊草甸
+            venue_en: Yuzixi 360-degree mountain ridge overlooking Gongga and Yala snow peaks, Western Sichuan
+            atmosphere_zh: 壮阔云海翻涌，黄昏粉金色晚霞将连绵雪山染上浪漫光晕
+            atmosphere_en: Rolling sea of clouds beneath pastel pink-gold sunset glow over distant snow peaks
+            foreground_zh: 迎风微斜的高原草甸山脊、零星经幡与自然山坡
+            foreground_en: Sweeping highland meadow ridge, distant prayer flags softly out of focus, open slope
+          - id: sayram-lake
+            name:
+              zh: 新疆赛里木湖
+              en: Sayram Lake, Xinjiang
+            venue_zh: 新疆赛里木湖湛蓝湖畔与远景天山雪峰草坡
+            venue_en: Deep sapphire shoreline of Sayram Lake framed by Tianshan snow peaks, Xinjiang
+            atmosphere_zh: 澄澈高原蓝湖面波光粼粼，微风拂过白云低垂
+            atmosphere_en: Luminous turquoise-sapphire glacial lake rippling in crisp mountain breeze under low white clouds
+            foreground_zh: 铺满鹅卵石的湖岸、盛开的高山野花与起伏绿草坡
+            foreground_en: Pebble shoreline, blooming alpine wildflowers, and gently sloping lakeside meadow
+
+      - id: coastlines-and-islands
+        name:
+          zh: 海岸岛屿
+          en: Coastlines & Islands
+        presets:
+          - id: black-volcanic-reef
+            name:
+              zh: 黑礁石情绪海岸
+              en: Dramatic Black Reef Coastline
+            venue_zh: 火山黑礁石海崖与拍岸白浪海岸线
+            venue_en: Sculptural black volcanic basalt reefs along a dramatic ocean coastline
+            atmosphere_zh: 阴郁电影感海风与破云海光交错，高级克制的暗调情绪氛围
+            atmosphere_en: Moody sea mist with shafts of diffused coastal sunlight and crashing white surf
+            foreground_zh: 湿润深色礁石肌理、退潮水洼倒影与浪花水雾
+            foreground_en: Textured dark wet basalt rocks, reflective tide pools, and sea spray mist
+          - id: tropical-orange-sea-beach
+            name:
+              zh: 热带橘子海沙滩
+              en: Tropical Golden Sunset Beach
+            venue_zh: 热带海岛细腻白沙滩与开阔无垠的落日海面
+            venue_en: Fine white-sand tropical beach overlooking a vast glowing sunset ocean
+            atmosphere_zh: 日落橘子海暖橙金光铺满海面，晚风轻拂椰影摇曳
+            atmosphere_en: Tangerine-gold sunset shimmering across gentle waves with warm coastal breeze
+            foreground_zh: 温柔漫过脚踝的浅滩浪花、柔软细沙与飘逸裙摆
+            foreground_en: Shallow translucent shoreline ripples, soft warm sand, and billowing veil trails
+          - id: private-yacht-ocean
+            name:
+              zh: 私人游艇海面
+              en: Private Yacht Open Sea
+            venue_zh: 纯白豪华帆船游艇甲板，背景为蔚蓝无垠的远海海平线
+            venue_en: Sleek white sailing yacht deck gliding across deep azure open sea
+            atmosphere_zh: 午后南法度假感明媚海风与海面耀眼星芒反光
+            atmosphere_en: Sun-drenched Mediterranean holiday breeze with sparkling sunlight glinting on deep blue waves
+            foreground_zh: 柚木游艇甲板、白色船舷缆绳与洁白船帆局部构图
+            foreground_en: Teak wood deck planks, crisp white railings, and billowing sail edge framing
+          - id: cliffside-lighthouse
+            name:
+              zh: 悬崖灯塔海角
+              en: Cliffside Lighthouse Cape
+            venue_zh: 临海绿色草坡悬崖与远景纯白复古灯塔
+            venue_en: Grassy coastal cliff overlooking the ocean with a classic white lighthouse in the distance
+            atmosphere_zh: 辽阔海天一色，清新海风吹动长头纱的电影治愈感
+            atmosphere_en: Expansive sea-and-sky horizon with brisk coastal breeze lifting the bridal veil
+            foreground_zh: 悬崖边摇曳的野生芒草与天然石阶小路
+            foreground_en: Wind-swept coastal wild grass and weathered stone path along the bluff
+
+      - id: forests-meadows-wilderness
+        name:
+          zh: 森系旷野
+          en: Forests, Meadows & Wilderness
+        presets:
+          - id: primeval-forest-tyndall
+            name:
+              zh: 原始森林丁达尔光
+              en: Primeval Forest Tyndall Light
+            venue_zh: 参天冷杉与苔藓覆盖的幽深原始森林林间空地
+            venue_en: Quiet clearing in a towering evergreen primeval forest carpeted with lush moss
+            atmosphere_zh: 清晨阳光穿过树冠雾气形成梦幻丁达尔光束，静谧精灵感
+            atmosphere_en: Volumetric morning Tyndall sunbeams slicing through woodland mist and canopy leaves
+            foreground_zh: 柔和虚化的蕨类叶片、青苔倒木与飘浮森林光斑
+            foreground_en: Soft-focus fern fronds, mossy fallen logs, and floating golden forest dust motes
+          - id: french-estate-lawn
+            name:
+              zh: 法式草坪庄园草地
+              en: French Country Estate Meadow Lawn
+            venue_zh: 绿意舒展的法式庄园起伏草坪，远景隐现古树与浅石建筑轮廓
+            venue_en: Rolling sunlit French countryside estate lawn framed by ancient cypress and oaks
+            atmosphere_zh: 下午四点柔和斜射暖阳，草坪散发自然松弛的油画光影
+            atmosphere_en: Late-afternoon golden slanted sunlight casting soft painterly shadows over the lawn
+            foreground_zh: 零星雏菊野花与微风拂过的鲜绿草尖
+            foreground_en: Scattered white daisies and gently swaying sunlit lawn grass
+          - id: autumn-reed-marsh
+            name:
+              zh: 秋日芦苇荡
+              en: Golden Autumn Reed Marsh
+            venue_zh: 一望无际的金色秋日芦苇湿地区域与蜿蜒木栈道
+            venue_en: Vast golden autumn reed wetlands with a rustic wooden boardwalk
+            atmosphere_zh: 逆光下芦花通透发光，空气中漂浮柔暖秋日氛围
+            atmosphere_en: Backlit feathery reed plumes glowing warm amber-gold in crisp autumn afternoon light
+            foreground_zh: 前景虚化的蓬松芦苇穗营造柔和画框层次
+            foreground_en: Dreamy out-of-focus sunlit reed plumes framing the lower foreground
+          - id: desert-and-salt-flat
+            name:
+              zh: 旷野沙漠 / 天空之镜盐湖
+              en: Sculptural Desert Dunes / Mirror Salt Flat
+            venue_zh: 曲线流畅的金色沙丘脊线，或倒映云霞的镜面盐湖旷野
+            venue_en: Sculptural wind-carved desert sand dunes or vast mirror-like sky-reflecting salt flat
+            atmosphere_zh: 极简天地构图，落日长影或蓝调镜面天空倒影极具史诗感
+            atmosphere_en: Minimalist monumental horizon with dramatic long sunset shadows or mirror sky reflections
+            foreground_zh: 细腻沙纹曲线或平静浅水倒影
+            foreground_en: Rippled fine desert sand ridges or glassy shallow reflective water surface
+
+  - group_id: architecture-and-heritage
+    name:
+      zh: 建筑人文
+      en: Architectural & Cultural Landmarks
+    categories:
+      - id: european-and-french-estates
+        name:
+          zh: 欧式法式建筑
+          en: European & French Estates
+        presets:
+          - id: vintage-french-chateau
+            name:
+              zh: 复古庄园古堡
+              en: Vintage French Chateau & Courtyard
+            venue_zh: 历经岁月洗礼的法式浅米色石灰岩古堡与对称雕花露台
+            venue_en: Historic cream-limestone French chateau terrace with carved stone balustrades
+            atmosphere_zh: 典雅复古的老钱贵族电影感，柔和暖阳洒在浮雕石墙上
+            atmosphere_en: Timeless old-money European elegance bathed in warm afternoon sunlight on aged stonework
+            foreground_zh: 石雕栏杆、攀援藤蔓玫瑰与古典碎石庭院
+            foreground_en: Carved stone parapet, climbing garden roses, and pale gravel courtyard
+          - id: white-chapel-colonnade
+            name:
+              zh: 白色教堂拱廊
+              en: White Chapel & Archway Colonnade
+            venue_zh: 纯白古典建筑柱廊与高挑圣洁的拱形长廊
+            venue_en: Luminous white classical chapel colonnade with tall symmetrical stone archways
+            atmosphere_zh: 神圣通透的仪式感，几何拱门形成自然纵深与柔美明暗节奏
+            atmosphere_en: Sacred luminous serenity with architectural arches creating graceful depth and shadow rhythm
+            foreground_zh: 光洁石材地面与拱门柱廊的层次透视框架
+            foreground_en: Polished pale stone floor and layered colonnade arch perspective
+          - id: sunlit-glass-conservatory
+            name:
+              zh: 阳光玻璃花房
+              en: Sunlit Glass Botanical Conservatory
+            venue_zh: 白色铁艺拱顶复古玻璃花房，四周环绕盛放白绿色植物花卉
+            venue_en: Vintage white wrought-iron glass conservatory filled with lush greenery and white blooms
+            atmosphere_zh: 通透玻璃折射清亮自然日光，浪漫清新如法式秘密花园
+            atmosphere_en: Airy diffused daylight streaming through glass panes in a romantic botanical sanctuary
+            foreground_zh: 垂落常春藤、白色飞燕草与玻璃窗格光影
+            foreground_en: Cascading ivy, white delphinium blooms, and delicate glasshouse mullion shadows
+
+      - id: chinese-gardens-and-heritage
+        name:
+          zh: 中式古风建筑
+          en: Chinese Gardens & Heritage Architecture
+        presets:
+          - id: suzhou-classical-garden
+            name:
+              zh: 苏州古典园林
+              en: Suzhou Classical Scholar Garden
+            venue_zh: 粉墙黛瓦、花窗月洞门与曲折回廊相映的苏州古典园林
+            venue_en: Traditional Suzhou classical garden featuring whitewashed walls, moon gates, and carved wooden corridors
+            atmosphere_zh: 江南烟雨朦胧或温润斜阳，移步换景的东方留白诗意
+            atmosphere_en: Poetic Jiangnan mist or gentle afternoon sun creating serene Eastern painterly negative space
+            foreground_zh: 摇曳翠竹叶影、太湖石与雕花木格花窗构图
+            foreground_en: Delicate bamboo leaves, Taihu scholar rock, and lattice window framing
+          - id: forbidden-city-red-walls
+            name:
+              zh: 红墙故宫宫廷建筑
+              en: Imperial Crimson Walls & Glazed Tiles
+            venue_zh: 朱红宫墙、金色铜钉大门与飞檐琉璃瓦掩映的中式宫廷长巷
+            venue_en: Traditional Chinese imperial crimson palace walls with gilded eaves and stone courtyard paving
+            atmosphere_zh: 大气端庄的东方美学质感，斜阳将红墙光影拉出浓郁电影层次
+            atmosphere_en: Regal Oriental grandeur with warm low sunlight sculpting rich shadows along crimson walls
+            foreground_zh: 青石板地面、朱漆木柱与柔和散落的树影斑驳
+            foreground_en: Blue-grey stone courtyard flagstones, lacquered wooden pillars, and dappled branch shadows
+          - id: jiangnan-huizhou-watertown
+            name:
+              zh: 江南水乡徽派古村
+              en: Jiangnan & Huizhou Water Town
+            venue_zh: 马头墙白墙黛瓦、小桥流水与乌篷船相伴的徽派江南水乡
+            venue_en: Classic Huizhou white-walled, black-tiled riverside village with arched stone bridges
+            atmosphere_zh: 晨雾轻笼水面，青黛水墨般温润内敛的东方婚嫁画卷
+            atmosphere_en: Soft morning mist drifting above quiet canals in an understated Chinese ink-wash palette
+            foreground_zh: 湿润石阶码头、垂柳枝条与古桥倒影
+            foreground_en: Weathered riverside stone steps, weeping willow tendrils, and calm canal reflections
+
+  - group_id: indoor-studio-and-sets
+    name:
+      zh: 室内高定棚拍与实景造景
+      en: Luxury Indoor Studios & Architectural Sets
+    categories:
+      - id: minimalist-indoor-studios
+        name:
+          zh: 室内高定极简棚拍
+          en: Minimalist High-Fashion Indoor Studios
+        presets:
+          - id: korean-pure-white-studio
+            name:
+              zh: 极简韩系纯白影棚
+              en: Minimalist Korean Pure-White Studio
+            venue_zh: 高级留白韩系纯白无缝弧形影棚空间
+            venue_en: Clean seamless pure-white Korean bridal photography studio
+            atmosphere_zh: 柔和通透的奶油高调光影，将全部视觉聚焦于人物情绪、五官与婚纱质感
+            atmosphere_en: Luminous soft high-key light placing complete focus on couple chemistry, likeness, and couture fabric
+            foreground_zh: 极简纯白地面与自然延展的轻纱拖尾
+            foreground_en: Clean matte-white floor with sculptural flowing wedding gown train
+          - id: french-cream-latte-studio
+            name:
+              zh: 法式奶咖温柔影棚
+              en: French Cream-Latte Tonal Studio
+            venue_zh: 哑光奶咖暖杏色微水泥墙面与法式石膏线条极简影棚
+            venue_en: Warm cream-latte matte plaster studio with subtle French wall moldings
+            atmosphere_zh: 温润低饱和奶油调质感，柔和侧窗漫射光凸显温柔高级感
+            atmosphere_en: Soft low-saturation warm cream palette illuminated by gentle side-window diffused light
+            foreground_zh: 极简中古风木椅或复古亚麻布艺坐具
+            foreground_en: Minimalist mid-century wooden chair or textured linen bench accent
+          - id: editorial-charcoal-black-studio
+            name:
+              zh: 高级黑灰情绪影棚
+              en: Editorial Charcoal-Black Studio
+            venue_zh: 手工肌理深灰与炭黑色画布背景的高定杂志人像影棚
+            venue_en: Hand-painted textured charcoal-grey and deep matte black editorial portrait studio
+            atmosphere_zh: 精雕伦勃朗光与人物轮廓光，强烈明暗对比打造高级时装大片感
+            atmosphere_en: Sculpted Rembrandt key light and crisp rim light creating luxury Vogue-style chiaroscuro contrast
+            foreground_zh: 洁净深色地面与微弱镜面反光层次
+            foreground_en: Clean dark studio floor with subtle matte light falloff
+          - id: plaster-venetian-blinds-light
+            name:
+              zh: 石膏百叶窗几何光影棚
+              en: Plaster Wall & Venetian Blinds Shadow Studio
+            venue_zh: 浅象牙白肌理石膏墙面室内空间，落地窗投射清晰柔和的百叶窗光条
+            venue_en: Ivory-white textured plaster interior washed with crisp sunlit Venetian blind shadow stripes
+            atmosphere_zh: 午后慵懒静谧的建筑几何光影美学，富有电影叙事呼吸感
+            atmosphere_en: Serene afternoon architectural light stripes adding poetic cinematic geometry
+            foreground_zh: 落地光斑与自然垂坠的极简白纱窗帘
+            foreground_en: Sunlit floor light bars and sheer billowing linen curtains
+
+      - id: vintage-and-floral-indoor-sets
+        name:
+          zh: 室内实景艺术造景
+          en: Vintage & Floral Indoor Architectural Sets
+        presets:
+          - id: french-spiral-staircase
+            name:
+              zh: 法式复古旋转楼梯
+              en: Grand French Spiral Staircase Hall
+            venue_zh: 雕花铁艺扶手与大理石台阶盘旋而上的欧式复古旋转楼梯厅
+            venue_en: Grand European marble spiral staircase with ornate wrought-iron railings and tall arched windows
+            atmosphere_zh: 建筑线条极具仪式张力，长拖尾婚纱沿楼梯倾泻而下
+            atmosphere_en: Architectural majesty with natural window backlight illuminating a cascading bridal gown train
+            foreground_zh: 旋梯栏杆曲线与阶梯落花点缀
+            foreground_en: Sweeping curved banister framing and subtle white petals on marble steps
+          - id: suspended-floral-installation
+            name:
+              zh: 立体悬吊花艺艺术空间
+              en: Sculptural Suspended Floral Installation Set
+            venue_zh: 挑高白色艺术空间内悬挂云雾状白绿色立体鲜花垂吊花艺装置
+            venue_en: High-ceiling gallery interior featuring a cloud-like suspended white-and-green fresh floral installation
+            atmosphere_zh: 梦幻高定婚礼艺术展氛围，柔光穿透层层花瓣与薄纱
+            atmosphere_en: Dreamy haute-couture botanical exhibition atmosphere with soft light filtering through hanging blooms
+            foreground_zh: 虚化垂落蝴蝶兰与满天星花枝前景
+            foreground_en: Soft out-of-focus hanging phalaenopsis orchids and airy floral stems
+          - id: new-chinese-gongbi-screen
+            name:
+              zh: 新中式工笔屏风雅室
+              en: New Chinese Gongbi Silk Screen Salon
+            venue_zh: 手绘工笔花鸟真丝半透屏风、原木条案与插花青瓷构成的新中式雅室
+            venue_en: Refined New-Chinese salon featuring hand-painted Gongbi silk screens, dark timber console, and celadon vases
+            atmosphere_zh: 温润雅致的东方古画意境，柔暖室内光晕衬托锦缎刺绣细节
+            atmosphere_en: Serene Oriental classical painting ambiance with warm diffused glow highlighting silk embroidery
+            foreground_zh: 半透绢纱屏风光影、枯枝梅花剪影与古雅茶案
+            foreground_en: Translucent silk screen silhouette, plum blossom branch, and minimalist scholar table
+
+  - group_id: urban-and-editorial
+    name:
+      zh: 城市纪实与电影街头
+      en: Urban Documentary & Cinematic Streets
+    categories:
+      - id: urban-street-and-film
+        name:
+          zh: 城市街头与电影纪实
+          en: Urban Street, Film & Editorial Venues
+        presets:
+          - id: vintage-old-street-cafe
+            name:
+              zh: 老街复古咖啡馆
+              en: Old-Town Vintage Corner Cafe
+            venue_zh: 梧桐掩映的城市老街转角复古木框玻璃咖啡馆外摆区
+            venue_en: Tree-lined historic city corner with a vintage timber-framed sidewalk cafe
+            atmosphere_zh: 松弛惬意的法式都市漫步感，自然生活流抓拍与暖黄橱窗光
+            atmosphere_en: Effortless Parisian urban stroll mood with warm cafe window glow and candid street charm
+            foreground_zh: 复古圆桌上的拿铁咖啡杯与梧桐斑驳日光
+            foreground_en: Bistro table coffee cups and dappled plane-tree sunlight
+          - id: hong-kong-neon-night-market
+            name:
+              zh: 港风胶片夜市霓虹
+              en: Hong Kong Film Neon Night Street
+            venue_zh: 复古霓虹灯牌林立、微湿反光路面的港风电影感老城夜街
+            venue_en: Atmospheric retro Hong Kong-style night street glowing with vintage neon signage and rain-kissed pavement
+            atmosphere_zh: 王家卫式迷离胶片色调，青绿与暖橙霓虹交织出浓郁电影故事感
+            atmosphere_en: Wong Kar-wai inspired moody cinema palette blending emerald tungsten and warm neon bokeh
+            foreground_zh: 车流微弱光斑与湿润街面霓虹倒影
+            foreground_en: Softly blurred passing headlight bokeh and neon reflections on damp asphalt
+          - id: modern-art-museum
+            name:
+              zh: 现代极简美术馆
+              en: Modern Minimalist Art Museum
+            venue_zh: 清水混凝土与大面积几何玻璃采光天井构成的现代美术馆展厅
+            venue_en: Contemporary minimalist art museum featuring architectural concrete geometry and soaring skylights
+            atmosphere_zh: 冷静克制的高级时装大片感，干净线条衬托礼服廓形与人物张力
+            atmosphere_en: Architectural high-fashion restraint with crisp gallery light emphasizing couture silhouettes
+            foreground_zh: 极简建筑柱体与光洁水磨石地面倒影
+            foreground_en: Clean architectural column framing and subtle terrazzo floor reflections
+          - id: scenic-highway-vintage-convertible
+            name:
+              zh: 公路复古敞篷车
+              en: Open Highway & Vintage Convertible
+            venue_zh: 延伸向远方山海地平线的旷野景观公路，路旁停靠经典奶油白复古敞篷老爷车
+            venue_en: Open scenic highway stretching toward distant hills with a classic cream vintage convertible parked roadside
+            atmosphere_zh: 自由奔放的公路电影私奔婚礼感，夕阳斜照风吹裙摆与发丝
+            atmosphere_en: Free-spirited road-trip elopement cinema vibe bathed in golden sunset wind
+            foreground_zh: 复古敞篷车镀铬后视镜、真皮座椅与公路标线透视
+            foreground_en: Vintage chrome mirror, classic leather interior edge, and leading highway perspective
+
+  - group_id: global-iconic-landmarks
+    name:
+      zh: 全球标志性旅拍地标（海外大跨度精选）
+      en: Global Iconic Destination Landmarks
+    categories:
+      - id: international-destinations
+        name:
+          zh: 世界著名浪漫地标
+          en: World-Renowned Romantic Landmarks
+        presets:
+          - id: paris-pont-alexandre-iii
+            name:
+              zh: 法国巴黎·亚历山大三世桥与圣日耳曼街区
+              en: Paris, France - Pont Alexandre III & Saint-Germain
+            venue_zh: 法国巴黎塞纳河畔亚历山大三世桥雕花金饰灯柱、远景埃菲尔铁塔与圣日耳曼历史石墙长廊
+            venue_en: Pont Alexandre III ornate riverside bridge with distant Eiffel Tower silhouette and historic Saint-Germain stonework, Paris, France
+            atmosphere_zh: 清晨金粉晨雾与法式古典建筑雕塑感，老钱电影浪漫气息
+            atmosphere_en: Soft rose-gold Parisian morning mist illuminating ornate gilded lamp posts and historic limestone facades
+            foreground_zh: 雕花石桥护栏、塞纳河微光倒影与奥斯曼建筑拱门透视
+            foreground_en: Sculpted stone bridge balustrade, shimmering Seine reflections, and Haussmann archway framing
+          - id: switzerland-jungfrau-lucerne
+            name:
+              zh: 瑞士·卢塞恩湖与少女峰高山草坡
+              en: Switzerland - Lake Lucerne & Jungfrau Alpine Meadow
+            venue_zh: 瑞士阿尔卑斯山脉少女峰雪坡木屋小径与翡翠色卢塞恩湖畔观景台
+            venue_en: Swiss Alps alpine meadow trail facing snow-dusted Jungfrau peaks and emerald Lake Lucerne shoreline
+            atmosphere_zh: 通透澄澈的欧洲高山晴日晨光，雪峰与木屋草坡宛如童话胶片
+            atmosphere_en: Crisp luminous European alpine daylight across snow peaks, timber chalets, and lush emerald slopes
+            foreground_zh: 高山木栅栏、野花草坡与轻盈翻涌的云雾山谷
+            foreground_en: Rustic alpine timber fence, blooming wildflower slope, and drifting valley cloud layers
+          - id: iceland-reynisfjara-black-beach
+            name:
+              zh: 冰岛·维克黑沙滩与玄武岩柱群
+              en: Iceland - Reynisfjara Black Sand Beach & Basalt Columns
+            venue_zh: 冰岛雷尼斯黑沙滩几何六边形玄武岩柱崖壁与北大西洋白色翻涌海浪
+            venue_en: Reynisfjara jet-black volcanic sand beach framed by geometric basalt columns and foaming North Atlantic surf, Iceland
+            atmosphere_zh: 极简冷峻而充满史诗戏剧张力的北欧荒野光影，纯白婚纱在深黑玄武岩前极具高定对比度
+            atmosphere_en: Dramatic minimalist Nordic coastal atmosphere where luminous ivory bridal couture pops strikingly against matte-black basalt and mist
+            foreground_zh: 湿润反光黑沙岸线、白色浪花弧线与雕塑感玄武岩阶梯
+            foreground_en: Wet reflective black sand waterline, sweeping white foam arcs, and sculptural basalt ledges
+          - id: kyoto-higashiyama-arashiyama
+            name:
+              zh: 日本京都·东山町屋古巷与岚山竹林
+              en: Kyoto, Japan - Higashiyama Historic Lanes & Arashiyama
+            venue_zh: 日本京都东山清晨石板坡道木格町屋与岚山静谧竹林幽径
+            venue_en: Quiet dawn flagstone lane lined with dark-timber machiya townhouses in Higashiyama and tranquil Arashiyama bamboo grove, Kyoto
+            atmosphere_zh: 清晨无人时的静谧东方木质暖光与淡雅湿润青石色调
+            atmosphere_en: Serene early-morning quietude with soft warm lantern glow against weathered cedar and damp flagstones
+            foreground_zh: 格子木窗棂、青苔石阶与轻摇竹叶柔焦前景
+            foreground_en: Wooden lattice window frames, mossy stone steps, and soft-focus swaying bamboo foliage
+          - id: italy-lake-como-amalfi
+            name:
+              zh: 意大利·科莫湖古典别墅与阿马尔菲悬崖海岸
+              en: Italy - Lake Como Villa Terrace & Amalfi Cliff Coast
+            venue_zh: 意大利科莫湖临水古典石雕花园露台与远景碧蓝湖山轮廓
+            venue_en: Historic lakeside Italian villa terrace with sculpted cypress gardens overlooking cobalt Lake Como waters and mountains
+            atmosphere_zh: 意式午后温暖慵懒的复古胶片阳光，浓郁贵族度假电影质感
+            atmosphere_en: Sun-warmed Italian afternoon light with timeless Mediterranean villa cinema elegance
+            foreground_zh: 古典石雕栏杆、柏树与九重葛花瀑框景
+            foreground_en: Classical stone terrace parapet framed by cypress silhouettes and cascading bougainvillea
+
+# Reusable Shot-Level Micro Zones (场景微位点库 — 避免人物贴在扁平背景板前)
+# Inspired by couple-photo-orchestrator's Micro Zone practice: assign distinct micro-zones across Shots 1-8.
+micro_zones:
+  - id: doorway-or-archway-frame
+    zh: 门厅入口 / 拱廊尽头框景
+    en: Doorway entrance or colonnade archway frame
+  - id: staircase-turn-or-mid-steps
+    zh: 旋转楼梯转角 / 石阶中段
+    en: Staircase landing turn or mid-flight stone steps
+  - id: sunlit-window-seat
+    zh: 落地窗侧 / 临窗木座与白纱帘交界
+    en: Floor-to-ceiling window edge or sheer curtain threshold
+  - id: balustrade-or-terrace-corner
+    zh: 雕花栏杆边 / 露台转角俯瞰点
+    en: Carved stone balustrade or terrace corner overlook
+  - id: shoreline-or-ridge-edge
+    zh: 浅滩水线边缘 / 草甸山脊迎风坡面
+    en: Shallow waterline edge or windswept alpine ridge crest
+  - id: bistro-table-or-porch-bench
+    zh: 花园茶桌旁 / 木屋廊台坐席
+    en: Garden tea table or wooden cottage porch seating
+  - id: parked-car-door-or-mirror
+    zh: 静止车门侧 / 敞篷车内与后视镜前景
+    en: Parked vintage car door or convertible interior mirror frame
+  - id: translucent-veil-canopy
+    zh: 飘扬头纱形成的柔光纱幔空间内
+    en: Luminous sheltered micro-space beneath the floating translucent veil

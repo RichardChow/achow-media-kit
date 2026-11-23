@@ -1,0 +1,56 @@
+id: dali-cangshan-sunrise
+name:
+  zh: 大理苍山日照金山电影感婚纱照
+  en: Dali Cangshan Golden Sunrise Cinematic Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original flagship preset"
+tags:
+  - outdoor
+  - mountain
+  - sunrise-backlight
+  - cinematic-film
+  - 8-angle
+
+defaults:
+  location:
+    category: snow-mountains-and-plateaus
+    venue: 中国云南大理苍山 (Cangshan Mountain, Dali, Yunnan, China)
+    atmosphere: 日出“金山”效果，山峰笼罩在温暖的金色晨光中，山间云雾缭绕，天空澄澈湛蓝
+    foreground: 枯黄的草坡（自然户外高原草甸地形）
+  bride:
+    dress: 无肩带白色蕾丝蓬蓬婚纱，立体蕾丝纹理与多层轻盈拖尾薄纱
+    neckline_hint: 心形抹胸自然展露锁骨与舒展肩线，利于头肩比协调
+    hairstyle: 浪漫波浪大卷发（自动叠加高颅顶蓬松发根与空气感头包脸修饰）
+    makeup: 韩系精致清透妆容，自然水光肌，柔和玫瑰调唇妆
+    veil_or_accessories: 长款刺绣拖尾头纱，随高原晨风自然飘动
+  groom:
+    outfit: 黑色定制修身西装、挺括白色衬衫、经典黑色领结
+    hairstyle_virtual: 清爽利落自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整理
+  props:
+    - 15朵浅粉色玫瑰搭配清新绿叶组成的手捧花
+  mood:
+    tone: 浪漫深情、自然松弛、电影故事感
+    signature_poses:
+      - 新娘单手轻撩随风飘动的头纱，笑容灿烂
+      - 新郎手持浅粉玫瑰捧花，神态温柔从容
+      - 主镜头默认顺应参考图两人自然朝向与微倾角度（最大化保留真人五官相似度；可选改为两人深情对视）
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 定焦镜头（远景可平滑切换 35mm/50mm 视角感）
+    lighting: 日出黄金时段柔和逆光，温暖轮廓光勾勒情侣身形与发丝，阴影柔和
+    color_temperature: 5500K 暖色调色温
+    film_texture: 8K 超高清细节，细腻 35mm 胶片颗粒质感（Kodak Portra 400 影调），主体对焦锐利，背景奶油散景虚化
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "日照金山暖调逆光、高原云雾层次感、飘逸头纱动态、高颅顶头包脸、自然头肩比与肩颈无缝衔接、电影级婚纱纪实大片"
+  en_style_keywords: "golden sunrise alpenglow rim lighting, drifting alpine mist, flowing embroidered veil in wind, luminous filmic Kodak Portra 400 tone, voluminous high-crown bridal hair, natural harmonious head-to-shoulder proportions and seamless neck blending"
+  negative_hints: "flat pasted hair, oversized head on tiny body, narrow distorted shoulders, stiff neck seam, mismatched face and neck skin tone, duplicated poses across frames, plastic over-smoothed skin"

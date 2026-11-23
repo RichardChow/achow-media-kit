@@ -1,0 +1,167 @@
+# Shot Matrix: 8-Angle Cinematic Wedding Photography Set (Default)
+# Ensures zero duplicated framing, progressive cinema pacing, and proportion-friendly optics across all 8 shots.
+
+id: 8-angle-cinematic
+name:
+  zh: 8角度电影感全套分镜矩阵（默认）
+  en: 8-Angle Cinematic Wedding Shot Matrix (Default)
+version: "1.0.0"
+shot_count: 8
+recommended_batches:
+  - batch_index: 1
+    shots: [1, 2, 3, 4]
+    note: 开篇定调与动态叙事（大远景、三分法、动态抓拍、逆光侧颜）
+  - batch_index: 2
+    shots: [5, 6, 7, 8]
+    note: 情绪升华与高定收尾（亲密近景、新娘高光、仰拍/俯拍张力、头纱捧花氛围特写）
+
+diversity_quotas:
+  adjacent_frame_min_diff_fields: 4
+  max_direct_camera_gaze: 2
+  max_formal_side_by_side_standing: 2
+  min_distinct_actions: 5
+  min_expression_gaze_patterns: 4
+  min_camera_heights: 3
+  pose_family_semantic_dedupe: true
+  framing_adapted_mechanics_only: true
+
+anti_repetition_rule:
+  zh: 8张成片必须在景别（远/全/中/近/特写）、机位高度（平视/仰拍/俯拍）、朝向、场景微位点（Micro Zone）与姿势家族承重结构上严格错开：相邻两帧至少4个分镜字段不同，直视镜头≤2张、正式并排站姿≤2张，仅描述当前景别可见的2-4个身体力学点；同时锁定人物五官、头肩比、高颅顶、婚纱礼服、捧花与5500K光影色调完全一致。
+  en: All 8 frames must strictly vary in shot scale, camera elevation, micro-zone, pose-family load-bearing structure, and expression/gaze (adjacent frames differ in >=4 fields, direct-to-camera <=2, side-by-side standing <=2, describe only 2-4 framing-visible body mechanics) while keeping facial identity, head-to-shoulder proportion harmony, bridal high-crown volume, garments, bouquet, and lighting color temperature 100% consistent.
+
+shots:
+  - shot_index: 1
+    role:
+      zh: 史诗大远景开篇定调
+      en: Epic Establishing Wide Shot
+    framing:
+      zh: 宏大环境大远景全身构图，人物约占画面1/4至1/3，充分展露壮阔地形、建筑或雪山天际线
+      en: Expansive environmental wide establishing shot with couple occupying roughly 1/4 to 1/3 of the frame, showcasing monumental scenery and sky depth
+    angle:
+      zh: 平视偏低开阔广角机位（24mm-35mm 视角感），无边缘畸变
+      en: Open wide-angle eye-to-low horizon perspective (24mm-35mm equivalent) with clean optical geometry
+    pose_guidance:
+      zh: 情侣手牵手并肩立于开阔前景中或缓缓走向光影深处，长头纱与婚纱大裙摆顺风舒展铺开
+      en: Couple standing hand-in-hand or strolling slowly across the scenic foreground while the long veil and bridal train billow gracefully in the wind
+    guardrail_focus:
+      zh: 保证人物整体头身比修长自然，远景中男女身高差与肩宽骨架协调真实
+      en: Maintain natural elongated full-body proportions and realistic height/shoulder harmony between bride and groom
+
+  - shot_index: 2
+    role:
+      zh: 经典三分法中全景
+      en: Classic Rule-of-Thirds Medium Full Shot
+    framing:
+      zh: 经典三分法构图，将情侣置于画面右侧1/3视觉黄金线上，左侧2/3保留云雾山峰/建筑/海岸呼吸留白
+      en: Classic rule-of-thirds composition placing the couple on the right vertical third, leaving the left two-thirds open for atmospheric scenery and depth
+    angle:
+      zh: 平视自然人文视角（50mm 定焦视角），自然立体景深过渡
+      en: Eye-level natural perspective (50mm prime feel) with organic depth-of-field separation
+    pose_guidance:
+      zh: 主镜头默认顺应参考图两人的自然头部与身体朝向（最大化保留真人五官辨识度），新娘单手轻撩随风飘动的长头纱灿烂微笑，新郎手持手捧花温柔从容陪伴（若用户指定改为两人对视，则切换为3/4侧身温柔对望）
+      en: Hero frame follows the couple's natural head and body orientation from the reference photo by default for peak facial likeness while the bride lightly lifts her flowing veil with a bright smile and the groom holds the bouquet warmly beside her (or switches to 3/4 mutual gaze on request)
+    guardrail_focus:
+      zh: 3/4侧身姿态+推荐领型充分展露舒展肩颈线，杜绝呆板正拍大头感；新娘高颅顶发丝轻盈有空气感
+      en: 3/4 body turn and flattering neckline showcase natural shoulder-to-head proportions with airy high-crown bridal hair
+
+  - shot_index: 3
+    role:
+      zh: 动态奔跑或撩纱转圈抓拍
+      en: Dynamic Candid Running / Veil-Twirl Capture
+    framing:
+      zh: 中全景动态连拍构图，四周保留充足运动空间与飘动婚纱裙摆轨迹
+      en: Dynamic medium-wide candid capture with generous negative space accommodating trailing fabric and movement
+    angle:
+      zh: 轻微跟拍侧前方视角（35mm-50mm），高速快门清晰定格飞扬裙摆与自然笑容
+      en: Front-three-quarter tracking perspective (35mm-50mm) freezing lively skirt bloom and authentic movement
+    pose_guidance:
+      zh: 两人牵手轻快奔跑并回头开怀大笑，或新郎单手牵引新娘轻盈转圈、长头纱随惯性高高扬起
+      en: Couple jogging joyfully hand-in-hand looking back mid-laugh, or groom guiding bride through a breezy veil-sweeping twirl
+    guardrail_focus:
+      zh: 动态抓拍中保持真实五官不崩坏变形，高颅顶发根在风中依然蓬松饱满不贴头皮
+      en: Preserve exact recognizable facial likeness during joyful motion while keeping high-crown roots lifted in the wind
+
+  - shot_index: 4
+    role:
+      zh: 浪漫逆光侧颜轮廓
+      en: Romantic Backlit Side-Profile Portrait
+    framing:
+      zh: 中近景腰部以上双人侧颜构图，画面干净聚焦逆光金边轮廓与亲密情感张力
+      en: Waist-up medium close-up dual side-profile portrait highlighting glowing backlit silhouettes and tender intimacy
+    angle:
+      zh: 平视纯侧或3/4侧颜中长焦机位（85mm f/1.8），背景奶油般柔美散景虚化
+      en: Eye-level side or 3/4 profile on 85mm f/1.8 telephoto prime with creamy background bokeh
+    pose_guidance:
+      zh: 两人额头轻抵闭目微笑，或新郎轻吻新娘额角、新娘微扬侧脸，阳光穿过发丝与刺绣头纱勾勒出温暖金边
+      en: Foreheads gently touching with eyes closed or groom kissing bride's forehead while sunlight illuminates translucent veil and lifted hair crown
+    guardrail_focus:
+      zh: 重点突出新娘饱满高颅顶与立体后脑勺弧度、清晰自然下颌线以及面颈锁骨无缝光影衔接
+      en: Emphasize voluminous high-crown bridal silhouette, natural jawline-to-neck transition, and harmonious couple head scale
+
+  - shot_index: 5
+    role:
+      zh: 亲密半身近景情感互动
+      en: Intimate Waist-Up Emotional Close-Up
+    framing:
+      zh: 亲密半身近景（胸上至腰间），高清晰度呈现两人真实幸福微表情、眼神光与自然互动
+      en: Intimate chest-to-waist portrait capturing crisp eye catchlights, genuine micro-expressions, and warm couple chemistry
+    angle:
+      zh: 微微偏侧的人像中长焦平视机位（85mm f/1.8），彻底消除近拍广角畸变
+      en: Subtle off-axis 85mm f/1.8 portrait perspective eliminating any wide-angle facial distortion
+    pose_guidance:
+      zh: 新郎温柔抬手轻拂新娘耳畔碎发或双手环抱新娘腰肩，两人近距离微笑对视，新娘轻握捧花置于胸前下方
+      en: Groom tenderly tucks a loose strand behind the bride's ear or embraces her warmly as they share an affectionate smile, bouquet held gracefully below chest height
+    guardrail_focus:
+      zh: 真人参考图五官辨识度最高检验点：确保头肩比舒展、脖颈粗细真实、面颈锁骨肤色纹理与受光高度统一
+      en: "Peak facial likeness showcase: verify balanced head-to-shoulder frame, authentic neck width, and zero skin-tone seam between face, neck, and shoulders"
+
+  - shot_index: 6
+    role:
+      zh: 新娘单人高定高光视角
+      en: Bride Solo Couture Hero Portrait
+    framing:
+      zh: 新娘单人中景至七分身竖构图，突出婚纱重工蕾丝/缎面质感、高颅顶妆造与飘逸头纱层次
+      en: Solo vertical three-quarter or medium portrait celebrating bridal couture fabric, luminous makeup, high-crown hair, and veil flow
+    angle:
+      zh: 略低微仰5-10度的优雅人像中长焦机位（85mm f/1.8），凸显挺拔优雅气质与绝佳头身比
+      en: Gently elevated-presence 85mm f/1.8 portrait angle (slightly below eye level by 5-10 degrees) accentuating graceful stature
+    pose_guidance:
+      zh: 新娘单手轻持捧花、另一手轻搭头纱边缘，身体微侧45度回眸浅笑望向镜头或逆光微垂眼帘，新郎可完全出画或在远景奶油虚化中温柔守护
+      en: Bride turns 45 degrees holding the bouquet gracefully while brushing the veil edge, looking softly toward camera or sunlit horizon; groom out of frame or softly blurred in distance
+    guardrail_focus:
+      zh: 全方位展示高颅顶头包脸美学、自然舒展肩颈与锁骨光影、以及与整套图完全一致的礼服蕾丝与捧花细节
+      en: Hero showcase of voluminous high-crown hair framing, anatomically natural neck/shoulders, and locked dress/bouquet continuity
+
+  - shot_index: 7
+    role:
+      zh: 戏剧化低角度仰拍或高角度俯拍
+      en: Dramatic Low-Angle Heroic or High-Angle Poetic Shot
+    framing:
+      zh: 全身或大半身视觉张力构图——二选一：低角度仰拍将情侣与壮丽天空/建筑穹顶融为史诗画卷，或高角度俯拍展现大拖尾婚纱裙摆如花瓣绽放
+      en: High-impact compositional shift—either low-angle looking upward placing the couple against soaring sky/architecture, or elevated high-angle showcasing the full sweeping bridal train
+    angle:
+      zh: 明确区别于前6张平视机位的戏剧化机位高度（低角度仰拍35mm，或高角度俯拍50mm）
+      en: Distinct non-eye-level elevation contrasting Shots 1-6 (heroic low-angle 35mm or poetic high-angle 50mm)
+    pose_guidance:
+      zh: 低角度时新郎轻拥新娘微仰望向晨光/飞扬头纱划过天幕；高角度时两人仰头相视大笑或坐卧于草坡/石阶任裙摆呈扇形铺展
+      en: For low-angle, couple embraces as veil sweeps across the sky; for high-angle, couple gazes upward smiling amidst a fanned-out gown train
+    guardrail_focus:
+      zh: 控制仰拍/俯拍透视幅度，确保头身比例自然优美而不出现极端透视变形
+      en: Keep perspective tilt tasteful and optically disciplined so head-to-body proportions remain natural and flattering
+
+  - shot_index: 8
+    role:
+      zh: 透过头纱或牵手捧花氛围特写收尾
+      en: Closing Atmospheric Veil / Intertwined Hands & Bouquet Detail
+    framing:
+      zh: 富有电影尾声诗意的近景/氛围特写，前景为半透刺绣头纱柔焦纱幔，视觉落点在十指紧扣的婚戒双手、手捧花或纱后朦胧幸福笑颜
+      en: Poetic closing close-up framed through a sheer embroidered veil foreground, focusing on intertwined hands with rings and bouquet or soft glowing smiles behind the tulle
+    angle:
+      zh: 85mm f/1.8 浅景深微观叙事视角，前景薄纱与背景天光交融出梦幻层次
+      en: Shallow depth-of-field 85mm f/1.8 poetic detail angle blending sheer veil foreground with glowing warm backdrop
+    pose_guidance:
+      zh: 两人十指相扣轻托捧花，或共同藏于随风轻扬的半透头纱之后温柔对望微笑，为整套8图画上余韵悠长的电影句号
+      en: Intertwined hands resting beside the rose bouquet, or couple smiling softly beneath the floating sheer veil for a lingering cinematic finale
+    guardrail_focus:
+      zh: 严格校验捧花花材数量、头纱刺绣花纹、婚纱袖口/裙摆细节与全套色温颗粒感100%呼应前7张
+      en: Strictly verify bouquet floral composition, veil lace embroidery, sleeve/fabric trim, and film color grade match Shots 1-7 seamlessly

@@ -1,0 +1,167 @@
+# Shot Matrix: 8-Angle Narrative Timeline & Visual Echo Matrix
+# Designed for story-driven packs such as "From Campus to Marriage", "Road Trip", or multi-era couple stories.
+# Incorporates quantitative diversity quotas and pose-family semantic deduplication.
+
+id: story-timeline-8
+name:
+  zh: 8角度时间线叙事与跨时空呼应分镜矩阵
+  en: 8-Angle Story Timeline & Visual Echo Shot Matrix
+version: "1.0.0"
+shot_count: 8
+recommended_batches:
+  - batch_index: 1
+    shots: [1, 2, 3, 4]
+    note: 序章与回忆过渡（青春起点、日常默契、人生过渡节点、求婚/承诺瞬间）
+  - batch_index: 2
+    shots: [5, 6, 7, 8]
+    note: 当下婚礼回响（同机位跨时空呼应、新娘高定高光、动态仪式退场、婚戒时光收尾特写）
+
+diversity_quotas:
+  adjacent_frame_min_diff_fields: 4
+  max_direct_camera_gaze: 2
+  max_formal_side_by_side_standing: 2
+  min_distinct_actions: 5
+  min_expression_gaze_patterns: 4
+  min_camera_heights: 3
+  pose_family_semantic_dedupe: true
+
+anti_repetition_rule:
+  zh: 8张成片按“序章回忆 → 过渡节点 → 婚礼跨时空呼应 → 细节尾声”推进；相邻镜头至少4项分镜维度不同，直视镜头≤2张、并排站立≤2张，禁止换道具不换承重结构的伪变化；人物保持自然成年年龄感、面部一致性、头肩比协调与高颅顶统一。
+  en: Progresses from memory prologue to life transition, paired present-day wedding echo, and closing detail; adjacent frames must differ in at least 4 directing columns with max 2 direct-to-camera frames, max 2 side-by-side standing poses, strict pose-family dedupe, and locked facial likeness + proportion + high-crown guardrails.
+
+shots:
+  - shot_index: 1
+    role:
+      zh: 序章·青春/旅途起点的环境全景
+      en: Prologue Establishing Wide Shot
+    framing:
+      zh: 环境全景全身构图，以林荫道、校园拱门或公路起点交代故事最初发生的空间
+      en: Environmental wide shot establishing the opening memory setting (campus lane, doorway, or open road start)
+    angle:
+      zh: 35mm 自然平视人文视角，建筑/树荫形成自然纵深引导线
+      en: Eye-level 35mm documentary perspective with strong leading lines
+    pose_guidance:
+      zh: 两人穿着前期回忆/旅途装束并肩缓行或轻快交谈，其中一人侧头倾听微笑，不直视镜头
+      en: Couple walking side by side in prologue attire mid-conversation, one listening with a warm candid smile (off-camera gaze)
+    guardrail_focus:
+      zh: 确立真实成年人年龄感、自然身高差与头身比，确立后续第5帧跨时空呼应的构图坐标
+      en: Establishes consistent adult age, natural couple scale, and the compositional anchor echoed in Shot 5
+
+  - shot_index: 2
+    role:
+      zh: 共同日常·静谧坐姿默契中景
+      en: Shared Everyday Activity Medium Shot
+    framing:
+      zh: 窗口/桌边或车内坐姿中景，呈现两人专注投入同一件小事的亲密日常（共读一本书、看地图、泡茶）
+      en: Seated medium frame at a sunlit window desk, cafe table, or parked car interior capturing an absorbed shared task
+    angle:
+      zh: 50mm 微微偏侧观察机位，柔和窗光侧逆勾勒侧脸与发丝
+      en: 50mm off-axis observational angle bathed in soft side-window daylight
+    pose_guidance:
+      zh: 两人肩并肩微倾靠拢，一人指着书页/地图低语调侃，另一人忍不住露出真实浅笑（仅写肩线/躯干/手部2-4力学点）
+      en: Seated close leaning inward as one points to a book/map whispering a joke and the other reacts with an unguarded smile
+    guardrail_focus:
+      zh: 坐姿保持自然肩宽与舒展颈部线条，避免驼背耸肩压缩脖颈；高颅顶蓬松发根清晰自然
+      en: Relaxed upright shoulder geometry preserves neck length and natural head-to-shoulder proportion; lifted high-crown hair
+
+  - shot_index: 3
+    role:
+      zh: 时光过渡·动态奔跑或转场抓拍
+      en: Narrative Transition Dynamic Motion Shot
+    framing:
+      zh: 中全景动态跟拍，展现告别过往迈向新阶段的青春活力（操场/林荫小跑、搬家纸箱嬉笑或公路风中转圈）
+      en: Dynamic medium-wide tracking shot capturing forward momentum and joyful transition between life chapters
+    angle:
+      zh: 35mm 略低微跟拍动态视角，高速快门定格发丝与衣角飞扬
+      en: Slightly low 35mm tracking perspective freezing lively motion and authentic laughter
+    pose_guidance:
+      zh: 一人牵着另一人的手向前快步奔跑，被牵着的一方回眸开怀大笑，动作由奔跑惯性自然带动
+      en: One partner leads the other by the hand jogging forward while the trailing partner looks back mid-laugh
+    guardrail_focus:
+      zh: 动态大笑时严格维持真人五官骨相与清晰可读人脸（Face Readability Gate），绝不因运动模糊丢脸
+      en: Keep exact facial likeness crisp and readable mid-laugh (Face Readability Gate) with natural motion proportions
+
+  - shot_index: 4
+    role:
+      zh: 情感转折·求婚/承诺时刻近景反应
+      en: Emotional Turning Point Reaction Close-Up
+    framing:
+      zh: 亲密胸上至腰间半身近景，捕捉惊喜、感动或静静相拥的真实反应微表情
+      en: Intimate chest-up close-up capturing authentic surprise, tender emotion, or quiet forehead-to-forehead commitment
+    angle:
+      zh: 85mm f/1.8 浅景深人像中长焦，背景奶油虚化聚焦眼神光
+      en: 85mm f/1.8 shallow depth-of-field portrait compression eliminating wide-angle distortion
+    pose_guidance:
+      zh: 新郎轻捧戒指盒或轻抚新娘脸颊低声表白，新娘含笑眼波微动、抬手轻覆对方手背
+      en: Groom opens a ring box or cups bride's cheek gently as she reacts with a luminous emotional smile and rests her hand over his
+    guardrail_focus:
+      zh: 85mm 近景重点核验真实五官、面颈锁骨肩臂整体匀净白皙衔接及自然真实肤质微纹理
+      en: Verify seamless unified luminous skin tone across face, jawline, neck, and shoulders with natural micro-texture
+
+  - shot_index: 5
+    role:
+      zh: 跨时空呼应·换上婚纱西装的经典对仗帧
+      en: Present-Day Wedding Visual Echo Shot
+    framing:
+      zh: 与第1帧（或第2帧）呼应的三分法中全景构图，同一林荫轴线/相似空间韵律下，两人已换上正式婚纱与高定西装
+      en: Rule-of-thirds medium-full frame echoing the visual rhythm of Shot 1, now transformed into full bridal gown and tailored suit
+    angle:
+      zh: 50mm 平视经典构图，光线由清亮日光升华为温暖金色仪式逆光
+      en: Eye-level 50mm classic perspective bathed in warm ceremonial golden-hour light
+    pose_guidance:
+      zh: 新娘微侧3/4身姿手执手捧花并轻撩随风飘动的长头纱，新郎温柔注视新娘并轻挽其腰际，形成时光定格仪式感
+      en: Bride in a 3/4 stance holding the bridal bouquet and lifting her floating veil while groom gazes warmly at her in formal ceremonial attire
+    guardrail_focus:
+      zh: 服装切换后锁定本组所有婚礼镜（5-8帧）的婚纱蕾丝、头纱刺绣、捧花花材与新郎礼服完全一致
+      en: Establishes the locked bridal dress, veil embroidery, bouquet composition, and groom suit continuity for Shots 5-8
+
+  - shot_index: 6
+    role:
+      zh: 新娘单人高光·盛装时刻封面视角
+      en: Bride Solo Ceremonial Hero Portrait
+    framing:
+      zh: 新娘单人七分身或半身竖构图，全方位呈现婚纱领型、高颅顶新娘妆发与逆光通透头纱
+      en: Vertical three-quarter or waist-up solo bridal portrait celebrating couture neckline, luminous veil, and high-crown styling
+    angle:
+      zh: 85mm f/1.8 略低微仰5-10度人像机位，凸显优雅挺拔仪态
+      en: Gently low-angle 85mm f/1.8 portrait perspective elevating graceful bridal stature
+    pose_guidance:
+      zh: 新娘身体微转45度轻握捧花置于胸前下方，另一手轻触飘动头纱边缘，从容回眸展露柔和坚定微笑
+      en: Bride turned 45 degrees holding the bouquet gracefully below chest level, fingertips brushing the veil edge with a serene radiant smile
+    guardrail_focus:
+      zh: 展示饱满高颅顶头包脸轮廓、舒展肩颈比例与统一清透白皙的面颈肩光影过渡
+      en: Hero verification of voluminous high-crown hair, flattering shoulder-to-head proportions, and unified luminous skin finish
+
+  - shot_index: 7
+    role:
+      zh: 仪式高潮·高位俯拍或低位仰拍欢庆退场
+      en: Celebratory Climax High-Angle or Low-Angle Shot
+    framing:
+      zh: 显著区别于平视机位的戏剧化角度：低角度仰拍两人牵手欢笑步出花门/拱廊，或高位俯拍大裙摆呈花瓣铺展
+      en: "Distinct non-eye-level dramatic angle: heroic low-angle celebratory exit with tossing petals/veil sweep, or poetic overhead frame of the fanned gown"
+    angle:
+      zh: 明显机位高度变化（低角度仰拍35mm或高角度俯拍50mm），拉满电影情绪高潮
+      en: Contrasting low-angle 35mm or elevated overhead 50mm perspective creating cinematic climax
+    pose_guidance:
+      zh: 两人牵手大步欢笑向前或仰头相视大笑，长头纱与裙摆在温暖金光中彻底舒展扬起
+      en: Couple striding joyfully hand-in-hand or looking upward laughing amidst billowing veil and sunlit motion
+    guardrail_focus:
+      zh: 控制广角透视幅度避免头身失真，保持两人面部辨识度清晰自然
+      en: Disciplined perspective geometry preserving balanced body proportions and clear facial readability
+
+  - shot_index: 8
+    role:
+      zh: 时光尾声·透过头纱与婚戒捧花的氛围特写
+      en: Closing Timeline Detail (Rings, Hands & Translucent Veil)
+    framing:
+      zh: 电影尾声诗意微观特写，聚焦戴着婚戒紧扣的双手、手捧花（或一枚呼应序章的小信物）与柔焦半透刺绣头纱前景
+      en: Poetic closing close-up framed through sheer embroidered veil foreground, focusing on ringed intertwined hands, bouquet, and subtle prologue keepsake
+    angle:
+      zh: 85mm f/1.8 极浅景深特写机位，背景暖金散景隐约映出两人甜蜜相依剪影
+      en: Shallow depth-of-field 85mm f/1.8 detail angle melting warm golden backdrop and couple silhouettes into creamy bokeh
+    pose_guidance:
+      zh: 两人十指紧扣轻靠捧花，新娘无名指婚戒在逆光下泛起柔和微光，为整段时光故事温柔落幕
+      en: Intertwined hands resting gently beside the bouquet as wedding bands catch soft golden rim light for a lingering finale
+    guardrail_focus:
+      zh: 核验婚戒、袖口蕾丝、头纱刺绣、捧花花材与5500K-5600K胶片影调和第5-7帧100%统一
+      en: Verify rings, lace trim, veil embroidery, bouquet blooms, and warm filmic grade match Shots 5-7 identically

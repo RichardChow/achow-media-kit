@@ -1,0 +1,14 @@
+# macOS / Windows OS metadata
+.DS_Store
+Thumbs.db
+
+# Python caches & virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Generated photo outputs
+outputs/

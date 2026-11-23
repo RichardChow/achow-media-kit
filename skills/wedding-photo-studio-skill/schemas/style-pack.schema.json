@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WeddingStylePack",
+  "description": "Standard interface for pluggable wedding photography style packs, supporting both native packs and adapted packs merged from external repositories.",
+  "type": "object",
+  "required": ["id", "name", "version", "source", "defaults", "prompt_modifiers"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique lowercase hyphenated pack identifier."
+    },
+    "name": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "version": { "type": "string" },
+    "source": {
+      "type": "object",
+      "description": "Provenance metadata for tracking original or merged external inspirations.",
+      "required": ["origin"],
+      "properties": {
+        "origin": { "type": "string", "enum": ["native", "adapted-external"] },
+        "reference_url": { "type": "string" },
+        "license_note": { "type": "string" }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "defaults": {
+      "type": "object",
+      "required": ["location", "bride", "groom", "props", "mood", "camera", "shot_matrix"],
+      "properties": {
+        "location": {
+          "type": "object",
+          "required": ["venue", "atmosphere", "foreground"],
+          "properties": {
+            "category": { "type": "string" },
+            "venue": { "type": "string" },
+            "atmosphere": { "type": "string" },
+            "foreground": { "type": "string" }
+          }
+        },
+        "bride": {
+          "type": "object",
+          "required": ["dress", "hairstyle", "makeup", "veil_or_accessories"],
+          "properties": {
+            "dress": { "type": "string" },
+            "neckline_hint": { "type": "string" },
+            "hairstyle": { "type": "string" },
+            "makeup": { "type": "string" },
+            "veil_or_accessories": { "type": "string" }
+          }
+        },
+        "groom": {
+          "type": "object",
+          "required": ["outfit", "hairstyle_virtual", "hairstyle_reference_mode"],
+          "properties": {
+            "outfit": { "type": "string" },
+            "hairstyle_virtual": { "type": "string" },
+            "hairstyle_reference_mode": { "type": "string" }
+          }
+        },
+        "props": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "mood": {
+          "type": "object",
+          "required": ["tone", "signature_poses"],
+          "properties": {
+            "tone": { "type": "string" },
+            "signature_poses": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "camera": {
+          "type": "object",
+          "required": ["body_and_lens", "lighting", "color_temperature", "film_texture", "aspect_ratio"],
+          "properties": {
+            "body_and_lens": { "type": "string" },
+            "lighting": { "type": "string" },
+            "color_temperature": { "type": "string" },
+            "film_texture": { "type": "string" },
+            "aspect_ratio": { "type": "string" }
+          }
+        },
+        "shot_matrix": {
+          "type": "string",
+          "description": "Relative path to a matrix file in matrices/, e.g. matrices/8-angle-cinematic.yaml"
+        }
+      }
+    },
+    "guardrail_overrides": {
+      "type": "object",
+      "description": "Optional fine-tuning flags; core proportion & high-crown guardrails remain enabled by default.",
+      "properties": {
+        "enforce_high_crown": { "type": "boolean", "default": true },
+        "enforce_proportion_blending": { "type": "boolean", "default": true }
+      }
+    },
+    "prompt_modifiers": {
+      "type": "object",
+      "required": ["zh_style_keywords", "en_style_keywords", "negative_hints"],
+      "properties": {
+        "zh_style_keywords": { "type": "string" },
+        "en_style_keywords": { "type": "string" },
+        "negative_hints": { "type": "string" }
+      }
+    }
+  }
+}

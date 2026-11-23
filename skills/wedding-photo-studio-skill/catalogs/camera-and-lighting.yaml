@@ -1,0 +1,140 @@
+# Atomic Catalog: Camera Optics, Lighting Atmospheres, Film Textures & Aspect Ratios
+# Referenced by SKILL.md Phase 2 (Module 5) and adapters.
+
+version: "1.0.0"
+
+lighting_presets:
+  - id: sunrise-golden-backlight
+    name:
+      zh: 日出黄金逆光（日照金山）
+      en: Sunrise Golden Rim Backlight
+    color_temperature: 5500K 暖金晨光色调
+    prompt_zh: 日出黄金时段柔和低角度逆光，温暖金色轮廓光勾勒情侣发丝、头纱边缘与肩线，面部补光柔和通透、阴影干净不生硬
+    prompt_en: soft low-angle golden sunrise backlight creating luminous warm rim light along hair strands, flowing veil edges, and shoulders with gentle natural fill on faces
+  - id: sunset-orange-sea
+    name:
+      zh: 日落橘子海暖阳
+      en: Sunset Tangerine-Gold Glow
+    color_temperature: 5800K-6200K 暖橙落日色调
+    prompt_zh: 黄昏落日暖橙金色斜射光，温柔包裹肌肤与婚纱薄纱，天空呈现橘粉渐变晚霞与柔和长影
+    prompt_en: rich amber-tangerine late sunset side-backlight bathing skin and tulle in warm glow beneath pastel orange-pink skies
+  - id: blue-hour-twilight
+    name:
+      zh: 蓝调时刻微光氛围
+      en: Blue Hour Ethereal Twilight
+    color_temperature: 4200K-4600K 冷暖对比电影调
+    prompt_zh: 日落后静谧深邃的宝蓝天幕，搭配柔和暖黄环境微光或精致补光勾勒人物，营造浪漫电影忧郁质感
+    prompt_en: deep serene sapphire blue-hour twilight sky balanced with gentle warm ambient key light on the couple for poetic cinematic contrast
+  - id: forest-tyndall-dappled
+    name:
+      zh: 树影丁达尔体积光
+      en: Forest Tyndall Volumetric Sunlight
+    color_temperature: 5200K 自然清新暖日光
+    prompt_zh: 穿透林间树叶与薄雾的柔和丁达尔光束，细碎光斑轻落裙摆与草地，主体面部受光均匀通透
+    prompt_en: volumetric Tyndall sunbeams piercing woodland canopy mist with delicate dappled light across gown and meadow while keeping facial illumination clean and even
+  - id: studio-butterfly-softbox
+    name:
+      zh: 棚拍高定蝴蝶柔光
+      en: Couture Studio Butterfly Softbox Light
+    color_temperature: 5400K 精准纯净日光棚拍色温
+    prompt_zh: 高定影棚大型柔光箱蝴蝶光与柔和轮廓辅光，皮肤质感细腻真实、锁骨与面部立体感优雅自然、无过曝死白
+    prompt_en: luxury editorial studio butterfly softbox key light with gentle rim separation, preserving authentic skin micro-texture and graceful sculpted collarbone shadows
+  - id: direct-on-camera-film-flash
+    name:
+      zh: 胶片机顶直闪纪实
+      en: Direct On-Camera Editorial Film Flash
+    color_temperature: 5000K-5300K 胶片复古混合色温
+    prompt_zh: 复古胶片机顶直闪打造明快人物主体与微微压暗的街景或夜景背景，边缘带自然直闪高光与随性抓拍张力
+    prompt_en: crisp vintage direct on-camera flash illuminating the couple vividly against a softly darkened urban or night backdrop with authentic candid snap energy
+
+focal_lengths:
+  - id: lens-85mm
+    focal_length: "85mm f/1.4 - f/1.8"
+    name:
+      zh: 85mm 人像中长焦定焦（头肩比最友好）
+      en: 85mm Portrait Telephoto Prime (Most Proportion-Flattering)
+    best_for: 半身近景、侧颜特写、单人高光、双人亲密互动
+    proportion_note: 自然中长焦压缩感彻底避免广角透视放大头部的问题，极大提升真人参考图头肩比自然度（主力推荐）
+    prompt_en: shot on 85mm f/1.8 prime lens, natural portrait optical compression, razor-sharp eyes, creamy bokeh falloff
+  - id: lens-50mm
+    focal_length: "50mm f/1.4 - f/2.0"
+    name:
+      zh: 50mm 人文标准定焦
+      en: 50mm Classic Natural Standard Prime
+    best_for: 三分法中全景、自然生活流双人互动、棚拍全身
+    proportion_note: 最接近人眼真实透视，兼顾人物头身比例真实感与适度环境叙事
+    prompt_en: shot on 50mm f/1.8 prime lens, authentic human-eye perspective, balanced subject-to-environment framing
+  - id: lens-35mm
+    focal_length: "35mm f/1.8 - f/2.8"
+    name:
+      zh: 35mm 电影纪实人文广角
+      en: 35mm Cinematic Environmental Storytelling Lens
+    best_for: 电影感环境全身、动态奔跑抓拍、街头咖啡馆与建筑长廊
+    proportion_note: 适合中全景至远景（保持人物处于画面中远景而非贴脸近拍，避免边缘广角畸变）
+    prompt_en: shot on 35mm f/2.0 cinema prime, immersive environmental storytelling depth, clean optical geometry without edge distortion
+  - id: lens-24mm
+    focal_length: "24mm f/2.8 - f/4.0"
+    name:
+      zh: 24mm 史诗风光广角
+      en: 24mm Epic Landscape Establishing Lens
+    best_for: 史诗大远景（人物占画面较小比例）、宏大雪山/海岸/古堡开篇定调
+    proportion_note: 仅用于大远景环境确立镜头，切勿用于近距离人像半身拍
+    prompt_en: shot on 24mm f/2.8 wide-angle landscape lens, monumental architectural and natural scale with crisp horizon clarity
+  - id: lens-70-200mm
+    focal_length: "70-200mm f/2.8"
+    name:
+      zh: 70-200mm 长焦空间压缩镜头
+      en: 70-200mm Telephoto Spatial Compression Lens
+    best_for: 雪山拉近压缩感、海浪前景虚化、远距离自然无打扰抓拍
+    proportion_note: 强烈空间压缩将远方雪山或建筑宏伟拉近，同时让人物头身比显得高挑修长
+    prompt_en: shot on 70-200mm f/2.8 telephoto lens at 135mm, dramatic spatial compression bringing distant mountains closer behind the couple
+
+film_textures:
+  - id: kodak-portra-400
+    name:
+      zh: Kodak Portra 400 温暖胶片感（默认）
+      en: Kodak Portra 400 Warm Filmic Tone (Default)
+    prompt_zh: 8K超高清细节，细腻35mm Kodak Portra 400 胶片颗粒质感，肤色温润通透、高光柔和过渡、背景奶油散景虚化
+    prompt_en: 8K ultra-detailed photography, fine organic 35mm Kodak Portra 400 film grain, luminous true-to-life skin tones, gentle highlight roll-off, creamy natural bokeh
+  - id: fujifilm-pro-400h
+    name:
+      zh: Fujifilm Pro 400H 清新日系青绿调
+      en: Fujifilm Pro 400H Airy Pastel Tone
+    prompt_zh: 富士 Pro 400H 清新通透胶片影调，柔和青绿暗部与洁净白纱高光，微风轻盈日系电影感
+    prompt_en: Fujifilm Pro 400H airy pastel film emulation, delicate cool-green shadow undertones, luminous crisp wedding whites, fine film grain
+  - id: cinestill-800t
+    name:
+      zh: Cinestill 800T 港风夜景电影卷
+      en: Cinestill 800T Cinematic Night Tungsten Film
+    prompt_zh: Cinestill 800T 电影夜拍胶片质感，高光灯牌带细微柔美红色光晕，暗部浓郁胶片颗粒
+    prompt_en: Cinestill 800T tungsten motion-picture film texture, subtle warm halation around night highlights, rich cinematic shadow grain
+  - id: hasselblad-medium-format-clean
+    name:
+      zh: 哈苏中画幅高定纯净质感
+      en: Hasselblad Medium-Format Couture Clarity
+    prompt_zh: 哈苏中画幅相机级超凡动态范围与精准色彩科学，蕾丝刺绣与发丝丝丝分明、质感克制高级无多余滤镜感
+    prompt_en: Hasselblad X2D medium-format optical clarity, extraordinary dynamic range, razor-crisp embroidery and hair detail, refined luxury color science
+  - id: ilford-hp5-editorial-bw
+    name:
+      zh: 经典纪实高反差黑白胶片（Ilford HP5）
+      en: Classic Editorial Black & White Film (Ilford HP5)
+    prompt_zh: 经典 Ilford HP5 黑白银盐胶片质感，细腻层次灰阶与优雅电影颗粒，纯粹聚焦人物情绪与光影雕塑感
+    prompt_en: timeless Ilford HP5 monochrome silver-gelatin film texture, rich tonal gradation, tactile fine grain focusing purely on emotion and light
+
+aspect_ratios:
+  - id: "3:4"
+    label: "3:4 竖版人像（默认推荐）"
+    use_case: 最适合独立单图输出、手机全屏浏览、小红书/微信朋友圈晒图与实体婚纱相册排版，真人脸部清晰且头身比舒展
+    recommended_default: true
+  - id: "2:3"
+    label: "2:3 经典全画幅竖版"
+    use_case: 经典35mm单反原生竖构图，适合大拖尾主纱全身照与传统实体相框洗印
+    recommended_default: false
+  - id: "9:16"
+    label: "9:16 全屏竖版海报/壁纸"
+    use_case: 手机锁屏壁纸、电子请柬开屏与短视频动态封面
+    recommended_default: false
+  - id: "16:9"
+    label: "16:9 宽银幕电影剧照"
+    use_case: 横版电脑壁纸、婚礼现场大屏暖场轮播与双人史诗大远景电影剧照
+    recommended_default: false
