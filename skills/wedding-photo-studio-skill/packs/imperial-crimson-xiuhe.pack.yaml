@@ -1,0 +1,58 @@
+id: imperial-crimson-xiuhe
+name:
+  zh: 故宫红墙正红秀禾礼服婚纱照
+  en: Imperial Crimson Walls & Classic Gold Xiuhe Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for traditional Chinese Xiuhe bridal photography"
+tags:
+  - outdoor
+  - chinese-heritage
+  - xiuhe
+  - crimson-walls
+  - ceremonial
+  - 8-angle
+
+defaults:
+  location:
+    category: chinese-gardens-and-heritage
+    venue: 故宫风格朱红宫墙、金色铜钉朱漆大门、琉璃飞檐与青石板古建长巷 (Imperial Crimson Palace Walls, Gilded Timber Gates & Flagstone Courtyard)
+    atmosphere: 大气端庄、喜庆庄重的传统东方宫廷婚嫁画卷，午后暖阳在朱红宫墙上投下斑驳树影与深邃建筑纵深
+    foreground: 朱漆雕花木柱、青石台阶、摇曳海棠枝叶与宫门对称画框透视
+  bride:
+    dress: 正红色真丝重工盘金绣龙凤花鸟秀禾服，挺括立体宽云肩与温润马面百褶长裙
+    neckline_hint: 微低中式立领搭配横向舒展的立体云肩，自然修饰头肩比例且不显脖短、不把上身撑壮
+    hairstyle: 端庄中式顺滑饱满高颅顶盘发，圆润发顶稳妥托起鎏金步摇与珍珠发簪，耳侧保留洁净微弧度鬓角修饰脸型（自动锁定顺滑高颅顶）
+    makeup: 端庄大气中式新娘清透白皙妆，面颈锁骨与耳颈色调高度同步统一，细腻珠光眼妆与温润正红/朱砂红唇
+    veil_or_accessories: 非遗质感鎏金珍珠发簪、轻盈步摇流苏与精致双面苏绣真丝团扇
+  groom:
+    outfit: 墨黑或玄青色重工暗纹盘金绣新中式立领长袍马褂（或中式礼服中山装），与新娘正红秀禾服庄重呼应
+    hairstyle_virtual: 清爽利落绅士短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 手工苏绣真丝团扇（半遮微笑或轻执身前）
+    - 传统正红真丝喜字长绸带与红果海棠古典捧花
+  mood:
+    tone: 端庄喜庆、含蓄深情、礼成之日的东方盛典气韵
+    signature_poses:
+      - 主镜头默认按参考图自然朝向立于朱红宫墙前，新娘轻执团扇展露端庄灿烂笑意，新郎沉稳牵手或轻护身侧
+      - 两人共执正红丝绸长带漫步宫墙长巷，红绸随风划出舒展弧线
+      - 宫门光影下新娘以团扇微掩半颊含笑望向新郎，或青石阶前执手相看
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深聚焦人物与刺绣工艺（红墙长巷大远景切换 35mm/50mm）
+    lighting: 午后 4 点温暖斜射自然日光，红墙暖反光与柔和面光平衡，确保面颈肤色清透白皙不被红墙映红发脏
+    color_temperature: 5500K 端庄浓郁东方胶片暖调，红金质感高贵不刺眼
+    film_texture: 细腻 35mm Kodak Portra 400 胶片质感，金丝刺绣针脚与真丝光泽纤毫毕现，自然皮肤微纹理
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "故宫红墙青石板、正红重工盘金绣秀禾服、苏绣团扇与正红丝绸、顺滑饱满高颅顶中式盘发、正面0瘦脸保真脸型、原生肩颈比例、面颈清透白皙不受红墙偏色干扰"
+  en_style_keywords: "Imperial crimson palace walls and stone courtyard, authentic crimson and gold-thread embroidered Chinese Xiuhe bridal gown, embroidered silk round fan, tailored ink-black Chinese ceremonial suit, exact facial geometry zero slimming, sleek voluminous high-crown Oriental updo, clean luminous fair skin uncontaminated by red color cast"
+  negative_hints: "red color cast on faces, cheap costume polyester fabric, historical era mismatch, automatic face slimming, thick bulky shoulders, flat scalp beneath hairpins, frizzy flyaways, leftover reference everyday items"

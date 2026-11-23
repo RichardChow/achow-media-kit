@@ -1,0 +1,58 @@
+id: editorial-noir-studio
+name:
+  zh: 高级黑灰情绪杂志影棚婚纱照
+  en: High-Fashion Editorial Charcoal-Noir Studio Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for Vogue-style moody monochrome and dark-editorial bridal portraits"
+tags:
+  - indoor
+  - studio
+  - editorial-noir
+  - vogue-chic
+  - rembrandt-light
+  - 4-angle-or-8-angle
+
+defaults:
+  location:
+    category: minimalist-indoor-studios
+    venue: 手工肌理深灰炭黑画布背景与极简建筑线条高定杂志影棚 (Hand-Painted Textured Charcoal-Grey & Matte Noir High-Fashion Editorial Studio)
+    atmosphere: 克制高级、雕塑感强烈的 Vogue 时装杂志大片氛围，深邃暗调背景令纯白高定婚纱与人物眼神极具穿透力
+    foreground: 极简哑光深色地面微弱光影落差、简约中古黑木椅与干净建筑留白
+  bride:
+    dress: 象牙白极简斜裁真丝缎面鱼尾婚纱或雕塑感抹胸缎面礼服，利落高定剪裁与高级珠光光泽
+    neckline_hint: 利落抹胸或法式方领展露修长锁骨与清晰肩颈线条，结合精致轮廓光显优雅挺拔而不显壮
+    hairstyle: 摩登高定顺滑高颅顶后梳波浪或利落法式低盘发，发顶立体饱满、发丝顺滑极具光泽感（自动锁定顺滑高颅顶）
+    makeup: 清冷高级杂志感匀净白皙哑光缎面妆，面颈锁骨与肩臂整体同步匀亮且保留真实皮肤微纹理，精致立体眉眼与低饱和玫瑰裸杏唇
+    veil_or_accessories: 极简超透素纱长头纱或雕塑感珍珠耳饰，极少配饰凸显高级留白
+  groom:
+    outfit: 高级定制全黑双排扣或枪驳领丝绒/精纺羊毛礼服西装、挺括白衬衫（或全黑高定极简内搭），冷峻绅士杂志气场
+    hairstyle_virtual: 利落摩登微背头或干净偏分短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 极简纯白马蹄莲单品种建筑感手捧花（3-5枝干净线条）
+    - 极简深色复古木椅（用于高低坐姿杂志构图）
+  mood:
+    tone: 高级克制、从容自信、深情冷艳的时装杂志封面气质
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向，两人以松弛舒展的杂志大片站姿望向镜头，新娘轻搭头纱、新郎持极简白马蹄莲花束
+      - 一坐一站高低错落构图：新娘优雅落座中古木椅，新郎立于身侧轻扶椅背低眸凝望
+      - 伦勃朗光半身近景：两人肩背轻靠微侧对视，强明暗反差勾勒出高级电影情绪张力
+  camera:
+    body_and_lens: 哈苏中画幅 / Canon EOS R5 全画幅相机，85mm f/1.8 锐利人像定焦（全身杂志构图切换 50mm）
+    lighting: 精雕伦勃朗柔光箱主光 + 纤细发丝与肩线轮廓光，深灰背景形成自然渐晕，面部与颈肩光影过渡立体丝滑
+    color_temperature: 5300K 冷静高级微暖高光配深邃炭黑暗部（支持部分帧切换 Ilford HP5 经典黑白）
+    film_texture: 杂志封面级超凡质感叠加细微高级银盐颗粒，丝绸反光、发丝光泽与真实肤质清晰克制
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "高级黑灰肌理情绪影棚、Vogue高定杂志大片、伦勃朗雕光与轮廓光、极简真丝缎面鱼尾婚纱、白马蹄莲、正面0瘦脸保真脸型、原生优雅肩颈、顺滑高颅顶、面颈锁骨整体匀净白皙"
+  en_style_keywords: "high-fashion Vogue editorial bridal portrait in hand-painted charcoal noir studio, sculpted Rembrandt key light and delicate rim separation, minimalist ivory silk satin gown, architectural white calla lilies, exact facial geometry zero slimming, sleek voluminous high-crown hair, seamless luminous fair skin tone with natural shadows"
+  negative_hints: "muddy crushed black shadows losing suit detail, flat cheap flash, cluttered props, automatic face slimming or cheek narrowing, thick bulky shoulders, flat scalp hair, frizzy flyaways, neck skin tone seam"

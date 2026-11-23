@@ -16,6 +16,35 @@
       "type": "string",
       "description": "Optional unique identifier for the shooting session, e.g. wps-20261122-001."
     },
+    "workspace_theme_id": {
+      "type": "string",
+      "pattern": "^THEME-[0-9]{3,}$",
+      "description": "Optional isolated theme directory ID (e.g. THEME-001) when using local persistent multi-theme workspace via scripts/workspace_manager.py."
+    },
+    "participants": {
+      "type": "array",
+      "description": "Optional universal participant roster (P01, P02, P03...) used for solo, couple, family, or bridesmaid/groomsman wedding-party shoots (see workflows/multi-person-roster.md).",
+      "items": {
+        "type": "object",
+        "required": ["participant_id", "label", "role"],
+        "properties": {
+          "participant_id": { "type": "string", "pattern": "^P[0-9]{2}$" },
+          "label": { "type": "string" },
+          "role": { "type": "string" },
+          "gender": { "type": "string" },
+          "outfit": { "type": "string" },
+          "hairstyle": { "type": "string" },
+          "canonical_original_references": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "relationship_description": {
+      "type": "string",
+      "description": "Explicit interpersonal relationship and hierarchy description (required for 3+ person family/wedding-party shoots)."
+    },
     "input_mode": {
       "type": "object",
       "description": "Module 1: Subject source, canonical reference photos (couple + optional pet), and identity policy.",
@@ -256,6 +285,24 @@
           "type": "boolean",
           "default": false,
           "description": "Optional social media share card output (short title, hook, reusable prompt command, 4-7 hashtags)."
+        },
+        "aesthetic_tagline_id": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "dramatic-couture",
+            "airy-minimal-grace",
+            "candid-film-story",
+            "oriental-vintage-poetry",
+            "custom",
+            "none"
+          ],
+          "default": "auto",
+          "description": "Scene-matched photographic aesthetic tagline from catalogs/camera-and-lighting.yaml ('auto' selects the best-matching tagline for the active pack/scene)."
+        },
+        "custom_aesthetic_tagline": {
+          "type": "string",
+          "description": "Optional user-supplied custom photography tagline when aesthetic_tagline_id is 'custom'."
         },
         "batch_size": {
           "type": "integer",

@@ -13,7 +13,7 @@ Engineer × AI 工具 × 创作的自媒体制作工具箱：写稿、去 AI 味
 | 卡片 | [achow-journal-card](skills/achow-journal-card) | 手帐笔记风 3:4 卡：方格纸、胶带标签、彩色描边色块 | <img src="skills/achow-journal-card/examples/issue01.png" width="160"> |
 | 视频 | [achow-explainer-video](skills/achow-explainer-video) | 知识讲解类视频：模拟数据重建后台页面，3D 一镜到底逐项高亮讲解，卡通主讲人 + 配音字幕 + BGM 闪避音效，1080×1920 | <img src="skills/achow-explainer-video/examples/preview.jpg" width="160"> |
 | 封面/数据图 | [dark-tech-social-cards](skills/dark-tech-social-cards) | 5:2 封面 + A vs B 柱状对比卡，深色科技 / 亮色教程两套主题 | <img src="skills/dark-tech-social-cards/examples/dark-cover.png" width="200"> |
-| 摄影 | [wedding-photo-studio-skill](skills/wedding-photo-studio-skill) | 高定 AI 婚纱照编排：虚拟/真人参考图、9 套风格包（默认大理苍山）、多引擎适配与身份/比例护栏 | — |
+| 摄影 | [wedding-photo-studio-skill](skills/wedding-photo-studio-skill) | 高定 AI 婚纱照编排：虚拟/真人/多人参考图、19 套全品类风格包（默认大理苍山）、6 套换装板、三宫格精修、分场景美学口号、多引擎适配与 0 瘦脸身份/比例护栏 | — |
 
 ## 安装
 

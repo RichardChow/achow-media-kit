@@ -1,0 +1,58 @@
+id: iceland-black-sand-epic
+name:
+  zh: 冰岛黑沙滩极简史诗婚纱照
+  en: Iceland Reynisfjara Black Sand Minimalist Epic Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for dramatic Nordic black-sand coastline destination wedding photography"
+tags:
+  - outdoor
+  - iceland
+  - black-sand-beach
+  - basalt-columns
+  - minimalist-epic
+  - 8-angle
+
+defaults:
+  location:
+    category: international-destinations
+    venue: 冰岛维克雷尼斯黑沙滩、几何六边形玄武岩柱崖壁、北大西洋白色翻涌海浪与缥缈北欧海雾 (Reynisfjara Jet-Black Volcanic Sand Beach, Geometric Basalt Columns & North Atlantic Mist, Iceland)
+    atmosphere: 极简冷峻、天地苍茫又充满炽热爱意的北欧荒野史诗大片，纯白飘逸婚纱在极致哑光黑沙与灰蓝海雾间形成震撼高定视觉对比
+    foreground: 湿润反光黑沙岸线、白色海浪水线弧度与雕塑感六边形玄武岩天然石阶
+  bride:
+    dress: 极简高定一字肩或心形抹胸纯白多层轻盈大拖尾婚纱，超长流动轻纱在北欧海风中拉出戏剧性雕塑弧线
+    neckline_hint: 一字肩或心形抹胸清晰勾勒锁骨与修长颈线，严格忠实原照原生肩宽体量，在宏大荒野构图中显挺拔优雅而不显壮
+    hairstyle: 顺滑饱满高颅顶浪漫长卷或利落法式低盘发（抗北欧海风、发丝顺滑整齐不遮挡或切碎脸颊轮廓，自动锁定高颅顶）
+    makeup: 清冷通透高定白皙北欧风妆容，面颈锁骨与肩臂整体同步匀净清亮并保留自然真实微纹理，柔和玫瑰裸色唇
+    veil_or_accessories: 3米极简超长通透素白头纱，迎着海风在深色玄武岩背景下高高扬起如云雾翅膀
+  groom:
+    outfit: 剪裁利落的高级黑色长款精纺羊毛礼服西装（可搭黑色羊绒修身大衣增添北欧荒野电影质感）、挺括白衬衫与黑色领结
+    hairstyle_virtual: 利落抗风清爽自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 极简纯白玫瑰、白色海芋与银叶菊组成的冷调北欧高定手捧花
+    - 玄武岩几何石壁与镜面湿润黑沙天然构图空间
+  mood:
+    tone: 孤寂天地中的炽热浪漫、史诗极简、极具艺术馆收藏价值的大片张力
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于几何玄武岩柱前，纯白长头纱随海风向侧方舒展飞扬，新娘轻撩头纱温柔微笑、新郎手捧冷调白花沉稳陪伴
+      - 史诗大远景：广袤黑沙滩与拍岸白浪间两人手牵手缓行，白色大裙摆与长头纱成为天地间最耀眼的视觉中心
+      - 海风中紧紧相拥的85mm浅景深半身近景，背后迷雾玄武岩柔美虚化，突出两人真实温暖微表情与细腻肤质
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深人像（宏大黑沙滩与玄武岩柱史诗大远景切换 24mm-35mm）
+    lighting: 北欧高纬度柔和漫射天光（天然巨型柔光箱），高反差黑白地貌与极其柔和通透的人物肤光并存，面颈锁骨光影完全统一
+    color_temperature: 4800K-5100K 高级冷峻灰蓝、深邃炭黑与纯净象牙白对比（严格保持人物肤色健康清透白皙不发青紫）
+    film_texture: 哈苏中画幅高定解析力叠加细腻电影颗粒，黑沙湿润反光、白浪层次与真实肤质极致高级
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "冰岛雷尼斯黑沙滩与几何玄武岩柱、北大西洋海雾白浪、纯白大拖尾轻纱极简史诗对比、正面0瘦脸保真脸型、原生肩颈防显壮、抗风顺滑高颅顶、面颈整体清透健康白皙不发青"
+  en_style_keywords: "Iceland Reynisfjara black volcanic sand beach and geometric basalt columns, North Atlantic mist and white surf, billowing pure white couture wedding gown and cathedral veil striking against matte black terrain, exact facial geometry zero slimming, sleek wind-tamed voluminous high-crown bridal hair, healthy luminous fair skin without cold blue skin cast"
+  negative_hints: "cold blue or purple tint on faces, wind-tangled hair covering eyes or cheeks, tourists on beach, automatic face slimming, thick bulky shoulders, flat scalp hair, neck skin tone mismatch, leftover reference pamphlets"

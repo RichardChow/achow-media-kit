@@ -27,6 +27,7 @@ SUPPORTED_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 LAYOUT_GRIDS = {
     "2x2": (2, 2),
+    "3x2": (3, 2),
     "4x2": (4, 2),
     "2x4": (2, 4),
     "3x3": (3, 3),
@@ -48,6 +49,8 @@ def resolve_grid(layout: str, image_count: int) -> tuple[int, int]:
         return LAYOUT_GRIDS[layout]
     if image_count <= 4:
         return (2, 2)
+    if image_count <= 6:
+        return (3, 2)
     if image_count <= 8:
         return (4, 2)
     return (3, 3)
@@ -139,9 +142,9 @@ def main() -> int:
     parser.add_argument("output", type=Path, help="Output contact sheet path (e.g. outputs/preview_grid.jpg).")
     parser.add_argument(
         "--layout",
-        choices=("auto", "2x2", "4x2", "2x4", "3x3"),
+        choices=("auto", "2x2", "3x2", "4x2", "2x4", "3x3"),
         default="auto",
-        help="Grid layout: auto (<=4: 2x2, <=8: 4x2, 9+: 3x3), 2x2, 4x2, 2x4, or 3x3.",
+        help="Grid layout: auto (<=4: 2x2, <=6: 3x2, <=8: 4x2, 9+: 3x3), 2x2, 3x2, 4x2, 2x4, or 3x3.",
     )
     parser.add_argument("--cell-width", type=int, default=600, help="Width in pixels per tile (default: 600).")
     parser.add_argument("--cell-ratio", default="3:4", help="Tile aspect ratio W:H (default: 3:4).")

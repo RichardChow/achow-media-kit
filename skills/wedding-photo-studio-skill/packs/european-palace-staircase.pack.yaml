@@ -1,0 +1,58 @@
+id: european-palace-staircase
+name:
+  zh: 欧式古堡与旋转楼梯宫廷风婚纱照
+  en: European Grand Chateau & Spiral Staircase Palace Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for European palace and grand spiral staircase couture wedding photography"
+tags:
+  - indoor
+  - european-palace
+  - spiral-staircase
+  - old-money-couture
+  - cathedral-train
+  - 8-angle
+
+defaults:
+  location:
+    category: vintage-and-floral-indoor-sets
+    venue: 欧式古典大理石旋转楼梯大厅、雕花铁艺栏杆、法式高挑拱形落地窗与水晶吊灯古堡长廊 (Grand European Marble Spiral Staircase Hall, Ornate Wrought-Iron Balustrade & Tall Arched Chateau Windows)
+    atmosphere: 华丽优雅而不浮夸的老钱贵族宫廷电影感，柔和暖阳穿过挑高拱窗洒在旋转大理石阶梯与丝绸拖尾上
+    foreground: 雕花铁艺旋梯弧线扶手、光洁大理石台阶散落白玫瑰花瓣与挑高古典石柱纵深
+  bride:
+    dress: 象牙白重工钉珠蕾丝大拖尾一字肩/心形抹胸蓬蓬宫廷主纱，多层挺括立体薄纱沿大理石阶梯倾泻而下
+    neckline_hint: 一字肩或心形抹胸优雅展露锁骨与颈线，配合自然原生肩宽体量，高贵挺拔而不把上身撑宽显壮
+    hairstyle: 皇室优雅顺滑高颅顶赫本盘发或大波浪公主半扎，发顶饱满光洁配精致巴洛克珍珠/碎钻发冠（自动锁定顺滑高颅顶）
+    makeup: 华贵清透白皙名媛新娘妆，面颈锁骨与肩臂整体同步匀净柔亮并保留真实微纹理，细腻珠光与复古玫瑰红唇
+    veil_or_accessories: 3.5米重工蕾丝花边教堂大拖尾头纱、璀璨珍珠流苏耳饰
+  groom:
+    outfit: 经典黑色枪驳领高定礼服西装（或双排扣丝绒礼服）、挺括白衬衫、黑色丝绒领结与精致胸花
+    hairstyle_virtual: 复古优雅绅士微偏分短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 白色奥斯汀玫瑰、浅粉玫瑰与垂坠白蝴蝶兰组成的奢华宫廷手捧花
+    - 复古铁艺楼梯栏杆与拱窗古典长廊自然交互空间
+  mood:
+    tone: 华贵浪漫、老钱典雅、充满电影史诗仪式感的宫廷画卷
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于旋转楼梯中段，新娘单手轻搭雕花扶手或轻撩长头纱灿烂微笑，新郎手捧鲜花立于低一级台阶温柔陪伴
+      - 高位俯拍旋转楼梯全貌：大拖尾重工婚纱如白色瀑布沿大理石阶梯扇形铺展，两人仰头微笑定格
+      - 高挑拱窗逆光半身近景：柔和金光勾勒发冠、长头纱与两人深情相拥的剪影细节
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深人像（旋梯全景与俯拍切换 24mm-35mm 建筑线条视角）
+    lighting: 高挑法式拱窗自然漫射侧逆光搭配柔和暖调环境补光，凸显重工珠绣闪光与丝绸层次，面颈光影无缝统一
+    color_temperature: 5500K 温润浅米石材、鎏金微光与象牙白交织的老钱电影色调
+    film_texture: 8K 高定中画幅质感叠加细腻 35mm 胶片柔润颗粒，珠绣与蕾丝丝丝分明、零廉价影楼反光
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "欧式古堡大理石旋转楼梯、雕花铁艺扶手、重工钉珠大拖尾宫廷主纱沿阶梯倾泻、高挑拱窗自然光、正面0瘦脸保真脸型、原生肩颈防显壮、顺滑高颅顶发冠、面颈整体清透白皙统一"
+  en_style_keywords: "grand European chateau marble spiral staircase with ornate iron balustrade, couture ivory beaded lace ballgown cascading down marble steps, tall arched window sunlight, exact facial geometry zero slimming, sleek voluminous high-crown regal bridal hair, unified luminous fair skin across face neck and shoulders"
+  negative_hints: "tacky over-gold palace kitsch, distorted curved stairs, automatic face slimming, thick neck or bulky shoulders, flat scalp beneath tiara, frizzy flyaways, neck skin color mismatch, leftover reference pamphlets"

@@ -1,0 +1,57 @@
+id: jiangnan-ink-garden
+name:
+  zh: 江南园林水墨新中式婚纱照
+  en: Jiangnan Classical Garden Ink-Wash New-Chinese Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for poetic Jiangnan classical garden wedding photography"
+tags:
+  - outdoor-and-indoor
+  - chinese-garden
+  - new-chinese
+  - ink-wash-poetic
+  - 8-angle
+
+defaults:
+  location:
+    category: chinese-gardens-and-heritage
+    venue: 苏州古典园林粉墙黛瓦、月洞花窗、曲折竹林回廊与工笔真丝屏风雅室 (Suzhou Classical Garden, Moon Gates, Bamboo Corridor & Gongbi Silk Screen Pavilion)
+    atmosphere: 清雅温润、留白克制的江南水墨诗意画卷，柔光漫射穿透竹叶与雕花木窗棂
+    foreground: 摇曳翠竹柔焦前景、雕花木格花窗框景、青瓷瓶插梅枝与雨后青石倒影
+  bride:
+    dress: 香槟浅金色真丝提花暗纹新中式改良旗袍婚纱，水滴微镂空领口配轻盈半透欧根纱披肩长裙摆
+    neckline_hint: 水滴微镂空领搭配轻薄垂坠欧根纱披肩，温柔修饰肩颈线条、显颈长且头肩比轻盈舒展
+    hairstyle: 温婉江南风顺滑高颅顶低发髻，发顶自然蓬松饱满、鬓角柔顺干净，点缀细腻白玉珍珠步摇（自动锁定顺滑高颅顶）
+    makeup: 清雅温润江南白皙新娘妆，面颈锁骨整体同步清透白皙如瓷并保留自然微纹理，柔和豆沙玫瑰唇
+    veil_or_accessories: 轻透绢纱飘逸披肩、天然珍珠耳坠与素雅手绘真丝团扇
+  groom:
+    outfit: 温润米灰或深墨青色新中式真丝亚麻修身立领礼服，极简手工盘扣，儒雅书卷气质
+    hairstyle_virtual: 清爽温润自然偏分短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 白色蝴蝶兰、绿枝与淡粉芍药组成的东方留白手捧花
+    - 素雅竹骨油纸伞或手绘工笔真丝团扇
+  mood:
+    tone: 温婉含蓄、移步换景、东方留白诗意与相濡以沫的静谧深情
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于月洞门或花窗光影前，新娘执素雅团扇轻倚，新郎执伞或持花温润相伴
+      - 曲折回廊间共撑竹骨油纸伞缓步前行，竹影轻落素雅裙摆
+      - 临水亭台或半透工笔屏风旁静坐沏茶、低眉浅笑对望
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深柔美留白（园林花窗框景切换 50mm f/1.4）
+    lighting: 江南柔阴天漫射自然光或清晨温润斜阳，低反差奶油柔光让肤色清透干净、水墨质感极强
+    color_temperature: 5200K 清雅粉墙黛瓦、淡青竹影与香槟暖白交融的水墨色调
+    film_texture: Fujifilm Pro 400H 清透胶片影调叠加柔和微粒，保留真丝提花暗纹与真实细腻肤质
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "苏州园林粉墙黛瓦月洞花窗、竹影工笔屏风留白、香槟提花新中式旗袍与欧根纱披肩、正面0瘦脸保真脸型、原生修长肩颈、顺滑高颅顶低发髻、面颈清透白皙统一"
+  en_style_keywords: "Suzhou classical scholar garden whitewashed walls and moon gate, bamboo shadow framing, champagne silk jacquard New-Chinese wedding gown with sheer organza cape, poetic ink-wash negative space, exact facial geometry zero slimming, sleek voluminous high-crown low chignon, unified luminous fair complexion"
+  negative_hints: "cluttered tourist crowds, harsh noon shadows, oversaturated colors, automatic face slimming, thick bulky shoulders, flat scalp hair, messy frizzy flyaways, leftover reference everyday items"

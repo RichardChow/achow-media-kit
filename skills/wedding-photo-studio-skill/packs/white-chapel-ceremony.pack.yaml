@@ -1,0 +1,58 @@
+id: white-chapel-ceremony
+name:
+  zh: 纯白圣洁教堂仪式堂婚纱照
+  en: Luminous White Chapel & Colonnade Ceremony Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for sacred white chapel architectural wedding photography"
+tags:
+  - indoor-and-outdoor
+  - white-chapel
+  - architectural-symmetry
+  - sacred-ceremony
+  - couture-satin
+  - 8-angle
+
+defaults:
+  location:
+    category: european-and-french-estates
+    venue: 纯白古典建筑教堂圣殿、高挑对称拱形柱廊与洒满圣洁天光的誓言礼台 (Luminous White Classical Chapel Sanctuary, Symmetrical Stone Colonnade & Sunlit Altar)
+    atmosphere: 圣洁通透、庄重神圣的婚礼誓言仪式氛围，洁净建筑几何线条与柔和漫射天光烘托永恒承诺感
+    foreground: 光洁浅象牙石材地面倒影、对称纯白古典拱门纵深框景与极简白绿色仪式花柱
+  bride:
+    dress: 象牙白高定一字肩重工真丝缎面大拖尾主纱，优雅折边一字领、挺括收腰与教堂级雕塑感长拖尾
+    neckline_hint: 挺括优雅一字肩横向自然延展锁骨线条，同时严格忠实于原照真实肩宽体量，绝不把上身画厚显壮
+    hairstyle: 经典赫本风顺滑高颅顶芭蕾盘发或优雅低盘发，发顶饱满光洁配纤细珍珠皇冠发梳（自动锁定顺滑高颅顶，拒绝贴头皮扁塌与毛躁碎发）
+    makeup: 纯净圣洁高定白皙新娘妆，面颈锁骨与肩臂整体同步匀净柔亮且保留真实皮肤微纹理，清雅玫瑰裸粉唇
+    veil_or_accessories: 3.5米教堂级超长蕾丝刺绣拖尾头纱，搭配经典单颗珍珠耳饰
+  groom:
+    outfit: 经典黑色枪驳领高定无尾礼服西装、挺括白衬衫、黑色丝绒领结与洁白口袋巾
+    hairstyle_virtual: 利落绅士清爽短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 极简纯白蝴蝶兰与白玫瑰瀑布形仪式手捧花
+    - 圣洁教堂纯白拱门与誓言台自然光影空间
+  mood:
+    tone: 神圣庄重、坚定温柔、充满仪式感与永恒承诺的电影画面
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于纯白拱廊光影下，新娘单手轻撩飘逸长头纱优雅微笑，新郎手持纯白捧花沉稳陪伴
+      - 教堂中轴线大远景牵手缓步走向圣洁天光，3.5米缎面大拖尾与长头纱呈对称扇形延展
+      - 誓言台前轻吻额头或十指紧扣宣誓近景，柔和天光勾勒神圣发丝与头纱边缘
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深人像（教堂中轴对称大远景切换 24mm-35mm 建筑无畸变视角）
+    lighting: 挑高教堂漫射自然天光与柔和逆光光柱，纯净高调不死白，面颈锁骨过渡丝滑通透
+    color_temperature: 5400K 纯净象牙白与柔和暖金天光交织的圣洁影调
+    film_texture: 哈苏中画幅级高定清晰度叠加极细腻胶片颗粒，精准还原重工缎面光泽与刺绣头纱通透感
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "纯白圣洁教堂拱廊、中轴对称仪式感、象牙白一字肩重工缎面大拖尾主纱、顺滑高颅顶赫本盘发、正面0瘦脸保真脸型、原生肩颈比例防显壮、面颈锁骨整体清透白皙统一"
+  en_style_keywords: "luminous white classical chapel sanctuary and symmetrical colonnade, couture ivory off-the-shoulder heavy silk satin cathedral wedding gown, 3.5m embroidered cathedral veil, sleek voluminous high-crown Hepburn bridal updo, exact facial geometry zero slimming, natural native shoulder build, unified luminous fair skin across face neck and collarbones"
+  negative_hints: "blown-out white highlights losing dress detail, cluttered modern signs, automatic face slimming, thick neck or bulky shoulders, flat scalp hair, messy frizzy flyaways, neck skin color mismatch, leftover reference pamphlets"

@@ -72,7 +72,9 @@ KNOWN_ROOT_DIRS = (
     "matrices",
     "packs",
     "adapters",
+    "workflows",
     "scripts",
+    "tests",
     "docs",
 )
 
@@ -346,6 +348,19 @@ def validate_adapters_and_scripts(result: ValidationResult) -> None:
             else:
                 result.ok(f"Adapter present: {rel_path}")
 
+    workflow_dir = REPO_ROOT / "workflows"
+    if workflow_dir.is_dir():
+        workflow_files = sorted(workflow_dir.glob("*.md"))
+        if not workflow_files:
+            result.fail("workflows/: directory exists but has no markdown files")
+        else:
+            for path in workflow_files:
+                rel_path = path.relative_to(REPO_ROOT).as_posix()
+                if not path.read_text(encoding="utf-8").strip():
+                    result.fail(f"{rel_path}: workflow file is empty")
+                else:
+                    result.ok(f"Workflow module present: {rel_path}")
+
     script_files = sorted((REPO_ROOT / "scripts").glob("*.py"))
     if not script_files:
         result.fail("scripts/: no Python scripts found")
@@ -359,6 +374,18 @@ def validate_adapters_and_scripts(result: ValidationResult) -> None:
                 result.fail(f"{rel_path}: Python syntax error ({exc})")
             else:
                 result.ok(f"Python script compiles: {rel_path}")
+
+    tests_dir = REPO_ROOT / "tests"
+    if tests_dir.is_dir():
+        for path in sorted(tests_dir.glob("*.py")):
+            rel_path = path.relative_to(REPO_ROOT).as_posix()
+            try:
+                source = path.read_text(encoding="utf-8")
+                compile(source, rel_path, "exec")
+            except SyntaxError as exc:
+                result.fail(f"{rel_path}: Python test syntax error ({exc})")
+            else:
+                result.ok(f"Contract test compiles: {rel_path}")
 
 
 def validate_skill_md(result: ValidationResult) -> None:

@@ -1,0 +1,58 @@
+id: hongkong-retro-cinema
+name:
+  zh: 港风胶片霓虹夜景婚纱照
+  en: Hong Kong Retro Neon Night Cinema Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset inspired by classic 1990s Hong Kong cinema night-street editorial photography"
+tags:
+  - outdoor-and-indoor
+  - hong-kong-retro
+  - neon-night
+  - cinestill-800t
+  - direct-flash
+  - 8-angle
+
+defaults:
+  location:
+    category: urban-street-and-film
+    venue: 复古霓虹灯牌林立的老城夜街、微湿反光路面、复古冰室卡座与叮叮车/旧式走廊光影 (Retro Hong Kong Neon Night Street, Rain-Kissed Pavement & Vintage Tea-Cafe Booth)
+    atmosphere: 王家卫式90年代港片迷离浪漫氛围，复古青绿与暖橙霓虹散景交织出浓郁电影故事感与松弛私奔情绪
+    foreground: 柔焦霓虹灯牌光斑、微湿街面暖色倒影、复古玻璃门窗与冰室木格卡座前景
+  bride:
+    dress: 复古象牙白法式方领或抹胸缎面短款/轻拖尾婚纱（或丝绸细吊带复古礼服），配法式复古短网纱或飘逸素白短头纱，利落俏皮极具港风电影感
+    neckline_hint: 复古法式方领或心形抹胸干净展露锁骨与颈线，配合原生自然肩宽在夜街直闪下显精致明艳
+    hairstyle: 经典90年代港风顺滑蓬松高颅顶复古大波浪黑长发，发顶饱满空气弧度、发丝乌黑顺滑显发量（自动锁定顺滑高颅顶，拒绝贴头皮与毛躁乱发）
+    makeup: 明艳复古港风白皙电影妆，面颈锁骨与肩臂整体同步匀净清亮且保留真实肌理，清晰眉眼与经典复古丝绒红唇
+    veil_or_accessories: 复古珍珠短蓬纱/网纱头饰、醒目复古金色或大颗珍珠耳夹
+  groom:
+    outfit: 复古宽松合体黑色或深墨绿双排扣西装、白衬衫微敞一粒扣配复古窄领带（或经典黑领结），潇洒港片男主气质
+    hairstyle_virtual: 复古港风微纹理自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 复古红玫瑰与满天星组成的经典港风手捧花
+    - 透明极简长柄雨伞（雨夜霓虹绝配）或复古胶片相机、两杯港式冻柠茶/玻璃瓶汽水
+  mood:
+    tone: 迷离深情、浪漫私奔、肆意大笑与静谧依偎交织的90年代香港电影质感
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于复古霓虹夜街，机顶直闪定格两人明艳自然笑颜，新娘轻撩复古短头纱、新郎手持红玫瑰捧花相伴
+      - 复古冰室卡座隔窗窥视构图：两人并肩轻靠喝汽水低声说笑，暖黄橱窗光洒在侧脸
+      - 微湿霓虹街头共撑一把透明雨伞快步小跑回头大笑，车灯与霓虹化作迷离 Cinestill 散景
+  camera:
+    body_and_lens: 35mm 与 50mm 电影人文定焦（夜街近景人像使用 85mm f/1.8 保护五官比例并营造极美圆形霓虹光斑）
+    lighting: 复古机顶直闪柔光补面（或柔和暖黄橱窗侧光）配背景深邃霓虹光斑，确保人物面部、脖颈与锁骨肤色清亮匀净不发青发暗
+    color_temperature: 4600K-5200K 复古青绿暗部、暖橙霓虹与纯净人像肤色平衡的 Cinestill 电影影调
+    film_texture: Cinestill 800T 35mm 夜景电影卷颗粒质感，高光灯牌带细微柔美红色光晕，真实皮肤质感不过度磨皮
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "90年代王家卫港风胶片夜景、复古霓虹散景、Cinestill 800T红晕颗粒、明艳复古红唇、乌黑顺滑高颅顶港风大波浪、正面0瘦脸保真脸型、原生肩颈、面颈清亮白皙不受青绿夜景偏色污染"
+  en_style_keywords: "1990s Wong Kar-wai Hong Kong retro night street wedding cinema, vintage neon bokeh on rain-kissed pavement, Cinestill 800T 35mm film grain with subtle warm halation, classic red lips, sleek voluminous high-crown black retro waves, exact facial geometry zero slimming, clean balanced luminous fair skin on face and neck"
+  negative_hints: "green or magenta neon color cast staining skin, blurry faces in dark night, messy unreadable gibberish neon text, automatic face slimming, thick bulky shoulders, flat scalp hair, frizzy flyaways, leftover reference pamphlets"

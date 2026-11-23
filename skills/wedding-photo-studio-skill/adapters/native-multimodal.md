@@ -46,7 +46,8 @@ Native multimodal models follow structured natural-language instructions best. C
 [双手动作、手持物指定、头纱动态与反应式情绪]
 互动姿态：{pose}；新娘双手：{bride_hand_action}；新郎双手：{groom_hand_action}；手持物与动态：{handheld_prop_state}（例如头纱随风飘动具动态感、严禁残留参考图原日常手持物）；画面可见关键力学：{body_mechanics}；接触关系：{contact_topology}；表情与视线：{expression_gaze}；整体情绪氛围：{mood_tone}。
 
-[场景与光影质感锁定]
+[场景、分场景摄影美学口号与光影质感锁定]
+摄影美学定调：{aesthetic_tagline_zh}（按当前风格包从 catalogs/camera-and-lighting.yaml 自动匹配，而非一刀切强插）。
 拍摄场地：{venue}；环境氛围：{atmosphere}；前景构图：{foreground}。
 器材光影：{body_and_lens}；{lighting}；{color_temperature}；{film_texture}。画幅比例：{aspect_ratio}。
 
@@ -71,7 +72,8 @@ Bouquet & Props: {bouquet_and_props}.
 [Pose, Explicit Hand Actions, Handheld Props, Veil Dynamics & Reactive Expression]
 {pose}. Bride hands: {bride_hand_action}. Groom hands: {groom_hand_action}. Handheld prop & motion state: {handheld_prop_state} (e.g., wind-swept flowing veil dynamics; zero leftover reference-photo everyday objects). Key visible body mechanics: {body_mechanics}. Contact topology: {contact_topology}. Expression and gaze: {expression_gaze}. Emotional mood: {mood_tone}.
 
-[Location, Lighting & Film Grade Lock]
+[Location, Scene-Matched Aesthetic Direction Tagline, Lighting & Film Grade Lock]
+Aesthetic direction tagline: {aesthetic_tagline_en} (automatically matched to the active style family in catalogs/camera-and-lighting.yaml).
 Location: {venue}. Atmosphere: {atmosphere}. Foreground: {foreground}.
 Photography specs: {body_and_lens}, {lighting}, {color_temperature}, {film_texture}. Aspect ratio {aspect_ratio}.
 

@@ -20,16 +20,39 @@ An extensible, modular AI wedding photography orchestrator Skill designed for **
 
 ---
 
-## 内置 9 套开箱即用风格包 (`packs/`)
+## 内置 19 套开箱即用风格包 (`packs/`)
 
+### 一、自然风光与海外史诗 (5 套)
 | Pack ID | 中文名称 | 核心场景与氛围 | 默认分镜矩阵 |
 | --- | --- | --- | --- |
 | `dali-cangshan-sunrise` *(默认)* | 大理苍山日照金山电影感 | 高原草坡、日照金山逆光、飘逸长头纱 | `8-angle-cinematic` |
-| `korean-minimal-airy` | 韩系极简清透棚拍 | 纯白高定影棚、半透白纱帘、高调漫射窗光 | `8-angle-cinematic` |
-| `french-vintage-garden` | 法式复古庄园花园 | 石灰岩古堡、雕花花廊、午后斑驳树影 | `8-angle-cinematic` |
 | `sayram-lake-monet` | 赛里木湖莫奈油画感 | 湛蓝高原湖岸、雪峰野花、印象派柔美光色 | `8-angle-cinematic` |
-| `japanese-film-natural` | 日系胶片自然生活流 | 复古木屋书房、老街窗光、35mm 非摆拍纪实 | `8-angle-cinematic` |
+| `enchanted-forest-tyndall` | 原始森林丁达尔光精灵森系 | 参天冷杉苔藓密林、清晨丁达尔体积光束 | `8-angle-cinematic` |
 | `seaside-vacation-documentary` | 海边度假私奔纪实 | 阳光沙滩、海边木屋、复古单车与海风扬纱 | `8-angle-cinematic` |
+| `iceland-black-sand-epic` | 冰岛黑沙滩极简史诗大片 | 雷尼斯黑沙滩、几何玄武岩柱与白浪海雾 | `8-angle-cinematic` |
+
+### 二、东方美学 · 中式与新中式 (3 套)
+| Pack ID | 中文名称 | 核心场景与氛围 | 默认分镜矩阵 |
+| --- | --- | --- | --- |
+| `crimson-new-chinese` | 海派深红新中式高定棚拍 | 暗酒红丝绒/牛血红灰泥影棚、象牙白中式刺绣、墨黑立领 | `8-angle-cinematic` |
+| `imperial-crimson-xiuhe` | 故宫红墙正红秀禾礼服 | 朱红宫墙飞檐、盘金绣秀禾宽云肩、苏绣团扇红绸 | `8-angle-cinematic` |
+| `jiangnan-ink-garden` | 江南园林水墨新中式 | 苏州粉墙黛瓦花窗竹影、香槟提花旗袍、工笔屏风 | `8-angle-cinematic` |
+
+### 三、高定棚拍与宫廷仪式 (5 套)
+| Pack ID | 中文名称 | 核心场景与氛围 | 默认分镜矩阵 |
+| --- | --- | --- | --- |
+| `korean-minimal-airy` | 韩系极简清透棚拍 | 纯白高定影棚、半透白纱帘、高调漫射窗光 | `8-angle-cinematic` |
+| `white-chapel-ceremony` | 纯白圣洁教堂仪式堂 | 白色古典柱廊拱门、一字肩重工缎面大拖尾主纱 | `8-angle-cinematic` |
+| `editorial-noir-studio` | 高级黑灰情绪杂志影棚 | 手工肌理炭黑画布、伦勃朗雕光、Vogue 高定冷艳 | `8-angle-cinematic` |
+| `european-palace-staircase` | 欧式古堡与旋转楼梯宫廷风 | 大理石旋转楼梯、雕花铁艺扶手、重工大拖尾倾泻 | `8-angle-cinematic` |
+| `french-vintage-garden` | 法式复古庄园花园 | 石灰岩古堡、雕花花廊、午后斑驳树影 | `8-angle-cinematic` |
+
+### 四、复古电影、纪实与叙事 (6 套)
+| Pack ID | 中文名称 | 核心场景与氛围 | 默认分镜矩阵 |
+| --- | --- | --- | --- |
+| `japanese-film-natural` | 日系胶片自然生活流 | 复古木屋书房、老街窗光、35mm 非摆拍纪实 | `8-angle-cinematic` |
+| `hongkong-retro-cinema` | 港风胶片霓虹夜景 | 王家卫式霓虹夜街/复古冰室、Cinestill 800T 颗粒 | `8-angle-cinematic` |
+| `shanghai-vintage-mansion` | 海派民国老洋房复古电影 | 百年胡桃木楼梯、彩色花窗光影、海派名媛绅士 | `8-angle-cinematic` |
 | `road-trip-wedding` | 公路旅行电影感 | 旷野公路、停靠敞篷老爷车、落日与复古直闪 | `8-angle-cinematic` |
 | `school-to-marriage` | 从校服到婚姻·跨时空叙事 | 大学校园记忆与婚礼当下同机位跨时空呼应 | `story-timeline-8` |
 | `pet-family-wedding` | 有宠物家庭温馨婚纱照 | 居家/草坪温馨互动、锁定宠物参考品种花纹 | `8-angle-cinematic` |
@@ -62,42 +85,63 @@ wedding-photo-studio-skill/
 │   └── story-timeline-8.yaml              # 8 角度时间线跨时空呼应叙事矩阵
 ├── packs/
 │   ├── _template.pack.yaml                # 新建/合入风格包注释模板
-│   └── *.pack.yaml                        # 9 套开箱即用主题风格包
+│   └── *.pack.yaml                        # 19 套开箱即用主题风格包（自然/中式/棚拍/复古全覆盖）
 ├── adapters/
-│   ├── native-multimodal.md               # 原生多模态生图工具（默认，支持单图/代表图/8宫格）
+│   ├── native-multimodal.md               # 原生多模态生图工具（默认，支持单图/代表图/8宫格与双图微调）
 │   ├── cn-platforms.md                    # 国内常用平台适配（即梦 / 豆包 / Nano Banana）
 │   ├── midjourney.md                      # Midjourney v6.1 / v7 适配规范
 │   └── flux-comfyui.md                    # Flux.1 + ComfyUI / PuLID 适配规范
+├── workflows/                             # 按需触发的高阶扩展工作流
+│   ├── wardrobe-board.md                  # 6 宫格换装对比预演板（先看 6 套换装）
+│   ├── reference-beauty-prep.md           # 参考图前置三宫格精修（先美化参考图）
+│   └── multi-person-roster.md             # 单人 / 伴郎伴娘团 / 全家福多人 Detail Floor 编排
 ├── scripts/
 │   ├── validate_repo.py                   # 全仓库 Schema / YAML / 署名 / 脚本 / 路径校验
-│   ├── make_contact_sheet.py              # 独立成片拼图展示板工具（支持 2x2 / 4x2 / 3x3 + 编号）
-│   └── remix_resolver.py                  # 单变量局部 Remix 依赖解析器
+│   ├── make_contact_sheet.py              # 独立成片拼图展示板工具（支持 2x2 / 3x2 / 4x2 / 3x3 + 编号）
+│   ├── remix_resolver.py                  # 单变量局部 Remix 依赖解析器
+│   └── workspace_manager.py               # 可选本地多主题持久化工程目录管理（THEME-001/002...）
+├── tests/
+│   └── test_skill_contracts.py            # 自动化规则契约回归测试（标准库 unittest）
 └── docs/
     └── MERGE_GUIDE.md                     # 外部参考项目资产拆解与合入指南
 ```
 
 ---
 
-## 快速开始与实用工具 (Quick Start & Utilities)
+## 快速开始与全部高级用法 (Quick Start & Full Feature Usage)
 
 将本仓库挂载到支持 `SKILL.md` 的 AI Agent Skill 目录即可触发：
 
-- **默认旗舰包：** 「帮我拍一套大理苍山日照金山婚纱照，按默认生成」
-- **真人合照 + 一句话定制：** 上传合照并发送：「选韩系极简风，新郎发型按主题重塑，先出 1 张代表图确认再出独立 3:4 单图，其他默认」
-- **灵感探索（按需触发）：** 还没想好风格时可说「给我 3 个方向」（生成 A/B 两个跨文化现实地标 + C 一个穿越时空方案，回复 `A/B/C` 直接拍），或直接说「抽卡」（全自动盲盒抽签并锁定底线护栏一步出图）
-- **单变量局部改配：** 「只换场地到赛里木湖，其他全部冻结不变」
+### 1. 日常拍摄与按需扩展口令速查
+- **默认旗舰包：** 「帮我拍一套婚纱照」（先弹出 3 列确认表，回复「按默认生成」即开拍）
+- **真人合照 + 一句话定制：** 上传合照并发送：「换海派深红新中式，先出 1 张试拍，其他默认」
+- **6 宫格换装对比 (`workflows/wardrobe-board.md`)：** 定好场景但纠结衣服时说「选法式复古庄园，**先看 6 套换装**对比再开拍」
+- **参考图前置三宫格精修 (`workflows/reference-beauty-prep.md`)：** 仅手头有素颜生活照想先单独精修底图时说「**先美化参考图**（三宫格精修）」（不会打断日常拍摄，且不覆盖原始锁脸底图）
+- **伴郎伴娘 / 全家福多人 (`workflows/multi-person-roster.md`)：** 直接说「拍一组新人 + 2 位伴娘 + 2 位伴郎的纯白教堂婚礼群像」，自动走 `P01..Pn` 逐人 Detail Floor
+- **灵感探索：** 还没想好拍什么时说「**给我 3 个方向**」（A/B 跨文化地标 + C 穿越时空）或直接「**抽卡**」
+- **分场景动态摄影美学口号：** 自动按 4 大风格族匹配（戏剧高定 / 清透极简 / 生活流纪实 / 东方复古），也可自由指定或关闭
+- **成片局部防改坏微调：** 「**微调第 2 张**：只把新娘发色改为深黑并抬高颅顶，其他不动」（自动双图锚定：图 1 原照锁脸 + 图 2 成片锁构图）
+- **整套单变量 Remix：** 「**只换场地**到冰岛黑沙滩，其他全部冻结不变」
 
-### 命令行辅助脚本
+### 2. 命令行辅助脚本与契约测试
 
 ```bash
 # 1. 全仓库结构、JSON Schema、YAML、署名与路径完整性校验
 python scripts/validate_repo.py
 
-# 2. 查询单变量 Remix 冻结与失效依赖（支持中英文）
+# 2. 运行全套自动化规则契约回归测试（零第三方依赖）
+python -m unittest discover -s tests -v
+
+# 3. 查询单变量 Remix 冻结与失效依赖（支持中英文）
 python scripts/remix_resolver.py 场地
 
-# 3. 将生成的独立 3:4 单图拼成带编号的 4x2 或 3x3 选片展示板（需安装 Pillow）
+# 4. 将独立单图拼成带编号展示板（2x2 / 3x2换装板 / 4x2 / 3x3，需安装 Pillow）
 python scripts/make_contact_sheet.py ./outputs/session_01 ./outputs/preview_grid.jpg --layout auto
+
+# 5. 可选：初始化本地多主题持久化拍摄工程目录（共享原图、隔离各主题方案与出图）
+python scripts/workspace_manager.py init ./my_wedding_project --couple-label "OurWedding"
+python scripts/workspace_manager.py new-theme ./my_wedding_project --pack crimson-new-chinese --title "海派深红新中式"
+python scripts/workspace_manager.py list ./my_wedding_project
 ```
 
 ---

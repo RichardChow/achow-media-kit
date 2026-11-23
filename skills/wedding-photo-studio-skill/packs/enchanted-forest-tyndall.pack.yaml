@@ -1,0 +1,58 @@
+id: enchanted-forest-tyndall
+name:
+  zh: 原始森林丁达尔光精灵森系婚纱照
+  en: Enchanted Primeval Forest Tyndall Light Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for ethereal woodland Tyndall-sunbeam bridal photography"
+tags:
+  - outdoor
+  - primeval-forest
+  - tyndall-sunbeams
+  - woodland-fairy
+  - dreamy-mist
+  - 8-angle
+
+defaults:
+  location:
+    category: forests-meadows-wilderness
+    venue: 参天冷杉与绿绒苔藓覆盖的幽静原始森林林间空地、林中小径与溪畔木桥 (Towering Evergreen Primeval Forest Clearing, Mossy Trail & Woodland Mist)
+    atmosphere: 清晨暖金阳光穿透高耸树冠与薄雾形成梦幻丁达尔体积光束，静谧空灵如童话森林精灵电影
+    foreground: 柔焦翠绿蕨类叶片、苔藓覆盖的古老树根、轻盈漂浮的林间暖光斑与飘逸薄纱
+  bride:
+    dress: 仙气落肩薄纱袖立体蕾丝轻婚纱，轻盈透气的多层星光微闪白纱裙摆随林间步履摇曳
+    neckline_hint: 轻盈落肩薄纱袖温柔柔化肩臂转折并展露精致锁骨，兼顾修长颈线与原生轻盈肩宽
+    hairstyle: 森系精灵感顺滑高颅顶空气编发半扎长卷，发顶饱满蓬松、发丝柔顺不毛躁，发间轻缀细碎满天星与珍珠丝带（自动锁定顺滑高颅顶）
+    makeup: 清透空灵白皙森系精灵妆，面颈锁骨与肩臂整体同步清透白皙并保留真实皮肤微纹理，柔和桃粉微光眼颊与水润裸粉唇
+    veil_or_accessories: 轻盈半透森系花瓣刺绣长头纱，配小巧绿叶珍珠耳饰
+  groom:
+    outfit: 森林深墨绿、暖咖大地色或炭灰亚麻混纺复古三件套西装、象牙白衬衫与自然森林感胸花
+    hairstyle_virtual: 清爽自然微蓬松森系短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 白色洋甘菊、绿叶蕨类、浅白玫瑰与铃兰组成的森系自然野生感手捧花
+    - 复古黄铜森林小提灯（可选点缀微光氛围）
+  mood:
+    tone: 空灵静谧、童话浪漫、温柔治愈的森林精灵电影感
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于丁达尔光束落点，新娘单手轻撩通透飘纱浅笑，新郎手捧森系鲜花温柔相伴
+      - 林间苔藓小径牵手漫步回头微笑，丁达尔光柱在两人身后如舞台追光般洒落
+      - 绿叶柔焦前景框景下的亲密半身相拥，发丝与薄纱在森林逆光中泛起细腻金边
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深奶油虚化林间绿意（参天古树与光束大远景切换 35mm）
+    lighting: 清晨穿透树冠雾气的丁达尔体积光束 + 柔和林间漫射补光，保证面部肤色均匀白皙通透不被树影切成花脸
+    color_temperature: 5300K 深邃复古森林绿、苔藓棕与暖金晨光交织的电影色调
+    film_texture: 细腻 Kodak Portra 400 / Fujifilm Pro 400H 胶片质感，光束颗粒柔美、皮肤微纹理自然真实
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "原始冷杉苔藓森林、清晨丁达尔体积光束、森系落肩轻纱礼服、满天星顺滑高颅顶编发、正面0瘦脸保真脸型、原生肩颈防显壮、面颈肩整体清透白皙无树影花脸"
+  en_style_keywords: "enchanted primeval evergreen forest with mossy floor, volumetric morning Tyndall sunbeams slicing through woodland mist, ethereal draped-sleeve tulle wedding gown, sleek voluminous high-crown woodland half-up braids with baby's-breath, exact facial geometry zero slimming, clean even luminous fair skin without blotchy leaf shadows on faces"
+  negative_hints: "harsh blotchy leaf shadows across faces, green color cast on skin, fake CGI fairy sparkles, automatic face slimming, bulky widened shoulders, flat scalp hair, messy frizzy flyaways, leftover reference everyday items"

@@ -29,7 +29,7 @@
 新郎造型：{groom_outfit}；{groom_hairstyle}。
 捧花与道具：{bouquet_and_props}。
 互动动作与情绪：{pose}；新娘双手：{bride_hand_action}；新郎双手：{groom_hand_action}；手持物与动态：{handheld_prop_state}（彻底清除参考图原宣传册/手机等日常手持物，除非用户指定保留）；{contact_topology}；{expression_gaze}；整体氛围：{mood_tone}。
-场景与光影：{venue}，{atmosphere}，前景{foreground}；{body_and_lens}，{lighting}，{color_temperature}，{film_texture}。
+场景与光影：{aesthetic_tagline_zh}；{venue}，{atmosphere}，前景{foreground}；{body_and_lens}，{lighting}，{color_temperature}，{film_texture}。
 
 画面要求：不要改变两人真实面部特征，不要出现扁塌贴头皮发顶、大头小身或面颈肤色割裂，不要生成多余手指、额外路人或水印文字。
 ```

@@ -1,0 +1,58 @@
+id: crimson-new-chinese
+name:
+  zh: 海派深红新中式高定棚拍
+  en: Shanghai Crimson New-Chinese Couture Studio
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset refined from Shanghai contemporary Chinese wedding editorial direction"
+tags:
+  - indoor
+  - studio
+  - new-chinese
+  - crimson-velvet
+  - editorial-drama
+  - 8-angle
+
+defaults:
+  location:
+    category: vintage-and-floral-indoor-sets
+    venue: 海派深红高定艺术影棚、暗酒红丝绒垂幕、朱漆木格花窗与低饱和牛血红肌理灰泥空间 (Shanghai Contemporary Oxblood Plaster & Burgundy Velvet Wedding Studio)
+    atmosphere: 端庄克制而富有电影戏剧张力的东方高定氛围，深红绒幕与温润漆木映衬出高级静谧的婚礼仪式感
+    foreground: 深红丝绒帷幔柔和边缘、暗漆木雕窗格框景与极简新中式案几线条
+  bride:
+    dress: 象牙白挺括缎面新中式暗纹刺绣修身礼服（微弧度东方立领/水滴微镂空或一字肩东方刺绣剪裁，精致盘扣与立体云纹绣花）
+    neckline_hint: 柔和敞开式一字肩或水滴镂空东方领口自然展露锁骨与颈部留白，避免高紧领压迫脖颈与头肩比
+    hairstyle: 典雅海派新中式顺滑饱满高颅顶低盘发，头顶与后脑勺圆润饱满、微弧度顺滑碎发柔和修饰脸颊，搭配温润珍珠发簪（自动锁定顺滑高颅顶，拒绝毛躁炸发）
+    makeup: 东方古典清透白皙精修妆容，面颈锁骨与肩臂整体同步匀净白皙且保留真实皮肤微纹理，远山眉与质感丝绒暗红/玫瑰红唇
+    veil_or_accessories: 轻盈象牙白中式刺绣轻纱或珍珠流苏耳饰，低调温润玉镯
+  groom:
+    outfit: 剪裁挺括的墨黑色高定新中式立领修身中山礼服，暗纹真丝盘扣与干净领口留白，与新娘象牙白刺绣礼服形成经典黑白红东方美学
+    hairstyle_virtual: 利落沉稳自然短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 深红玫瑰、红果与少许绿叶组成的新中式古典手捧花（或苏绣真丝团扇）
+    - 复古漆木高脚圆凳 / 红绸喜字长带（按分镜点缀，少而精不堆砌）
+  mood:
+    tone: 端庄深情、克制高级、富有东方仪式感与电影戏剧张力
+    signature_poses:
+      - 主镜头默认顺应参考图两人自然朝向与站姿角度（锁脸最稳），新娘轻执团扇或手捧花端庄浅笑，新郎沉稳并肩陪伴
+      - 暖侧光下的深红绒幕前：新郎立于半步侧后方温柔凝望，新娘微侧3/4展露高颅顶盘发与细腻刺绣轮廓
+      - 两人一坐一站错落互动、共执红绸或十指相扣静谧对视，尽显海派电影叙事感
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 主力中长焦人像定焦（全身仪式构图切换 50mm f/1.4）
+    lighting: 精雕暖调侧主光与柔和轮廓光，在深红丝绒与漆木上塑造丰富明暗层次，同时确保下颌、颈侧、锁骨共享统一柔和光影与自然阴影
+    color_temperature: 5400K 温润电影暖侧光，深红浓郁不发荧光、象牙白与肤色纯净通透
+    film_texture: 哈苏中画幅高定影调叠加细腻电影颗粒，真实还原暗纹刺绣、丝绒绒感与自然皮肤微纹理，0 塑料磨皮
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "海派深红新中式高定、暗酒红丝绒与牛血红肌理墙、象牙白暗纹中式刺绣礼服、墨黑立领中山礼服、戏剧暖侧光、正面0瘦脸保真脸型、原生头肩比防显壮、顺滑高颅顶盘发、面颈锁骨整体清透白皙统一"
+  en_style_keywords: "Shanghai contemporary crimson New-Chinese bridal studio editorial, deep burgundy velvet and oxblood plaster backdrop, ivory tonal Chinese embroidered gown, tailored black stand-collar ceremonial suit, warm sculpted side lighting, exact facial geometry zero slimming, sleek voluminous high-crown bridal updo, unified luminous fair complexion across face neck and collarbones"
+  negative_hints: "cheap tacky bright neon red, plastic props, automatic face slimming or cheek narrowing, thick neck or bulky over-widened shoulders, flat pasted hair, messy frizzy flyaways, face-to-neck tone mismatch, leftover reference pamphlets"

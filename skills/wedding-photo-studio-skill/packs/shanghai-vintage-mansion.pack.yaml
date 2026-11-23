@@ -1,0 +1,58 @@
+id: shanghai-vintage-mansion
+name:
+  zh: 海派民国老洋房复古电影婚纱照
+  en: Vintage Shanghai Heritage Mansion Cinema Wedding
+version: "1.0.0"
+source:
+  origin: native
+  reference_url: ""
+  license_note: "Original studio preset designed for timeless old-Shanghai heritage villa wedding photography"
+tags:
+  - indoor-and-outdoor
+  - shanghai-vintage
+  - heritage-mansion
+  - republic-era-chic
+  - warm-film
+  - 8-angle
+
+defaults:
+  location:
+    category: vintage-and-floral-indoor-sets
+    venue: 上海梧桐区百年复古砖木老洋房、雕花胡桃木楼梯、彩色几何花窗、复古壁炉客厅与法式庭院铁门 (Historic Old-Shanghai Timber Villa, Carved Walnut Staircase, Stained Glass Windows & Wrought-Iron Garden Gate)
+    atmosphere: 温润怀旧、优雅克制的海派老电影《花样年华》式复古格调，午后斜阳穿透彩窗与百叶投下细腻条纹光影
+    foreground: 复古雕花木栏杆、老式落地留声机或丝绒沙发一角、法式百叶窗几何光条与梧桐树影
+  bride:
+    dress: 复古法式蕾丝长袖/方领修身轻鱼尾婚纱，或海派象牙白真丝珍珠刺绣改良长旗袍（配精致复古蕾丝手套与短蓬纱）
+    neckline_hint: 复古法式方领或温润水滴微敞领优雅展现锁骨与修长颈部，保持原生自然肩宽显窈窕典雅
+    hairstyle: 海派名媛顺滑高颅顶复古手推微卷或优雅低盘发，发顶饱满光洁、鬓角线条顺滑精致，配复古珍珠发卡（自动锁定顺滑高颅顶）
+    makeup: 经典海派名媛清透白皙复古妆，面颈锁骨与肩臂整体同步匀净柔白并保留真实皮肤微纹理，细弯温柔眉与丝绒豆沙红/复古正红唇
+    veil_or_accessories: 复古波点/蕾丝镶边中短头纱、温润珍珠项链与精致蕾丝手套
+  groom:
+    outfit: 经典深炭灰或深咖人字纹羊毛三件套双排扣复古西装、挺括白衬衫、复古丝绸领带与金丝怀表链细节，温润民国绅士格调
+    hairstyle_virtual: 复古海派绅士整洁偏分短发
+    hairstyle_reference_mode: 保持上传参考图原发型并自然整洁整理（可选：按主题交由发型师微调造型）
+  props:
+    - 香槟色与焦糖玫瑰搭配尤加利组成的海派复古手捧花
+    - 复古实木沙发、旧书信/留声机或老洋房庭院雕花铁门交互空间
+  mood:
+    tone: 温润优雅、怀旧深情、充满岁月沉淀与东方摩登气韵的复古电影感
+    signature_poses:
+      - 主镜头默认顺应参考图自然朝向立于老洋房雕花木楼梯或彩窗光影前，新娘单手轻提蕾丝头纱端庄微笑，新郎持复古玫瑰捧花绅士陪伴
+      - 复古丝绒沙发旁一坐一站并肩依偎，午后百叶窗光条轻落墙面与肩侧（避开强光条切割五官）
+      - 老洋房庭院雕花铁门与梧桐影下牵手漫步，回眸浅笑定格海派摩登记忆
+  camera:
+    body_and_lens: Canon EOS R5 全画幅相机，85mm f/1.8 浅景深人像定焦（老洋房客厅楼梯纵深切换 50mm f/1.4）
+    lighting: 午后斜射老洋房落地窗暖金自然光 + 柔和环境补光，凸显胡桃木温润质感与蕾丝浮雕层次，面颈肤色均匀柔亮
+    color_temperature: 5600K 焦糖暖棕、复古象牙白与深墨绿交织的老电影暖调
+    film_texture: Kodak Portra 400 细腻35mm胶片颗粒与温柔高光过渡，保留真实肤质与复古面料细节
+    aspect_ratio: "3:4"
+  shot_matrix: matrices/8-angle-cinematic.yaml
+
+guardrail_overrides:
+  enforce_high_crown: true
+  enforce_proportion_blending: true
+
+prompt_modifiers:
+  zh_style_keywords: "上海百年老洋房胡桃木楼梯与彩窗光影、海派复古电影格调、复古法式蕾丝礼服与三件套绅士西装、顺滑高颅顶名媛低盘发、正面0瘦脸保真脸型、原生优雅肩颈、面颈整体清透白皙统一"
+  en_style_keywords: "historic old-Shanghai heritage villa carved walnut staircase and stained glass light, timeless nostalgic cinema elegance, vintage ivory lace gown and tailored tweed three-piece suit, sleek voluminous high-crown vintage bridal hairstyle, exact facial geometry zero slimming, unified luminous fair skin across face neck and collarbones"
+  negative_hints: "harsh window blind stripes cutting across eyes, cheap modern decor, automatic face slimming, thick bulky shoulders, flat scalp hair, frizzy flyaways, neck skin tone mismatch, leftover reference everyday items"

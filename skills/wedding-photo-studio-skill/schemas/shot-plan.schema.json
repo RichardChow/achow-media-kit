@@ -31,6 +31,14 @@
       "enum": ["individual-images", "multi-panel-preview"],
       "default": "individual-images"
     },
+    "aesthetic_tagline_zh": {
+      "type": "string",
+      "description": "Scene-matched Chinese photographic aesthetic direction tagline injected across the set."
+    },
+    "aesthetic_tagline_en": {
+      "type": "string",
+      "description": "Scene-matched English photographic aesthetic direction tagline injected across the set."
+    },
     "guardrails_applied": {
       "type": "array",
       "minItems": 1,
@@ -135,6 +143,16 @@
             "type": "boolean",
             "default": false,
             "description": "When true (multi-panel preview mode), injects explicit per-panel identity reconstruction from canonical original reference."
+          },
+          "participants_present": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional list of participant IDs visible in this shot (e.g. ['P01', 'P02', 'P03']) for multi-person group shoots."
+          },
+          "participant_directions": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional per-person choreography directions matching participants_present (enforcing Detail Floor for 3+ people)."
           },
           "prompt_zh": {
             "type": "string",

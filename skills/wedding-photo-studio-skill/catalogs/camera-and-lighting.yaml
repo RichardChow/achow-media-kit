@@ -138,3 +138,55 @@ aspect_ratios:
     label: "16:9 宽银幕电影剧照"
     use_case: 横版电脑壁纸、婚礼现场大屏暖场轮播与双人史诗大远景电影剧照
     recommended_default: false
+
+# Scene-Matched Photographic Aesthetic Taglines (分场景动态摄影美学口号库)
+# Automatically matched to the active pack/scene instead of forcing one dramatic slogan onto delicate airy/minimal styles.
+# User can override with any custom tagline or set to 'none' in Phase 2/3.
+aesthetic_direction_taglines:
+  - id: dramatic-couture
+    name:
+      zh: 戏剧高定 / 史诗大片口号
+      en: Dramatic Couture & Monumental Epic Tagline
+    matched_packs:
+      - dali-cangshan-sunrise
+      - crimson-new-chinese
+      - imperial-crimson-xiuhe
+      - editorial-noir-studio
+      - european-palace-staircase
+      - iceland-black-sand-epic
+    tagline_zh: 高级摄影师风格，创意构图，强烈的戏剧张力，电影大片空间层次
+    tagline_en: master editorial photographer aesthetic, creative architectural composition, strong dramatic tension, cinematic spatial depth
+  - id: airy-minimal-grace
+    name:
+      zh: 清透柔和 / 极简圣洁口号
+      en: Airy Minimal & Luminous Ceremonial Tagline
+    matched_packs:
+      - korean-minimal-airy
+      - white-chapel-ceremony
+      - sayram-lake-monet
+      - enchanted-forest-tyndall
+    tagline_zh: 高定人像摄影师风格，克制留白构图，通透呼吸光影，纯净静谧仪式感
+    tagline_en: luxury editorial portrait aesthetic, restrained negative-space composition, luminous airy breathing light, serene ceremonial purity
+  - id: candid-film-story
+    name:
+      zh: 生活流纪实 / 温暖松弛口号
+      en: Candid Documentary & Warm Film Story Tagline
+    matched_packs:
+      - japanese-film-natural
+      - seaside-vacation-documentary
+      - road-trip-wedding
+      - school-to-marriage
+      - pet-family-wedding
+    tagline_zh: 电影纪实摄影师风格，生活流自然构图，松弛真实情绪呼吸感，细腻胶片叙事
+    tagline_en: cinema documentary photographer aesthetic, unposed candid storytelling composition, effortless authentic emotional resonance, tactile film narrative
+  - id: oriental-vintage-poetry
+    name:
+      zh: 东方雅韵 / 复古旧影口号
+      en: Oriental Poetic & Vintage Cinema Tagline
+    matched_packs:
+      - jiangnan-ink-garden
+      - french-vintage-garden
+      - shanghai-vintage-mansion
+      - hongkong-retro-cinema
+    tagline_zh: 电影美术级摄影师风格，古典画框层次构图，温润岁月质感与浓郁复古氛围张力
+    tagline_en: cinema art-director photography aesthetic, classical framed depth composition, timeless nostalgic tonal patina and poetic atmospheric tension
